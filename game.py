@@ -3,7 +3,7 @@ import pygame
 import traceback
 
 pygame.init()
-screen = pygame.display.set_mode((1024, 768))
+screen = pygame.display.set_mode((1024, 710))
 clock = pygame.time.Clock()
 w = screen.get_width()
 h = screen.get_height()
@@ -194,6 +194,60 @@ def load_level():
     for i in range(0,4):
         conveyor.append(pygame.image.load(image_folder_name + '/conveyor' + str(i+1) + '.png'))
         
+def animated_zoom():
+    global pixel_scale
+    save_pixel_scale = pixel_scale
+    half_width = man.image.get_width() * 0.5
+    half_height = man.image.get_height() * 0.5
+    
+    multiplier = 1.1
+    frames = 25
+    
+    final_scale = math.pow(multiplier, frames)
+    final_man_pos = [512, 700]
+    save_man_pos = [man.pos[0], man.pos[1]]
+    
+    for i in range(0,frames):
+        pixel_scale *= multiplier
+        man.images = []
+        man.leftward_images = []
+        man.load_images('walking man/t', DAN_OFFSETS, DAN_PIXEL_SCALE, False)
+        draw_background()
+        
+        man_shift = [(final_man_pos[0] - save_man_pos[0]) * (i+1)/frames,
+                     (final_man_pos[1] - save_man_pos[1]) * (i+1)/frames]
+        
+        man.pos[0] = save_man_pos[0] + man_shift[0]
+        man.pos[1] = save_man_pos[1] + man_shift[1]
+        
+        man.draw()
+        
+        for monster in monsters:
+            monster.images = []
+            monster.leftward_images = []
+            monster.load_images('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, True)
+            
+            save_monster_pos = [monster.pos[0], monster.pos[1]]
+            monster.pos[0] -= save_man_pos[0]
+            monster.pos[0] *= pixel_scale / save_pixel_scale
+            monster.pos[0] += man.pos[0]
+            monster.pos[1] -= save_man_pos[1]
+            monster.pos[1] *= pixel_scale / save_pixel_scale
+            monster.pos[1] += man.pos[1]
+
+            monster.draw()
+
+            monster.pos[0] = save_monster_pos[0]
+            monster.pos[1] = save_monster_pos[1]
+         
+        #draw_level()
+        draw_level([man.pos[0] - save_man_pos[0] * pixel_scale / save_pixel_scale, man.pos[1] - save_man_pos[1] * pixel_scale / save_pixel_scale])            
+        
+        pygame.display.flip()
+    pixel_scale = save_pixel_scale
+    import time
+    time.sleep(0.5)
+        
 def on_lose_life():
     global num_lives
     num_lives -= 1
@@ -201,6 +255,14 @@ def on_lose_life():
         on_game_over()
     else:
         load_level()
+    global left_pressed
+    global right_pressed
+    global up_pressed
+    global space_pressed
+    left_pressed = False
+    right_pressed = False
+    up_pressed = False
+    space_pressed = False
         
 def on_game_over():
     back_col = pygame.Color(0,0,0)
@@ -273,19 +335,16 @@ class Being(pygame.sprite.Sprite):
             if i == 8:
                 i = 0
             self.image = self.leftward_images[i]
-            self.image_shift = [self.pos[0] - self.left_offsets[i][0], self.pos[1] - self.left_offsets[i][1]]
+            self.image_shift = [int(self.pos[0] - self.left_offsets[i][0]), int(self.pos[1] - self.left_offsets[i][1])]
         else:
             self.image = self.images[self.image_index]
-            self.image_shift = [self.pos[0] - self.offsets[self.image_index][0], self.pos[1] - self.offsets[self.image_index][1]]
+            self.image_shift = [int(self.pos[0] - self.offsets[self.image_index][0]), int(self.pos[1] - self.offsets[self.image_index][1])]
         screen.blit(self.image, self.image_shift)
         self.rect = self.image.get_rect()
         self.rect.x += self.image_shift[0]
         self.rect.y += self.image_shift[1]
         # draw a yellow rectangle for debugging
-        pygame.draw.rect(screen, pygame.Color(255,255,0), self.rect, width = 1)
-        self.update_mask()
-        self.mask.to_surface(screen)#, dest=(self.image_shift[0], self.image_shift[1]))
-        
+        #pygame.draw.rect(screen, pygame.Color(255,255,0), self.rect, width = 1)
 
     def load_images(self, root_path, offsets, character_pixel_scale, leftward):
         if leftward:
@@ -331,19 +390,8 @@ class Being(pygame.sprite.Sprite):
         if pygame.sprite.collide_rect(self, being):
             self.update_mask()
             being.update_mask()
-            #return self.mask.overlap(
-            result = pygame.sprite.collide_mask(self, being)
-            if result != None:
-                return True
+            return self.mask.overlap(being.mask, (being.image_shift[0] - self.image_shift[0], being.image_shift[1] - self.image_shift[1]))
         return False
-#        posns = self.get_on_posns()
-#        b_posns = being.get_on_posns()
-#        for pos in posns:
-#            for b_pos in b_posns:
-#                if pos[0] == b_pos[0] and pos[1] == b_pos[1]:
-#                    return True
-#        return False
-            
 
 class Monster(Being):
     def __init__(self, version, leftward, x, y, minx, max_x):
@@ -395,7 +443,9 @@ class Man(Being):
     def move(self):
         on = self.on_flag()
         if on == 1:
+            animated_zoom()
             on_lose_life()
+            return
         elif on == 2 and keys_left == 0:
             on_end_level()
             
@@ -414,7 +464,9 @@ class Man(Being):
                 self.fall_count += 1
             else:
                 if self.fall_count > 8:
-                    self.on_fall_death()
+                    animated_zoom()
+                    on_lose_life()
+                    return
                 self.fall_count = 0                
                 if left_pressed:
                     self.move_dir = -1
@@ -535,26 +587,30 @@ def draw_background():
     global background_color
     screen.fill(background_color)
     
-def draw_level():
+def draw_level(offset = [0,0]):
     local_keys_left = 0
     global keys_left
+    global pixel_scale
     y = 0
     for line in level:
         for x in range(0,32):
-            pos = (x*32, y)
-            if line[x] == 'D':
-                screen.blit(conveyor[animation_index & 3], pos)
-            elif line[x] == 'W':
-                screen.blit(conveyor[3-(animation_index & 3)], pos)
-            elif line[x] != ' ':
-                flash = False
-                if ((animation_index & 3) > 1) and (keys_left == 0) and (line[x] >= 'N') and (line[x] <= 'Q'):
-                    flash = True
-                img = images[ord(line[x])-65 + (4 if flash else 0)]
+            pos = (x*pixel_scale + offset[0], y + offset[1])
+            if line[x] != ' ':
+                if line[x] == 'D':
+                    img = conveyor[animation_index & 3]
+                elif line[x] == 'W':
+                    img = conveyor[3-(animation_index & 3)]
+                else:
+                    flash = False
+                    if ((animation_index & 3) > 1) and (keys_left == 0) and (line[x] >= 'N') and (line[x] <= 'Q'):
+                        flash = True
+                    img = images[ord(line[x])-65 + (4 if flash else 0)]
+                if pixel_scale != 32:
+                    img = pygame.transform.scale(img, (int(img.get_width() * pixel_scale/32), int(img.get_height() * pixel_scale/32)))
                 screen.blit(img, pos)
             if line[x] == 'V':
                 local_keys_left += 1
-        y += 32
+        y += pixel_scale
         
     keys_left = local_keys_left
 
@@ -572,14 +628,14 @@ def draw_air():
 load_level()
 
 def draw_score():
-    screen.blit(myfont.render("High Score " + "{:06d}".format(high_score), False, pygame.Color(255,255,255)),(0,620))
-    screen.blit(myfont.render("Score " + "{:06d}".format(score), False, pygame.Color(255,255,255)),(512,620))
+    screen.blit(myfont.render("High Score " + "{:06d}".format(high_score), False, pygame.Color(255,255,255)),(0,580))
+    screen.blit(myfont.render("Score " + "{:06d}".format(score), False, pygame.Color(255,255,255)),(512,580))
     
 man_for_lives = Man()
 
 def draw_lives():
     for i in range(0, num_lives - 1):
-        man_for_lives.pos = [i * 64 + 64, 764]
+        man_for_lives.pos = [i * 64 + 64, 702]
         man_for_lives.draw()
     man_for_lives.image_index += 1
     if man_for_lives.image_index == 8:
@@ -623,10 +679,18 @@ while num_lives > 0:
     draw_score()
     draw_lives()
     
+    life_lost = False
+    
     for monster in monsters:
         if man.being_collision(monster):
+            pygame.display.flip()
+            animated_zoom()
             on_lose_life()
+            life_lost = True
             break
+        
+    if life_lost:
+        continue
 
     pygame.display.flip()
     
