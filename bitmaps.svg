@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="bitmaps.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="11.313709"
+     inkscape:cx="225.61126"
+     inkscape:cy="266.09312"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="true"
+     inkscape:snap-bbox="false"
+     inkscape:snap-nodes="true"
+     inkscape:object-paths="false"
+     inkscape:snap-intersection-paths="false"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:snap-midpoints="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid846"
+       spacingy="0.26458333" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2195">
+      <stop
+         style="stop-color:#b70dc8;stop-opacity:0.63529414"
+         offset="0"
+         id="stop2191" />
+      <stop
+         style="stop-color:#c00dc8;stop-opacity:0"
+         offset="1"
+         id="stop2193" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1887">
+      <stop
+         style="stop-color:#e300e1;stop-opacity:1"
+         offset="0"
+         id="stop1883" />
+      <stop
+         style="stop-color:#c80db9;stop-opacity:0"
+         offset="1"
+         id="stop1885" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7553">
+      <stop
+         style="stop-color:#1179ff;stop-opacity:1"
+         offset="0"
+         id="stop7549" />
+      <stop
+         style="stop-color:#11bbff;stop-opacity:1"
+         offset="1"
+         id="stop7551" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6824">
+      <stop
+         style="stop-color:#c80d0d;stop-opacity:0.63487738"
+         offset="0"
+         id="stop6820" />
+      <stop
+         style="stop-color:#c80d0d;stop-opacity:0"
+         offset="1"
+         id="stop6822" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6370">
+      <stop
+         style="stop-color:#c80d0d;stop-opacity:1"
+         offset="0"
+         id="stop6366" />
+      <stop
+         style="stop-color:#c80d0d;stop-opacity:0"
+         offset="1"
+         id="stop6368" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4453">
+      <stop
+         style="stop-color:#0d17c8;stop-opacity:1"
+         offset="0"
+         id="stop4449" />
+      <stop
+         style="stop-color:#7478c8;stop-opacity:0"
+         offset="1"
+         id="stop4451" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4453"
+       id="linearGradient4455"
+       x1="32.014584"
+       y1="58.472916"
+       x2="32.014584"
+       y2="61.383335"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6370"
+       id="linearGradient5474"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="61.383335"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-3.9687497)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6824"
+       id="linearGradient6629"
+       gradientUnits="userSpaceOnUse"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="61.383335" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7553"
+       id="linearGradient6939"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-3.9687491,3.9687503)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="61.383335" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6824"
+       id="linearGradient10120"
+       gradientUnits="userSpaceOnUse"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="59.795834"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,60.000004,6.0000004)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6824"
+       id="linearGradient10568"
+       gradientUnits="userSpaceOnUse"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="60.589581"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,30,3.0000038)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6824"
+       id="linearGradient10801"
+       gradientUnits="userSpaceOnUse"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.95208"
+       y2="60.986454"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,15.000009,1.5000096)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6824"
+       id="linearGradient1003"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,75.000004,7.5000076)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="59.398956" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6824"
+       id="linearGradient1030"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,90.000004,9.0000113)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="59.002079" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6824"
+       id="linearGradient1057"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,105,10.500009)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="58.605206" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6824"
+       id="linearGradient1210"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,45,4.5000129)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="60.192703" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1887"
+       id="linearGradient1684"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-3.9687502,-5.2916677)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="61.383335" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2195"
+       id="linearGradient1686"
+       gradientUnits="userSpaceOnUse"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="61.383335"
+       gradientTransform="translate(-1.3666667e-7,-5.2916677)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2195"
+       id="linearGradient1688"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,60.000004,6.0000004)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="59.795834" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2195"
+       id="linearGradient1690"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,75.000004,7.5000076)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="59.398956" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2195"
+       id="linearGradient1692"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,90.000004,9.0000113)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="59.002079" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2195"
+       id="linearGradient1694"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,105,10.500009)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="58.605206" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2195"
+       id="linearGradient1696"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,15.000009,1.5000096)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.95208"
+       y2="60.986454" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2195"
+       id="linearGradient1698"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,30,3.0000038)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="60.589581" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2195"
+       id="linearGradient1700"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,45,4.5000129)"
+       x1="39.952084"
+       y1="58.472916"
+       x2="39.952084"
+       y2="60.192703" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3834"
+       inkscape:export-filename="C:\Dev\Platform Game\brick.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <rect
+         style="fill:#c8bb74;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-linecap:round"
+         id="rect851"
+         width="3.1750026"
+         height="3.1750026"
+         x="26.458332"
+         y="58.208332" />
+      <rect
+         style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.833331;stroke-linecap:round"
+         id="rect3096"
+         width="1.3229178"
+         height="1.3229166"
+         x="26.458332"
+         y="58.208332" />
+      <rect
+         style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.912868;stroke-linecap:round"
+         id="rect3102"
+         width="1.5875009"
+         height="1.3229166"
+         x="28.045832"
+         y="58.208332" />
+      <rect
+         style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.809174;stroke-linecap:round"
+         id="rect3104"
+         width="2.9104166"
+         height="1.3229169"
+         x="26.458334"
+         y="59.795834" />
+    </g>
+    <g
+       id="g5358"
+       inkscape:export-filename="C:\Dev\Platform Game\brick2.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <g
+         id="g3834-9"
+         inkscape:export-filename="C:\Dev\Platform Game\brick.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256"
+         transform="matrix(0.49999992,0,0,0.49999992,17.19792,33.072921)">
+        <rect
+           style="fill:#c8bb74;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-linecap:round"
+           id="rect851-5"
+           width="3.1750026"
+           height="3.1750026"
+           x="26.458332"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.833331;stroke-linecap:round"
+           id="rect3096-9"
+           width="1.3229178"
+           height="1.3229166"
+           x="26.458332"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.912868;stroke-linecap:round"
+           id="rect3102-3"
+           width="1.5875009"
+           height="1.3229166"
+           x="28.045832"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.809174;stroke-linecap:round"
+           id="rect3104-3"
+           width="2.9104166"
+           height="1.3229169"
+           x="26.458334"
+           y="59.795834" />
+      </g>
+      <g
+         id="g3834-9-2"
+         inkscape:export-filename="C:\Dev\Platform Game\brick.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256"
+         transform="matrix(0.49999992,0,0,0.49999992,18.785419,33.072922)">
+        <rect
+           style="fill:#c8bb74;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-linecap:round"
+           id="rect851-5-7"
+           width="3.1750026"
+           height="3.1750026"
+           x="26.458332"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.833331;stroke-linecap:round"
+           id="rect3096-9-0"
+           width="1.3229178"
+           height="1.3229166"
+           x="26.458332"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.912868;stroke-linecap:round"
+           id="rect3102-3-6"
+           width="1.5875009"
+           height="1.3229166"
+           x="28.045832"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.809174;stroke-linecap:round"
+           id="rect3104-3-4"
+           width="2.9104166"
+           height="1.3229169"
+           x="26.458334"
+           y="59.795834" />
+      </g>
+      <g
+         id="g3834-9-7"
+         inkscape:export-filename="C:\Dev\Platform Game\brick.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256"
+         transform="matrix(0.49999992,0,0,0.49999992,17.19792,34.660421)">
+        <rect
+           style="fill:#c8bb74;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-linecap:round"
+           id="rect851-5-79"
+           width="3.1750026"
+           height="3.1750026"
+           x="26.458332"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.833331;stroke-linecap:round"
+           id="rect3096-9-2"
+           width="1.3229178"
+           height="1.3229166"
+           x="26.458332"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.912868;stroke-linecap:round"
+           id="rect3102-3-2"
+           width="1.5875009"
+           height="1.3229166"
+           x="28.045832"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.809174;stroke-linecap:round"
+           id="rect3104-3-7"
+           width="2.9104166"
+           height="1.3229169"
+           x="26.458334"
+           y="59.795834" />
+      </g>
+      <g
+         id="g3834-9-2-1"
+         inkscape:export-filename="C:\Dev\Platform Game\brick.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256"
+         transform="matrix(0.49999992,0,0,0.49999992,18.785419,34.660422)">
+        <rect
+           style="fill:#c8bb74;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-linecap:round"
+           id="rect851-5-7-8"
+           width="3.1750026"
+           height="3.1750026"
+           x="26.458332"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.833331;stroke-linecap:round"
+           id="rect3096-9-0-0"
+           width="1.3229178"
+           height="1.3229166"
+           x="26.458332"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.912868;stroke-linecap:round"
+           id="rect3102-3-6-3"
+           width="1.5875009"
+           height="1.3229166"
+           x="28.045832"
+           y="58.208332" />
+        <rect
+           style="fill:#c86241;fill-opacity:1;stroke:none;stroke-width:0.809174;stroke-linecap:round"
+           id="rect3104-3-4-9"
+           width="2.9104166"
+           height="1.3229169"
+           x="26.458334"
+           y="59.795834" />
+      </g>
+    </g>
+    <rect
+       style="fill:url(#linearGradient4455);fill-opacity:1;stroke:none;stroke-width:0.3;stroke-linecap:round"
+       id="rect851-7"
+       width="3.1750026"
+       height="3.1750026"
+       x="30.427084"
+       y="58.208332"
+       inkscape:export-filename="C:\Dev\Platform Game\floor.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <rect
+       style="fill:#555500;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-linecap:round"
+       id="rect851-4"
+       width="3.1750026"
+       height="3.1750026"
+       x="26.458334"
+       y="62.177082"
+       inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <rect
+       style="fill:#555500;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-linecap:round"
+       id="rect851-4-6"
+       width="3.1750026"
+       height="3.1750026"
+       x="26.45833"
+       y="66.145828"
+       inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       style="fill:url(#linearGradient5474);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 34.395833,58.208334 v 0.79375 l 0.79375,2.38125 0.79375,-1.852084 0.529166,0.79375 1.058334,-1.322916 v -0.79375 z"
+       id="path5466"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="C:\Dev\Platform Game\floor.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       style="fill:url(#linearGradient6939);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 34.395833,62.177084 c 0.123288,0.615435 0.453551,1.0772 0.79375,1.587499 l 0.79375,-1.058333 0.79375,2.645833 c 0.686987,-0.716044 0.79375,-2.229834 0.79375,-3.174999 z"
+       id="path5466-7"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\Dev\Platform Game\stalactite.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       style="fill:url(#linearGradient6629);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 38.364583,58.208333 v 0.79375 l 0.79375,2.38125 0.79375,-1.852084 0.529166,0.79375 1.058334,-1.322916 v -0.79375 z"
+       id="path5466-0"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="C:\Dev\Platform Game\floorfall.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       style="fill:#3d8709;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 39.6875,65.352083 v -0.79375 h -0.529167 l -0.79375,0.529166 0.529167,-0.529166 -0.529167,-0.79375 0.79375,0.529166 H 39.6875 v -0.79375 l -1.058334,-1.322916 1.058334,0.79375 1.058333,-0.79375 -0.529167,1.058333 v 1.058333 l 0.79375,0.264584 0.529167,-0.529167 -0.264584,0.79375 0.264584,0.264583 -0.79375,-0.264583 -0.529167,-0.264583 v 0.79375 z"
+       id="path7912"
+       inkscape:export-filename="C:\Dev\Platform Game\thorn bush.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <g
+       id="g10027"
+       inkscape:export-filename="C:\Dev\Platform Game\conveyor1.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       style="fill:#358f35;fill-opacity:1">
+      <path
+         id="path8249"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 116.93945,250 c -2.52217,0.0615 -2.4871,4 0.0606,4 h 8 c 2.56771,0.0147 2.58262,-4 0,-4 h -8 c -0.0202,0 -0.0407,-4.8e-4 -0.0606,0 z m 0.15007,0.72461 7.80704,0.0298 c 1.62018,0.006 1.61084,2.51884 0,2.50977 l -7.80704,-0.0298 c -1.61082,-0.006 -1.62017,-2.51596 0,-2.50977 z"
+         transform="scale(0.26458333)"
+         sodipodi:nodetypes="cscsscsscss" />
+      <path
+         id="path8249-1"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 30.91654,67.541613 c -0.667325,0.01627 -0.658046,1.058334 0.01603,1.058334 h 2.116667 c 0.679373,0.0039 0.683318,-1.058334 0,-1.058334 H 30.93257 c -0.0053,0 -0.01077,-1.27e-4 -0.01603,0 z m 0.03971,0.19172 2.065612,0.0079 c 0.428673,0.0016 0.426202,0.666443 0,0.664043 l -2.065612,-0.0079 c -0.426196,-0.0016 -0.42867,-0.665681 0,-0.664043 z"
+         sodipodi:nodetypes="cscsscsscss" />
+      <rect
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect9942"
+         width="3.175"
+         height="0.52916664"
+         x="30.427082"
+         y="68.791664" />
+    </g>
+    <g
+       id="g7943"
+       inkscape:export-filename="C:\Dev\Platform Game\conveyor2.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       style="fill:#358f35;fill-opacity:1">
+      <path
+         id="path8249-4"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 115 265 L 115 265.72852 L 121.89648 265.75391 C 123.51667 265.75995 123.50732 268.27274 121.89648 268.26367 L 115 268.23828 L 115 269 L 122 269 C 124.56771 269.01474 124.58262 265 122 265 L 115 265 z "
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-1-6"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 119.84961 270.27539 C 117.32744 270.33688 117.36247 274.27539 119.91016 274.27539 L 127 274.27539 L 127 273.53516 L 120 273.50977 C 118.38918 273.50372 118.37983 270.99381 120 271 L 127 271.02539 L 127 270.27539 L 119.91016 270.27539 C 119.89012 270.27539 119.86949 270.27491 119.84961 270.27539 z "
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect9942-6"
+         width="3.175"
+         height="0.52916664"
+         x="30.427084"
+         y="72.760414" />
+      <path
+         id="path8249-4-4"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 125.93945 265 C 123.41728 265.06149 123.45231 269 126 269 L 127 269 L 127 268.23828 L 126.08984 268.23438 C 124.47902 268.22833 124.46967 265.71842 126.08984 265.72461 L 127 265.72852 L 127 265 L 125.93945 265 z "
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-1-6-5"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 115 270.27539 L 115 271.02539 L 115.80664 271.0293 C 117.42682 271.03534 117.41748 273.54813 115.80664 273.53906 L 115 273.53516 L 115 274.27539 L 115.91016 274.27539 C 118.47787 274.29013 118.49278 270.27539 115.91016 270.27539 L 115 270.27539 z "
+         transform="scale(0.26458333)" />
+    </g>
+    <g
+       id="g7943-4"
+       transform="matrix(-1,0,0,1,67.997927,0)"
+       inkscape:export-filename="C:\Dev\Platform Game\conveyor4.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       style="fill:#358f35;fill-opacity:1">
+      <path
+         id="path8249-4-8"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 115,265 v 0.72852 l 6.89648,0.0254 c 1.62019,0.006 1.61084,2.51883 0,2.50976 L 115,268.23828 V 269 h 7 c 2.56771,0.0147 2.58262,-4 0,-4 z"
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-1-6-59"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 119.84961,270.27539 c -2.52217,0.0615 -2.48714,4 0.0606,4 H 127 v -0.74023 l -7,-0.0254 c -1.61082,-0.006 -1.62017,-2.51596 0,-2.50977 l 7,0.0254 v -0.75 h -7.08984 c -0.02,0 -0.0407,-4.8e-4 -0.0606,0 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect9942-6-5"
+         width="3.175"
+         height="0.52916664"
+         x="30.427084"
+         y="72.760414" />
+      <path
+         id="path8249-4-4-7"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 125.93945,265 c -2.52217,0.0615 -2.48714,4 0.0606,4 h 1 v -0.76172 l -0.91016,-0.004 c -1.61082,-0.006 -1.62017,-2.51596 0,-2.50977 L 127,265.72852 V 265 Z"
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-1-6-5-6"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 115,270.27539 v 0.75 l 0.80664,0.004 c 1.62018,0.006 1.61084,2.51883 0,2.50976 L 115,273.53516 v 0.74023 h 0.91016 c 2.56771,0.0147 2.58262,-4 0,-4 z"
+         transform="scale(0.26458333)" />
+    </g>
+    <g
+       id="g7936"
+       inkscape:export-filename="C:\Dev\Platform Game\conveyor3.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       style="fill:#358f35;fill-opacity:1">
+      <path
+         id="path8249-19"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 137.93945 250 C 135.41728 250.06149 135.45231 254 138 254 L 142 254 L 142 253.25 L 138.08984 253.23438 C 136.47902 253.22833 136.46967 250.71841 138.08984 250.72461 L 142 250.74023 L 142 250 L 137.93945 250 z "
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-1-0"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 137.84961 255.27539 C 135.32744 255.33688 135.36247 259.27539 137.91016 259.27539 L 142 259.27539 L 142 258.52539 L 138 258.50977 C 136.38918 258.50372 136.37983 255.99381 138 256 L 142 256.01562 L 142 255.27539 L 137.91016 255.27539 C 137.89012 255.27539 137.86949 255.27491 137.84961 255.27539 z "
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect9942-1"
+         width="3.175"
+         height="0.52916664"
+         x="34.395832"
+         y="68.791664" />
+      <path
+         id="path8249-1-0-1"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 130 255.27539 L 130 256.01562 L 133.80664 256.0293 C 135.42682 256.03534 135.41748 258.54813 133.80664 258.53906 L 130 258.52539 L 130 259.27539 L 133.91016 259.27539 C 136.47787 259.29013 136.49278 255.27539 133.91016 255.27539 L 130 255.27539 z "
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-19-9"
+         style="fill:#358f35;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 130 250 L 130 250.74023 L 133.89648 250.75391 C 135.51667 250.75995 135.50732 253.27274 133.89648 253.26367 L 130 253.25 L 130 254 L 134 254 C 136.56771 254.01474 136.58262 250 134 250 L 130 250 z "
+         transform="scale(0.26458333)" />
+    </g>
+    <g
+       id="g10027-5"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\conveyor1.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       style="fill:#cbcd4c;fill-opacity:1"
+       transform="translate(19.843749,-3.9687488)">
+      <path
+         id="path8249-7"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 116.93945,250 c -2.52217,0.0615 -2.4871,4 0.0606,4 h 8 c 2.56771,0.0147 2.58262,-4 0,-4 h -8 c -0.0202,0 -0.0407,-4.8e-4 -0.0606,0 z m 0.15007,0.72461 7.80704,0.0298 c 1.62018,0.006 1.61084,2.51884 0,2.50977 l -7.80704,-0.0298 c -1.61082,-0.006 -1.62017,-2.51596 0,-2.50977 z"
+         transform="scale(0.26458333)"
+         sodipodi:nodetypes="cscsscsscss" />
+      <path
+         id="path8249-1-2"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 30.91654,67.541613 c -0.667325,0.01627 -0.658046,1.058334 0.01603,1.058334 h 2.116667 c 0.679373,0.0039 0.683318,-1.058334 0,-1.058334 H 30.93257 c -0.0053,0 -0.01077,-1.27e-4 -0.01603,0 z m 0.03971,0.19172 2.065612,0.0079 c 0.428673,0.0016 0.426202,0.666443 0,0.664043 l -2.065612,-0.0079 c -0.426196,-0.0016 -0.42867,-0.665681 0,-0.664043 z"
+         sodipodi:nodetypes="cscsscsscss" />
+      <rect
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect9942-3"
+         width="3.175"
+         height="0.52916664"
+         x="30.427082"
+         y="68.791664" />
+    </g>
+    <g
+       id="g7943-3"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\conveyor2.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       style="fill:#cbcd4c;fill-opacity:1"
+       transform="translate(19.843749,-3.9687488)">
+      <path
+         id="path8249-4-1"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 115,265 v 0.72852 l 6.89648,0.0254 c 1.62019,0.006 1.61084,2.51883 0,2.50976 L 115,268.23828 V 269 h 7 c 2.56771,0.0147 2.58262,-4 0,-4 z"
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-1-6-9"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 119.84961,270.27539 c -2.52217,0.0615 -2.48714,4 0.0606,4 H 127 v -0.74023 l -7,-0.0254 c -1.61082,-0.006 -1.62017,-2.51596 0,-2.50977 l 7,0.0254 v -0.75 h -7.08984 c -0.02,0 -0.0407,-4.8e-4 -0.0606,0 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect9942-6-0"
+         width="3.175"
+         height="0.52916664"
+         x="30.427084"
+         y="72.760414" />
+      <path
+         id="path8249-4-4-3"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 125.93945,265 c -2.52217,0.0615 -2.48714,4 0.0606,4 h 1 v -0.76172 l -0.91016,-0.004 c -1.61082,-0.006 -1.62017,-2.51596 0,-2.50977 L 127,265.72852 V 265 Z"
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-1-6-5-0"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 115,270.27539 v 0.75 l 0.80664,0.004 c 1.62018,0.006 1.61084,2.51883 0,2.50976 L 115,273.53516 v 0.74023 h 0.91016 c 2.56771,0.0147 2.58262,-4 0,-4 z"
+         transform="scale(0.26458333)" />
+    </g>
+    <g
+       id="g7943-4-9"
+       transform="matrix(-1,0,0,1,87.841676,-3.9687488)"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\conveyor4.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       style="fill:#cbcd4c;fill-opacity:1">
+      <path
+         id="path8249-4-8-5"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 115,265 v 0.72852 l 6.89648,0.0254 c 1.62019,0.006 1.61084,2.51883 0,2.50976 L 115,268.23828 V 269 h 7 c 2.56771,0.0147 2.58262,-4 0,-4 z"
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-1-6-59-0"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 119.84961,270.27539 c -2.52217,0.0615 -2.48714,4 0.0606,4 H 127 v -0.74023 l -7,-0.0254 c -1.61082,-0.006 -1.62017,-2.51596 0,-2.50977 l 7,0.0254 v -0.75 h -7.08984 c -0.02,0 -0.0407,-4.8e-4 -0.0606,0 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect9942-6-5-0"
+         width="3.175"
+         height="0.52916664"
+         x="30.427084"
+         y="72.760414" />
+      <path
+         id="path8249-4-4-7-0"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 125.93945,265 c -2.52217,0.0615 -2.48714,4 0.0606,4 h 1 v -0.76172 l -0.91016,-0.004 c -1.61082,-0.006 -1.62017,-2.51596 0,-2.50977 L 127,265.72852 V 265 Z"
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-1-6-5-6-0"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 115,270.27539 v 0.75 l 0.80664,0.004 c 1.62018,0.006 1.61084,2.51883 0,2.50976 L 115,273.53516 v 0.74023 h 0.91016 c 2.56771,0.0147 2.58262,-4 0,-4 z"
+         transform="scale(0.26458333)" />
+    </g>
+    <g
+       id="g7936-4"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\conveyor3.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       style="fill:#cbcd4c;fill-opacity:1"
+       transform="translate(19.843749,-3.9687488)">
+      <path
+         id="path8249-19-7"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 137.93945,250 c -2.52217,0.0615 -2.48714,4 0.0606,4 h 4 v -0.75 l -3.91016,-0.0156 c -1.61082,-0.006 -1.62017,-2.51597 0,-2.50977 L 142,250.74023 V 250 Z"
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-1-0-5"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 137.84961,255.27539 c -2.52217,0.0615 -2.48714,4 0.0605,4 H 142 v -0.75 l -4,-0.0156 c -1.61082,-0.006 -1.62017,-2.51596 0,-2.50977 l 4,0.0156 v -0.74023 h -4.08984 c -0.02,0 -0.0407,-4.8e-4 -0.0605,0 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect9942-1-5"
+         width="3.175"
+         height="0.52916664"
+         x="34.395832"
+         y="68.791664" />
+      <path
+         id="path8249-1-0-1-8"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 130,255.27539 v 0.74023 l 3.80664,0.0137 c 1.62018,0.006 1.61084,2.51883 0,2.50976 L 130,258.52539 v 0.75 h 3.91016 c 2.56771,0.0147 2.58262,-4 0,-4 z"
+         transform="scale(0.26458333)" />
+      <path
+         id="path8249-19-9-2"
+         style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 130,250 v 0.74023 l 3.89648,0.0137 c 1.62019,0.006 1.61084,2.51883 0,2.50976 L 130,253.25 V 254 h 4 c 2.56771,0.0147 2.58262,-4 0,-4 z"
+         transform="scale(0.26458333)" />
+    </g>
+    <g
+       id="g4845"
+       inkscape:export-filename="C:\Dev\Platform Game\floorfall4.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <path
+         id="path5466-0-8"
+         style="fill:url(#linearGradient10120);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 205 226 L 205 229 L 206 232 L 210.57031 232 L 211 231 L 211.66797 232 L 214.60156 232 L 217 229 L 217 226 L 205 226 z "
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278"
+         width="3.175"
+         height="0.52916664"
+         x="54.239582"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4849"
+       inkscape:export-filename="C:\Dev\Platform Game\floorfall5.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <path
+         id="path5466-0-8-4"
+         style="fill:url(#linearGradient1003);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 220 227.5 L 220 230.5 L 220.5 232 L 230.80078 232 L 232 230.5 L 232 227.5 L 220 227.5 z "
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-36"
+         width="3.175"
+         height="0.52916664"
+         x="58.208332"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4853"
+       inkscape:export-filename="C:\Dev\Platform Game\floorfall6.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <path
+         id="path5466-0-8-49"
+         style="fill:url(#linearGradient1030);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 235 229 L 235 232 L 247 232 L 247 229 L 235 229 z "
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-43"
+         width="3.175"
+         height="0.52916664"
+         x="62.177082"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4857"
+       inkscape:export-filename="C:\Dev\Platform Game\floorfall7.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <path
+         id="path5466-0-8-7"
+         style="fill:url(#linearGradient1057);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 250 230.5 L 250 232 L 262 232 L 262 230.5 L 250 230.5 z "
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-37"
+         width="3.175"
+         height="0.52916664"
+         x="66.145836"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4833"
+       inkscape:export-filename="C:\Dev\Platform Game\floorfall1.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <path
+         id="path5466-0-96"
+         style="fill:url(#linearGradient10801);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 160 221.5 L 160 224.5 L 162.5 232 L 163.64258 232 L 166 226.5 L 168 229.5 L 172 224.5 L 172 221.5 L 160 221.5 z "
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:0.707108;stroke-linecap:round"
+         id="rect10278-4"
+         width="3.175"
+         height="0.26458433"
+         x="42.333336"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4837"
+       inkscape:export-filename="C:\Dev\Platform Game\floorfall2.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <path
+         id="path5466-0-9"
+         style="fill:url(#linearGradient10568);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 175 223 L 175 226 L 177 232 L 179.28516 232 L 181 228 L 183 231 L 187 226 L 187 223 L 175 223 z "
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-3"
+         width="3.175"
+         height="0.52916664"
+         x="46.302082"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4841"
+       inkscape:export-filename="C:\Dev\Platform Game\floorfall3.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <path
+         id="path5466-0-9-0"
+         style="fill:url(#linearGradient1210);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 190 224.5 L 190 227.5 L 191.5 232 L 194.92773 232 L 196 229.5 L 197.66602 232 L 198.40039 232 L 202 227.5 L 202 224.5 L 190 224.5 z "
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-9"
+         width="3.175"
+         height="0.52916664"
+         x="50.270832"
+         y="58.208332" />
+    </g>
+    <path
+       style="fill:url(#linearGradient1684);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 34.395833,52.916666 v 0.79375 l 0.79375,2.38125 0.79375,-1.852084 0.529166,0.79375 1.058334,-1.322916 v -0.79375 z"
+       id="path5466-4"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\floor.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       style="fill:url(#linearGradient1686);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 38.364583,52.916665 v 0.79375 l 0.79375,2.38125 0.79375,-1.852084 0.529166,0.79375 1.058334,-1.322916 v -0.79375 z"
+       id="path5466-0-1"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <g
+       id="g4845-9"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall4.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="translate(-1.3666667e-7,-5.2916677)">
+      <path
+         id="path5466-0-8-9"
+         style="fill:url(#linearGradient1688);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 205,226 v 3 l 1,3 h 4.57031 L 211,231 l 0.66797,1 h 2.93359 L 217,229 v -3 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-98"
+         width="3.175"
+         height="0.52916664"
+         x="54.239582"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4849-2"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall5.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="translate(-1.3666667e-7,-5.2916677)">
+      <path
+         id="path5466-0-8-4-2"
+         style="fill:url(#linearGradient1690);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 220,227.5 v 3 l 0.5,1.5 h 10.30078 L 232,230.5 v -3 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-36-6"
+         width="3.175"
+         height="0.52916664"
+         x="58.208332"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4853-4"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall6.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="translate(-1.3666667e-7,-5.2916677)">
+      <path
+         id="path5466-0-8-49-8"
+         style="fill:url(#linearGradient1692);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 235,229 v 3 h 12 v -3 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-43-1"
+         width="3.175"
+         height="0.52916664"
+         x="62.177082"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4857-4"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall7.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="translate(-1.3666667e-7,-5.2916677)">
+      <path
+         id="path5466-0-8-7-6"
+         style="fill:url(#linearGradient1694);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 250,230.5 v 1.5 h 12 v -1.5 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-37-9"
+         width="3.175"
+         height="0.52916664"
+         x="66.145836"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4833-1"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall1.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="translate(-1.3666667e-7,-5.2916677)">
+      <path
+         id="path5466-0-96-2"
+         style="fill:url(#linearGradient1696);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 160,221.5 v 3 l 2.5,7.5 h 1.14258 L 166,226.5 l 2,3 4,-5 v -3 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:0.707108;stroke-linecap:round"
+         id="rect10278-4-7"
+         width="3.175"
+         height="0.26458433"
+         x="42.333336"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4837-1"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall2.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="translate(-1.3666667e-7,-5.2916677)">
+      <path
+         id="path5466-0-9-07"
+         style="fill:url(#linearGradient1698);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 175,223 v 3 l 2,6 h 2.28516 L 181,228 l 2,3 4,-5 v -3 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-3-4"
+         width="3.175"
+         height="0.52916664"
+         x="46.302082"
+         y="58.208332" />
+    </g>
+    <g
+       id="g4841-6"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall3.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="translate(-1.3666667e-7,-5.2916677)">
+      <path
+         id="path5466-0-9-0-3"
+         style="fill:url(#linearGradient1700);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 190,224.5 v 3 l 1.5,4.5 h 3.42773 L 196,229.5 l 1.66602,2.5 h 0.73437 L 202,227.5 v -3 z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
+         id="rect10278-9-9"
+         width="3.175"
+         height="0.52916664"
+         x="50.270832"
+         y="58.208332" />
+    </g>
+    <path
+       id="rect5396"
+       style="fill:#dae3a1;fill-opacity:1;stroke-width:3.62835;stroke-linecap:round"
+       d="M 160 235 L 160 247 L 160.96094 247 L 160.96094 245.14258 L 164.63281 245.14258 L 164.63281 246.0625 L 163.69531 247 L 165.55078 247 L 165.55078 245.14258 L 169.22461 245.14258 L 169.22461 246.0625 L 168.28711 247 L 170.14258 247 L 170.14258 245.14258 L 172 245.14258 L 172 243.28711 L 171.0625 244.22461 L 170.14258 244.22461 L 170.14258 240.55078 L 172 240.55078 L 172 238.69531 L 171.0625 239.63281 L 170.14258 239.63281 L 170.14258 235.96094 L 172 235.96094 L 172 235 L 160 235 z M 160.96094 235.96094 L 164.63281 235.96094 L 164.63281 236.87891 L 161.87891 239.63281 L 160.96094 239.63281 L 160.96094 235.96094 z M 165.55078 235.96094 L 169.22461 235.96094 L 169.22461 236.87891 L 166.4707 239.63281 L 165.55078 239.63281 L 165.55078 235.96094 z M 160.96094 240.55078 L 164.63281 240.55078 L 164.63281 241.4707 L 161.87891 244.22461 L 160.96094 244.22461 L 160.96094 240.55078 z M 165.55078 240.55078 L 169.22461 240.55078 L 169.22461 241.4707 L 166.4707 244.22461 L 165.55078 244.22461 L 165.55078 240.55078 z "
+       transform="scale(0.26458333)"
+       inkscape:export-filename="C:\Dev\Platform Game\end1.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       id="rect5396-6"
+       style="fill:#dae3a1;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
+       d="m 45.508333,62.187417 v 0.254249 h 0.480592 v 0.242879 l -0.480592,0.48059 v 0.490926 h 0.480592 v 0.243396 l -0.480592,0.480591 v 0.490927 h 0.480592 v 0.243395 l -0.248047,0.248047 h 0.490927 v -0.491442 h 0.972031 v 0.243395 l -0.248047,0.248047 h 0.490927 v -0.491442 h 0.972034 v 0.243395 l -0.248047,0.248047 h 0.51263 v -3.175 z m 0.723472,0.254249 h 0.972031 v 0.242879 L 46.4752,63.413181 h -0.243395 z m 1.214911,0 h 0.972034 v 0.242879 l -0.729155,0.728636 h -0.242879 z m -1.214911,1.214395 h 0.972031 v 0.243396 L 46.4752,64.628095 h -0.243395 z m 1.214911,0 h 0.972034 v 0.243396 l -0.729155,0.728638 h -0.242879 z"
+       inkscape:export-filename="C:\Dev\Platform Game\end2.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       id="rect5396-0"
+       style="fill:#dae3a1;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
+       d="m 42.333333,65.352083 v 3.174999 h 3.175 v -0.51263 l -0.248047,0.248047 h -0.243395 v -0.972034 h 0.491442 v -0.490926 l -0.248047,0.248046 h -0.243395 v -0.972031 h 0.491442 v -0.490927 l -0.248047,0.248047 h -0.243395 v -0.480591 h -0.490927 l -0.480591,0.480591 h -0.243396 v -0.480591 h -0.490926 l -0.480589,0.480591 h -0.24288 v -0.480591 z m 0.254249,0.723471 h 0.971516 v 0.243395 l -0.728636,0.728636 h -0.24288 z m 1.214395,0 h 0.972034 v 0.243395 l -0.728638,0.728636 h -0.243396 z m -1.214395,1.214911 h 0.971516 v 0.24288 l -0.728636,0.729154 h -0.24288 z m 1.214395,0 h 0.972034 v 0.24288 l -0.728638,0.729154 h -0.243396 z"
+       inkscape:export-filename="C:\Dev\Platform Game\end3.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       id="rect5396-2"
+       style="fill:#dae3a1;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
+       d="m 45.740878,65.352083 -0.232545,0.232544 v 0.490927 h 0.480592 v 0.243395 l -0.480592,0.48059 v 0.490926 h 0.480592 v 0.24288 l -0.480592,0.481107 v 0.51263 h 3.175 v -3.174999 h -0.51263 l -0.481108,0.480591 H 47.446716 V 65.352083 H 46.955789 L 46.4752,65.832674 h -0.243395 v -0.480591 z m 0.490927,0.723471 h 0.972031 v 0.243395 L 46.4752,67.047585 h -0.243395 z m 1.214911,0 h 0.972034 v 0.243395 l -0.729155,0.728636 h -0.242879 z m -1.214911,1.214911 h 0.972031 v 0.24288 L 46.4752,68.262499 h -0.243395 z m 1.214911,0 h 0.972034 v 0.24288 l -0.729155,0.729154 h -0.242879 z"
+       inkscape:export-filename="C:\Dev\Platform Game\end4.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       id="rect5396-4"
+       style="fill:#a1b6e3;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
+       d="m 42.333333,70.114582 v 3.175 h 0.254249 v -0.491443 h 0.971515 v 0.243396 l -0.248047,0.248047 h 0.490927 v -0.491443 h 0.972034 v 0.243396 l -0.248047,0.248047 h 0.490927 v -0.491443 h 0.491442 v -0.490926 l -0.248047,0.248047 h -0.243395 v -0.972034 h 0.491442 v -0.490927 l -0.248047,0.248047 H 45.016891 V 70.36883 h 0.491442 v -0.254248 z m 0.254249,0.254248 h 0.971515 v 0.24288 l -0.728636,0.728636 h -0.242879 z m 1.214395,0 h 0.972034 v 0.24288 l -0.728639,0.728636 h -0.243395 z m -1.214395,1.214396 h 0.971515 v 0.243395 l -0.728636,0.728639 h -0.242879 z m 1.214395,0 h 0.972034 v 0.243395 l -0.728639,0.728639 h -0.243395 z"
+       inkscape:export-filename="C:\Dev\Platform Game\end1inv.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       id="rect5396-6-9"
+       style="fill:#a1b6e3;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
+       d="m 45.508333,70.124916 v 0.254249 h 0.480592 v 0.242879 l -0.480592,0.48059 v 0.490926 h 0.480592 v 0.243396 l -0.480592,0.480591 v 0.490927 h 0.480592 v 0.243395 l -0.248047,0.248047 h 0.490927 v -0.491442 h 0.972031 v 0.243395 l -0.248047,0.248047 h 0.490927 v -0.491442 h 0.972034 v 0.243395 l -0.248047,0.248047 h 0.51263 v -3.175 z m 0.723472,0.254249 h 0.972031 v 0.242879 L 46.4752,71.35068 h -0.243395 z m 1.214911,0 h 0.972034 v 0.242879 l -0.729155,0.728636 h -0.242879 z m -1.214911,1.214395 h 0.972031 v 0.243396 L 46.4752,72.565594 h -0.243395 z m 1.214911,0 h 0.972034 v 0.243396 l -0.729155,0.728638 h -0.242879 z"
+       inkscape:export-filename="C:\Dev\Platform Game\end2inv.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       id="rect5396-0-5"
+       style="fill:#a1b6e3;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
+       d="m 42.333333,73.289582 v 3.174999 h 3.175 v -0.51263 l -0.248047,0.248047 h -0.243395 v -0.972034 h 0.491442 v -0.490926 l -0.248047,0.248046 h -0.243395 v -0.972031 h 0.491442 v -0.490927 l -0.248047,0.248047 h -0.243395 v -0.480591 h -0.490927 l -0.480591,0.480591 h -0.243396 v -0.480591 h -0.490926 l -0.480589,0.480591 h -0.24288 v -0.480591 z m 0.254249,0.723471 h 0.971516 v 0.243395 l -0.728636,0.728636 h -0.24288 z m 1.214395,0 h 0.972034 v 0.243395 l -0.728638,0.728636 h -0.243396 z m -1.214395,1.214911 h 0.971516 v 0.24288 l -0.728636,0.729154 h -0.24288 z m 1.214395,0 h 0.972034 v 0.24288 l -0.728638,0.729154 h -0.243396 z"
+       inkscape:export-filename="C:\Dev\Platform Game\end3inv.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       id="rect5396-2-2"
+       style="fill:#a1b6e3;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
+       d="m 45.740878,73.289582 -0.232545,0.232544 v 0.490927 h 0.480592 v 0.243395 l -0.480592,0.48059 v 0.490926 h 0.480592 v 0.24288 l -0.480592,0.481107 v 0.51263 h 3.175 v -3.174999 h -0.51263 l -0.481108,0.480591 H 47.446716 V 73.289582 H 46.955789 L 46.4752,73.770173 h -0.243395 v -0.480591 z m 0.490927,0.723471 h 0.972031 v 0.243395 L 46.4752,74.985084 h -0.243395 z m 1.214911,0 h 0.972034 v 0.243395 l -0.729155,0.728636 h -0.242879 z m -1.214911,1.214911 h 0.972031 v 0.24288 L 46.4752,76.199998 h -0.243395 z m 1.214911,0 h 0.972034 v 0.24288 l -0.729155,0.729154 h -0.242879 z"
+       inkscape:export-filename="C:\Dev\Platform Game\end4inv.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       id="path9481"
+       style="fill:#ffdd55;fill-opacity:1;stroke:none;stroke-width:0.196364px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 38.541923,67.072632 c -0.59499,0.784599 0.478999,1.636547 1.073991,0.851949 l 0.163854,-0.21607 0.938434,0.737053 -0.298571,0.383593 0.206168,0.163544 0.291134,-0.373785 0.166735,0.12441 -0.287415,0.368881 0.248242,0.189067 0.46748,-0.626579 -1.556731,-1.19758 0.136662,-0.180213 c 0.594993,-0.7846 -0.478998,-1.63655 -1.07399,-0.851949 z m 0.235088,0.176669 0.470879,-0.620936 c 0.363415,-0.479224 0.95478,-0.0023 0.598728,0.474942 l -0.469804,0.629644 c -0.356051,0.477193 -0.963211,-0.0044 -0.599803,-0.48365 z"
+       inkscape:export-filename="C:\Dev\Platform Game\key.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <path
+       id="path952"
+       style="fill:#bfe3a1;fill-opacity:1;stroke-width:2.32003;stroke-linecap:round"
+       d="M 149.0625 262.66992 A 4.6038096 4.6038096 0 0 0 145.82031 264.04688 A 4.6038096 4.6038096 0 0 0 145.87695 270.55664 A 4.6038096 4.6038096 0 0 0 151.12305 271.4082 L 154.37695 274.60547 L 156.52734 272.41602 L 153.27344 269.21875 A 4.6038096 4.6038096 0 0 0 152.33008 263.98828 A 4.6038096 4.6038096 0 0 0 149.0625 262.66992 z M 149.41406 264.13672 A 3.1747105 3.1747105 0 0 1 150.76758 264.55859 L 150.18359 265.04688 L 149.32031 264.2207 L 149.41406 264.13672 z M 148.89258 264.14062 L 148.9668 264.21289 L 148.17578 264.89844 L 147.75 264.46094 A 3.1747105 3.1747105 0 0 1 148.89258 264.14062 z M 149.14453 264.375 L 149.99219 265.20117 L 149.1582 265.90234 L 148.3457 265.07617 L 149.14453 264.375 z M 147.5293 264.58789 L 147.99219 265.06055 L 147.2168 265.74023 L 146.74805 265.25391 A 3.1747105 3.1747105 0 0 1 146.9082 265.07422 A 3.1747105 3.1747105 0 0 1 147.5293 264.58789 z M 150.98438 264.69727 A 3.1747105 3.1747105 0 0 1 151.39648 265.03516 A 3.1747105 3.1747105 0 0 1 151.70117 265.38281 L 151.0918 265.92578 L 150.36133 265.2168 L 150.98438 264.69727 z M 148.16211 265.23828 L 148.9668 266.05859 L 148.16211 266.73047 L 147.37891 265.91797 L 148.16211 265.23828 z M 150.16992 265.37109 L 150.9082 266.08789 L 150.06641 266.83398 L 149.32812 266.07227 L 150.16992 265.37109 z M 146.59375 265.45312 L 147.02539 265.90234 L 146.04492 266.76367 A 3.1747105 3.1747105 0 0 1 146.59375 265.45312 z M 151.8457 265.58984 A 3.1747105 3.1747105 0 0 1 152.3418 267.13086 L 151.27734 266.0957 L 151.8457 265.58984 z M 147.19531 266.08008 L 147.9707 266.89258 L 146.86914 267.80078 L 146.07227 267.07031 L 147.19531 266.08008 z M 149.13672 266.23633 L 149.88281 267.00391 L 149.0918 267.70508 L 148.32422 266.90625 L 149.13672 266.23633 z M 151.0918 266.25781 L 152.20703 267.33594 L 151.27734 268.07422 L 150.24414 267.00977 L 151.0918 266.25781 z M 148.14062 267.07031 L 148.9082 267.86719 L 147.91016 268.75195 L 147.05469 267.9707 L 148.14062 267.07031 z M 150.05859 267.17969 L 151.08594 268.22852 L 150.23633 268.90039 L 149.26172 267.88086 L 150.05859 267.17969 z M 146.00195 267.33789 L 146.67773 267.96289 L 146.1875 268.37109 A 3.1747105 3.1747105 0 0 1 146.00195 267.33789 z M 152.33594 267.55664 A 3.1747105 3.1747105 0 0 1 151.97656 268.78711 L 151.45508 268.25 L 152.33594 267.55664 z M 149.07812 268.04492 L 150.03711 269.05469 L 149.07031 269.82227 L 148.08789 268.92188 L 149.07812 268.04492 z M 146.86328 268.13281 L 147.71875 268.92188 L 146.9707 269.58594 A 3.1747105 3.1747105 0 0 1 146.94727 269.56445 A 3.1747105 3.1747105 0 0 1 146.28711 268.61328 L 146.86328 268.13281 z M 151.25586 268.40625 L 151.8457 269.00977 A 3.1747105 3.1747105 0 0 1 151.43555 269.52344 A 3.1747105 3.1747105 0 0 1 151.10352 269.8125 L 150.40625 269.07812 L 151.25586 268.40625 z M 147.9043 269.08398 L 148.87109 269.97852 L 148.37305 270.37109 A 3.1747105 3.1747105 0 0 1 147.15625 269.74805 L 147.9043 269.08398 z M 150.20703 269.23242 L 150.90234 269.95898 A 3.1747105 3.1747105 0 0 1 149.72656 270.42188 L 149.25391 269.98438 L 150.20703 269.23242 z M 149.05469 270.14844 L 149.39844 270.46484 A 3.1747105 3.1747105 0 0 1 148.68945 270.43555 L 149.05469 270.14844 z "
+       transform="scale(0.26458333)"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\paddle.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <g
+       id="g4667"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\end1.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3411"
+         width="3.1750002"
+         height="3.1749992"
+         x="58.208332"
+         y="62.177082" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435"
+         width="0.26458094"
+         height="2.9104178"
+         x="61.118752"
+         y="62.441666" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-7"
+         width="0.52916545"
+         height="2.9104178"
+         x="58.472916"
+         y="62.441666" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-6"
+         width="0.52916545"
+         height="2.9104178"
+         x="59.795834"
+         y="62.441666" />
+    </g>
+    <g
+       id="g4667-8"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\end4.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="rotate(180,61.383333,65.352082)">
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3411-76"
+         width="3.1750002"
+         height="3.1749992"
+         x="58.208332"
+         y="62.177082" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-01"
+         width="0.26458094"
+         height="2.9104178"
+         x="61.118752"
+         y="62.441666" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-7-2"
+         width="0.52916545"
+         height="2.9104178"
+         x="58.472916"
+         y="62.441666" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-6-3"
+         width="0.52916545"
+         height="2.9104178"
+         x="59.795834"
+         y="62.441666" />
+    </g>
+    <g
+       id="g4667-8-9"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\end3.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="matrix(1,0,0,-1,-2.5431316e-7,130.70416)">
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3411-76-0"
+         width="3.1750002"
+         height="3.1749992"
+         x="58.208332"
+         y="62.177082" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-01-5"
+         width="0.26458094"
+         height="2.9104178"
+         x="61.118752"
+         y="62.441666" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-7-2-7"
+         width="0.52916545"
+         height="2.9104178"
+         x="58.472916"
+         y="62.441666" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-6-3-3"
+         width="0.52916545"
+         height="2.9104178"
+         x="59.795834"
+         y="62.441666" />
+    </g>
+    <g
+       id="g4667-8-9-0"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\end2.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="matrix(-1,-2.1401814e-6,-2.1401814e-6,1,122.7668,1.2650575e-4)">
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3411-76-0-9"
+         width="3.1750002"
+         height="3.1749992"
+         x="58.208332"
+         y="62.177082" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-01-5-2"
+         width="0.26458094"
+         height="2.9104178"
+         x="61.118752"
+         y="62.441666" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-7-2-7-8"
+         width="0.52916545"
+         height="2.9104178"
+         x="58.472916"
+         y="62.441666" />
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-6-3-3-9"
+         width="0.52916545"
+         height="2.9104178"
+         x="59.795834"
+         y="62.441666" />
+    </g>
+    <g
+       id="g9094"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\end1inv.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3411-7"
+         width="3.1750002"
+         height="3.1749992"
+         x="58.208332"
+         y="70.114586"
+         inkscape:export-filename="C:\Dev\Platform Game\level2\end1inv.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-2"
+         width="0.26458094"
+         height="2.9104178"
+         x="61.118752"
+         y="70.379166" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-7-0"
+         width="0.52916545"
+         height="2.9104178"
+         x="58.472916"
+         y="70.379166" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-6-4"
+         width="0.52916545"
+         height="2.9104178"
+         x="59.795834"
+         y="70.379166" />
+    </g>
+    <g
+       id="g9094-4"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\end4inv.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="rotate(-179.99971,61.383334,73.289579)">
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3411-7-2"
+         width="3.1750002"
+         height="3.1749992"
+         x="58.208332"
+         y="70.114586"
+         inkscape:export-filename="C:\Dev\Platform Game\level2\end1inv.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-2-4"
+         width="0.26458094"
+         height="2.9104178"
+         x="61.118752"
+         y="70.379166" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-7-0-7"
+         width="0.52916545"
+         height="2.9104178"
+         x="58.472916"
+         y="70.379166" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-6-4-4"
+         width="0.52916545"
+         height="2.9104178"
+         x="59.795834"
+         y="70.379166" />
+    </g>
+    <g
+       id="g9094-4-2"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\end3inv.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="matrix(1,-5.0614548e-6,-5.0614548e-6,-1,3.5672959e-4,146.57946)">
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3411-7-2-4"
+         width="3.1750002"
+         height="3.1749992"
+         x="58.208332"
+         y="70.114586"
+         inkscape:export-filename="C:\Dev\Platform Game\level2\end1inv.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-2-4-4"
+         width="0.26458094"
+         height="2.9104178"
+         x="61.118752"
+         y="70.379166" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-7-0-7-2"
+         width="0.52916545"
+         height="2.9104178"
+         x="58.472916"
+         y="70.379166" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-6-4-4-0"
+         width="0.52916545"
+         height="2.9104178"
+         x="59.795834"
+         y="70.379166" />
+    </g>
+    <g
+       id="g9094-4-2-6"
+       inkscape:export-filename="C:\Dev\Platform Game\level2\end2inv.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="matrix(-1,-4.3263601e-6,-4.3263601e-6,1,122.76697,2.5882889e-4)">
+      <rect
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3411-7-2-4-7"
+         width="3.1750002"
+         height="3.1749992"
+         x="58.208332"
+         y="70.114586"
+         inkscape:export-filename="C:\Dev\Platform Game\level2\end1inv.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-2-4-4-2"
+         width="0.26458094"
+         height="2.9104178"
+         x="61.118752"
+         y="70.379166" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-7-0-7-2-1"
+         width="0.52916545"
+         height="2.9104178"
+         x="58.472916"
+         y="70.379166" />
+      <rect
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3435-6-4-4-0-8"
+         width="0.52916545"
+         height="2.9104178"
+         x="59.795834"
+         y="70.379166" />
+    </g>
+  </g>
+</svg>
