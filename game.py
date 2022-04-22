@@ -105,7 +105,7 @@ keys_left = 1
 air = 2000
 score = 0
 high_score = 0
-level_number = 0
+level_number = 1
 conveyor = []
 level_title = ''
 background_color = pygame.Color(0,0,0)
@@ -243,6 +243,7 @@ def animated_zoom():
         #draw_level()
         draw_level([man.pos[0] - save_man_pos[0] * pixel_scale / save_pixel_scale, man.pos[1] - save_man_pos[1] * pixel_scale / save_pixel_scale])            
         
+        clock.tick(12.5)
         pygame.display.flip()
     pixel_scale = save_pixel_scale
     import time
@@ -290,7 +291,12 @@ def on_game_over():
     level_number = 0
     load_level()
         
-
+def on_game_win():
+    win_img = pygame.image.load('win.png')
+    screen.blit(win_img, (0,0))
+    pygame.display.flip()
+    import time
+    time.sleep(10)
         
 def on_end_level():
     # animated air going down
@@ -316,6 +322,10 @@ def on_end_level():
     
     global level_number
     level_number += 1
+    if level_number >= len(levels):
+        level_number = 0
+        on_game_win()
+    
     load_level()
 
 class Being(pygame.sprite.Sprite):
