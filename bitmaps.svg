@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="11.313709"
-     inkscape:cx="225.61126"
-     inkscape:cy="266.09312"
+     inkscape:zoom="8.0000004"
+     inkscape:cx="124.81249"
+     inkscape:cy="264.31249"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -44,21 +44,34 @@
     <inkscape:grid
        type="xygrid"
        id="grid846"
-       spacingy="0.26458333" />
+       spacingy="0.26458333"
+       spacingx="0.26458333" />
   </sodipodi:namedview>
   <defs
      id="defs2">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient2195">
+       id="linearGradient2751">
       <stop
-         style="stop-color:#b70dc8;stop-opacity:0.63529414"
+         style="stop-color:#00f9ff;stop-opacity:0.76036865"
          offset="0"
-         id="stop2191" />
+         id="stop2747" />
       <stop
-         style="stop-color:#c00dc8;stop-opacity:0"
+         style="stop-color:#00f9ff;stop-opacity:0;"
          offset="1"
-         id="stop2193" />
+         id="stop2749" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3020">
+      <stop
+         style="stop-color:#ff00f1;stop-opacity:1"
+         offset="0"
+         id="stop3016" />
+      <stop
+         style="stop-color:#770071;stop-opacity:1"
+         offset="1"
+         id="stop3018" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
@@ -83,18 +96,6 @@
          style="stop-color:#11bbff;stop-opacity:1"
          offset="1"
          id="stop7551" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient6824">
-      <stop
-         style="stop-color:#c80d0d;stop-opacity:0.63487738"
-         offset="0"
-         id="stop6820" />
-      <stop
-         style="stop-color:#c80d0d;stop-opacity:0"
-         offset="1"
-         id="stop6822" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
@@ -141,15 +142,6 @@
        gradientTransform="translate(-3.9687497)" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient6824"
-       id="linearGradient6629"
-       gradientUnits="userSpaceOnUse"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="61.383335" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient7553"
        id="linearGradient6939"
        gradientUnits="userSpaceOnUse"
@@ -160,164 +152,131 @@
        y2="61.383335" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient6824"
-       id="linearGradient10120"
-       gradientUnits="userSpaceOnUse"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="59.795834"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,60.000004,6.0000004)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6824"
-       id="linearGradient10568"
-       gradientUnits="userSpaceOnUse"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="60.589581"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,30,3.0000038)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6824"
-       id="linearGradient10801"
-       gradientUnits="userSpaceOnUse"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.95208"
-       y2="60.986454"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,15.000009,1.5000096)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6824"
-       id="linearGradient1003"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,75.000004,7.5000076)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="59.398956" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6824"
-       id="linearGradient1030"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,90.000004,9.0000113)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="59.002079" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6824"
-       id="linearGradient1057"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,105,10.500009)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="58.605206" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6824"
-       id="linearGradient1210"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,45,4.5000129)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="60.192703" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient1887"
        id="linearGradient1684"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-3.9687502,-5.2916677)"
        x1="39.952084"
        y1="58.472916"
        x2="39.952084"
        y2="61.383335" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3020"
+       id="radialGradient3022"
+       cx="35.983334"
+       cy="75.402802"
+       fx="35.983334"
+       fy="75.402802"
+       r="0.7937495"
+       gradientTransform="matrix(1,0,0,1.0233861,0,-1.7599276)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3020"
+       id="radialGradient3375"
+       cx="35.983334"
+       cy="76.332291"
+       fx="35.983334"
+       fy="76.332291"
+       r="0.39687499"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3020"
+       id="radialGradient3418"
+       cx="35.057293"
+       cy="75.110954"
+       fx="35.057293"
+       fy="75.110954"
+       r="0.78953844"
+       gradientTransform="matrix(0.88794349,0.6021832,-0.06597759,0.09728662,8.8840371,46.723465)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3020"
+       id="radialGradient3418-8"
+       cx="35.057293"
+       cy="75.110954"
+       fx="35.057293"
+       fy="75.110954"
+       r="0.78953844"
+       gradientTransform="matrix(-0.88794349,0.6021832,0.06597759,0.09728662,63.082631,46.723465)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3020"
+       id="radialGradient3418-5"
+       cx="35.057293"
+       cy="75.110954"
+       fx="35.057293"
+       fy="75.110954"
+       r="0.78953844"
+       gradientTransform="matrix(0.79443207,0.27328149,-0.02292719,0.11367153,9.0451702,57.493431)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3020"
+       id="radialGradient3418-5-3"
+       cx="35.057293"
+       cy="75.110954"
+       fx="35.057293"
+       fy="75.110954"
+       r="0.78953844"
+       gradientTransform="matrix(-0.79443207,0.27328149,0.02292719,0.11367153,62.921498,57.522341)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3020"
+       id="radialGradient3418-5-6"
+       cx="35.057293"
+       cy="75.110954"
+       fx="35.057293"
+       fy="75.110954"
+       r="0.78953844"
+       gradientTransform="matrix(0.79443207,-0.27328149,-0.02292719,-0.11367153,9.0451705,94.083907)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3020"
+       id="radialGradient3418-5-6-0"
+       cx="35.057293"
+       cy="75.110954"
+       fx="35.057293"
+       fy="75.110954"
+       r="0.78953844"
+       gradientTransform="matrix(-0.79443207,-0.27328149,0.02292719,-0.11367153,62.921499,94.083907)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3020"
+       id="radialGradient3418-5-6-4"
+       cx="35.057293"
+       cy="75.110954"
+       fx="35.057293"
+       fy="75.110954"
+       r="0.78953844"
+       gradientTransform="matrix(0.64756357,-0.53522566,-0.06144096,-0.09834572,17.264454,102.30559)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3020"
+       id="radialGradient3418-5-6-4-3"
+       cx="35.057293"
+       cy="75.110954"
+       fx="35.057293"
+       fy="75.110954"
+       r="0.78953844"
+       gradientTransform="matrix(-0.64756357,-0.53522566,0.06144096,-0.09834572,54.702215,102.30559)"
+       gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient2195"
-       id="linearGradient1686"
-       gradientUnits="userSpaceOnUse"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="61.383335"
-       gradientTransform="translate(-1.3666667e-7,-5.2916677)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2195"
-       id="linearGradient1688"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,60.000004,6.0000004)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="59.795834" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2195"
-       id="linearGradient1690"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,75.000004,7.5000076)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="59.398956" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2195"
-       id="linearGradient1692"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,90.000004,9.0000113)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="59.002079" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2195"
-       id="linearGradient1694"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,105,10.500009)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="58.605206" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2195"
-       id="linearGradient1696"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,15.000009,1.5000096)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.95208"
-       y2="60.986454" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2195"
-       id="linearGradient1698"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,30,3.0000038)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="60.589581" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2195"
-       id="linearGradient1700"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.7795276,0,0,3.7795276,45,4.5000129)"
-       x1="39.952084"
-       y1="58.472916"
-       x2="39.952084"
-       y2="60.192703" />
+       xlink:href="#linearGradient2751"
+       id="linearGradient2753"
+       x1="106"
+       y1="295"
+       x2="106"
+       y2="307"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -550,14 +509,6 @@
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256" />
     <path
-       style="fill:url(#linearGradient6629);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 38.364583,58.208333 v 0.79375 l 0.79375,2.38125 0.79375,-1.852084 0.529166,0.79375 1.058334,-1.322916 v -0.79375 z"
-       id="path5466-0"
-       sodipodi:nodetypes="cccccccc"
-       inkscape:export-filename="C:\Dev\Platform Game\floorfall.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256" />
-    <path
        style="fill:#3d8709;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
        d="m 39.6875,65.352083 v -0.79375 h -0.529167 l -0.79375,0.529166 0.529167,-0.529166 -0.529167,-0.79375 0.79375,0.529166 H 39.6875 v -0.79375 l -1.058334,-1.322916 1.058334,0.79375 1.058333,-0.79375 -0.529167,1.058333 v 1.058333 l 0.79375,0.264584 0.529167,-0.529167 -0.264584,0.79375 0.264584,0.264583 -0.79375,-0.264583 -0.529167,-0.264583 v 0.79375 z"
        id="path7912"
@@ -698,7 +649,7 @@
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256"
        style="fill:#cbcd4c;fill-opacity:1"
-       transform="translate(19.843749,-3.9687488)">
+       transform="translate(15.875001,-7.9374987)">
       <path
          id="path8249-7"
          style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -724,7 +675,7 @@
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256"
        style="fill:#cbcd4c;fill-opacity:1"
-       transform="translate(19.843749,-3.9687488)">
+       transform="translate(19.843749,-11.906249)">
       <path
          id="path8249-4-1"
          style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -755,7 +706,7 @@
     </g>
     <g
        id="g7943-4-9"
-       transform="matrix(-1,0,0,1,87.841676,-3.9687488)"
+       transform="matrix(-1,0,0,1,83.872918,-7.9374988)"
        inkscape:export-filename="C:\Dev\Platform Game\level2\conveyor4.png"
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256"
@@ -794,7 +745,7 @@
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256"
        style="fill:#cbcd4c;fill-opacity:1"
-       transform="translate(19.843749,-3.9687488)">
+       transform="translate(11.906251,-3.9687488)">
       <path
          id="path8249-19-7"
          style="fill:#cbcd4c;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -823,642 +774,701 @@
          d="m 130,250 v 0.74023 l 3.89648,0.0137 c 1.62019,0.006 1.61084,2.51883 0,2.50976 L 130,253.25 V 254 h 4 c 2.56771,0.0147 2.58262,-4 0,-4 z"
          transform="scale(0.26458333)" />
     </g>
-    <g
-       id="g4845"
-       inkscape:export-filename="C:\Dev\Platform Game\floorfall4.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256">
-      <path
-         id="path5466-0-8"
-         style="fill:url(#linearGradient10120);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 205 226 L 205 229 L 206 232 L 210.57031 232 L 211 231 L 211.66797 232 L 214.60156 232 L 217 229 L 217 226 L 205 226 z "
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278"
-         width="3.175"
-         height="0.52916664"
-         x="54.239582"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4849"
-       inkscape:export-filename="C:\Dev\Platform Game\floorfall5.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256">
-      <path
-         id="path5466-0-8-4"
-         style="fill:url(#linearGradient1003);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 220 227.5 L 220 230.5 L 220.5 232 L 230.80078 232 L 232 230.5 L 232 227.5 L 220 227.5 z "
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-36"
-         width="3.175"
-         height="0.52916664"
-         x="58.208332"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4853"
-       inkscape:export-filename="C:\Dev\Platform Game\floorfall6.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256">
-      <path
-         id="path5466-0-8-49"
-         style="fill:url(#linearGradient1030);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 235 229 L 235 232 L 247 232 L 247 229 L 235 229 z "
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-43"
-         width="3.175"
-         height="0.52916664"
-         x="62.177082"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4857"
-       inkscape:export-filename="C:\Dev\Platform Game\floorfall7.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256">
-      <path
-         id="path5466-0-8-7"
-         style="fill:url(#linearGradient1057);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 250 230.5 L 250 232 L 262 232 L 262 230.5 L 250 230.5 z "
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-37"
-         width="3.175"
-         height="0.52916664"
-         x="66.145836"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4833"
-       inkscape:export-filename="C:\Dev\Platform Game\floorfall1.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256">
-      <path
-         id="path5466-0-96"
-         style="fill:url(#linearGradient10801);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 160 221.5 L 160 224.5 L 162.5 232 L 163.64258 232 L 166 226.5 L 168 229.5 L 172 224.5 L 172 221.5 L 160 221.5 z "
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:0.707108;stroke-linecap:round"
-         id="rect10278-4"
-         width="3.175"
-         height="0.26458433"
-         x="42.333336"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4837"
-       inkscape:export-filename="C:\Dev\Platform Game\floorfall2.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256">
-      <path
-         id="path5466-0-9"
-         style="fill:url(#linearGradient10568);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 175 223 L 175 226 L 177 232 L 179.28516 232 L 181 228 L 183 231 L 187 226 L 187 223 L 175 223 z "
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-3"
-         width="3.175"
-         height="0.52916664"
-         x="46.302082"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4841"
-       inkscape:export-filename="C:\Dev\Platform Game\floorfall3.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256">
-      <path
-         id="path5466-0-9-0"
-         style="fill:url(#linearGradient1210);fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 190 224.5 L 190 227.5 L 191.5 232 L 194.92773 232 L 196 229.5 L 197.66602 232 L 198.40039 232 L 202 227.5 L 202 224.5 L 190 224.5 z "
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-9"
-         width="3.175"
-         height="0.52916664"
-         x="50.270832"
-         y="58.208332" />
-    </g>
     <path
        style="fill:url(#linearGradient1684);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 34.395833,52.916666 v 0.79375 l 0.79375,2.38125 0.79375,-1.852084 0.529166,0.79375 1.058334,-1.322916 v -0.79375 z"
+       d="m 38.364583,58.208333 v 0.79375 l 0.79375,2.38125 0.79375,-1.852084 0.529166,0.79375 1.058334,-1.322916 v -0.79375 z"
        id="path5466-4"
        sodipodi:nodetypes="cccccccc"
        inkscape:export-filename="C:\Dev\Platform Game\level2\floor.png"
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256" />
     <path
-       style="fill:url(#linearGradient1686);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 38.364583,52.916665 v 0.79375 l 0.79375,2.38125 0.79375,-1.852084 0.529166,0.79375 1.058334,-1.322916 v -0.79375 z"
-       id="path5466-0-1"
-       sodipodi:nodetypes="cccccccc"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256" />
-    <g
-       id="g4845-9"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall4.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="translate(-1.3666667e-7,-5.2916677)">
-      <path
-         id="path5466-0-8-9"
-         style="fill:url(#linearGradient1688);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 205,226 v 3 l 1,3 h 4.57031 L 211,231 l 0.66797,1 h 2.93359 L 217,229 v -3 z"
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-98"
-         width="3.175"
-         height="0.52916664"
-         x="54.239582"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4849-2"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall5.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="translate(-1.3666667e-7,-5.2916677)">
-      <path
-         id="path5466-0-8-4-2"
-         style="fill:url(#linearGradient1690);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 220,227.5 v 3 l 0.5,1.5 h 10.30078 L 232,230.5 v -3 z"
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-36-6"
-         width="3.175"
-         height="0.52916664"
-         x="58.208332"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4853-4"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall6.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="translate(-1.3666667e-7,-5.2916677)">
-      <path
-         id="path5466-0-8-49-8"
-         style="fill:url(#linearGradient1692);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 235,229 v 3 h 12 v -3 z"
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-43-1"
-         width="3.175"
-         height="0.52916664"
-         x="62.177082"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4857-4"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall7.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="translate(-1.3666667e-7,-5.2916677)">
-      <path
-         id="path5466-0-8-7-6"
-         style="fill:url(#linearGradient1694);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 250,230.5 v 1.5 h 12 v -1.5 z"
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-37-9"
-         width="3.175"
-         height="0.52916664"
-         x="66.145836"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4833-1"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall1.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="translate(-1.3666667e-7,-5.2916677)">
-      <path
-         id="path5466-0-96-2"
-         style="fill:url(#linearGradient1696);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 160,221.5 v 3 l 2.5,7.5 h 1.14258 L 166,226.5 l 2,3 4,-5 v -3 z"
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:0.707108;stroke-linecap:round"
-         id="rect10278-4-7"
-         width="3.175"
-         height="0.26458433"
-         x="42.333336"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4837-1"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall2.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="translate(-1.3666667e-7,-5.2916677)">
-      <path
-         id="path5466-0-9-07"
-         style="fill:url(#linearGradient1698);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 175,223 v 3 l 2,6 h 2.28516 L 181,228 l 2,3 4,-5 v -3 z"
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-3-4"
-         width="3.175"
-         height="0.52916664"
-         x="46.302082"
-         y="58.208332" />
-    </g>
-    <g
-       id="g4841-6"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\floorfall3.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="translate(-1.3666667e-7,-5.2916677)">
-      <path
-         id="path5466-0-9-0-3"
-         style="fill:url(#linearGradient1700);fill-opacity:1.0;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 190,224.5 v 3 l 1.5,4.5 h 3.42773 L 196,229.5 l 1.66602,2.5 h 0.73437 L 202,227.5 v -3 z"
-         transform="scale(0.26458333)" />
-      <rect
-         style="fill:#55553c;fill-opacity:0;stroke:none;stroke-width:1;stroke-linecap:round"
-         id="rect10278-9-9"
-         width="3.175"
-         height="0.52916664"
-         x="50.270832"
-         y="58.208332" />
-    </g>
-    <path
        id="rect5396"
-       style="fill:#dae3a1;fill-opacity:1;stroke-width:3.62835;stroke-linecap:round"
-       d="M 160 235 L 160 247 L 160.96094 247 L 160.96094 245.14258 L 164.63281 245.14258 L 164.63281 246.0625 L 163.69531 247 L 165.55078 247 L 165.55078 245.14258 L 169.22461 245.14258 L 169.22461 246.0625 L 168.28711 247 L 170.14258 247 L 170.14258 245.14258 L 172 245.14258 L 172 243.28711 L 171.0625 244.22461 L 170.14258 244.22461 L 170.14258 240.55078 L 172 240.55078 L 172 238.69531 L 171.0625 239.63281 L 170.14258 239.63281 L 170.14258 235.96094 L 172 235.96094 L 172 235 L 160 235 z M 160.96094 235.96094 L 164.63281 235.96094 L 164.63281 236.87891 L 161.87891 239.63281 L 160.96094 239.63281 L 160.96094 235.96094 z M 165.55078 235.96094 L 169.22461 235.96094 L 169.22461 236.87891 L 166.4707 239.63281 L 165.55078 239.63281 L 165.55078 235.96094 z M 160.96094 240.55078 L 164.63281 240.55078 L 164.63281 241.4707 L 161.87891 244.22461 L 160.96094 244.22461 L 160.96094 240.55078 z M 165.55078 240.55078 L 169.22461 240.55078 L 169.22461 241.4707 L 166.4707 244.22461 L 165.55078 244.22461 L 165.55078 240.55078 z "
-       transform="scale(0.26458333)"
-       inkscape:export-filename="C:\Dev\Platform Game\end1.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256" />
-    <path
-       id="rect5396-6"
-       style="fill:#dae3a1;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
-       d="m 45.508333,62.187417 v 0.254249 h 0.480592 v 0.242879 l -0.480592,0.48059 v 0.490926 h 0.480592 v 0.243396 l -0.480592,0.480591 v 0.490927 h 0.480592 v 0.243395 l -0.248047,0.248047 h 0.490927 v -0.491442 h 0.972031 v 0.243395 l -0.248047,0.248047 h 0.490927 v -0.491442 h 0.972034 v 0.243395 l -0.248047,0.248047 h 0.51263 v -3.175 z m 0.723472,0.254249 h 0.972031 v 0.242879 L 46.4752,63.413181 h -0.243395 z m 1.214911,0 h 0.972034 v 0.242879 l -0.729155,0.728636 h -0.242879 z m -1.214911,1.214395 h 0.972031 v 0.243396 L 46.4752,64.628095 h -0.243395 z m 1.214911,0 h 0.972034 v 0.243396 l -0.729155,0.728638 h -0.242879 z"
-       inkscape:export-filename="C:\Dev\Platform Game\end2.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256" />
-    <path
-       id="rect5396-0"
-       style="fill:#dae3a1;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
-       d="m 42.333333,65.352083 v 3.174999 h 3.175 v -0.51263 l -0.248047,0.248047 h -0.243395 v -0.972034 h 0.491442 v -0.490926 l -0.248047,0.248046 h -0.243395 v -0.972031 h 0.491442 v -0.490927 l -0.248047,0.248047 h -0.243395 v -0.480591 h -0.490927 l -0.480591,0.480591 h -0.243396 v -0.480591 h -0.490926 l -0.480589,0.480591 h -0.24288 v -0.480591 z m 0.254249,0.723471 h 0.971516 v 0.243395 l -0.728636,0.728636 h -0.24288 z m 1.214395,0 h 0.972034 v 0.243395 l -0.728638,0.728636 h -0.243396 z m -1.214395,1.214911 h 0.971516 v 0.24288 l -0.728636,0.729154 h -0.24288 z m 1.214395,0 h 0.972034 v 0.24288 l -0.728638,0.729154 h -0.243396 z"
-       inkscape:export-filename="C:\Dev\Platform Game\end3.png"
+       style="fill:#dae3a1;fill-opacity:1;stroke-width:0.48;stroke-linecap:round"
+       d="m 42.333333,58.208333 v 1.5875 1.5875 h 1.5875 1.5875 V 59.801 59.7958 58.213467 h -1.5875 v -0.0052 z m 0.127124,0.127124 h 0.485758 v 0.12144 l -0.364318,0.364318 h -0.12144 z m 0.607198,0 h 0.486017 v 0.12144 l -0.36432,0.364318 h -0.121697 z m 0.607457,0 h 0.245721 v 0.0052 h 0.240296 v 0.12144 l -0.240296,0.240296 v -0.0052 l -0.124024,0.124024 h -0.121697 z m 0.607456,0.0052 h 0.486016 v 0.12144 l -0.364318,0.364319 h -0.121698 z m 0.607456,0 h 0.486017 v 0.12144 l -0.364577,0.364319 h -0.12144 z m -2.429567,0.60203 h 0.485758 v 0.121698 l -0.364318,0.36432 h -0.12144 z m 0.607198,0 h 0.486017 v 0.121698 l -0.36432,0.36432 h -0.121697 z m 0.607457,0 h 0.245721 v 0.0052 h 0.240296 v 0.121699 l -0.240296,0.240294 v -0.0052 l -0.124024,0.124024 h -0.121697 z m 0.607456,0.0052 h 0.486016 v 0.121699 l -0.364318,0.364318 h -0.121698 z m 0.607456,0 h 0.486017 v 0.121699 l -0.364577,0.364318 h -0.12144 z m -2.429567,0.602289 h 0.485758 v 0.121698 l -0.124023,0.124024 -0.240295,0.240295 h -0.12144 v -0.240295 z m 0.607198,0 h 0.486017 v 0.121698 l -0.124024,0.124024 -0.240296,0.240295 h -0.121697 v -0.240295 z m 0.607457,0 h 0.245721 v 0.0052 h 0.240296 v 0.121697 l -0.118856,0.118857 h -0.0052 l -0.116272,0.116272 -0.124024,0.124023 H 43.67508 V 59.79593 Z m 0.607456,0.0052 h 0.486016 v 0.121697 l -0.118855,0.118857 h -0.0052 l -0.240295,0.240295 h -0.121698 v -0.235128 -0.0052 z m 0.607456,0 h 0.486017 v 0.121697 l -0.118856,0.118857 h -0.0052 l -0.240554,0.240295 h -0.12144 v -0.235128 -0.0052 z m -2.429567,0.602289 h 0.485758 v 0.121698 l -0.364318,0.364318 h -0.12144 z m 0.607198,0 h 0.486017 v 0.121698 l -0.36432,0.364318 h -0.121697 z m 0.607457,0 h 0.245721 0.240296 v 0.121698 l -0.240296,0.240295 -0.124024,0.124023 h -0.121697 z m 0.607456,0 h 0.486016 v 0.121698 l -0.364318,0.364318 h -0.121698 z m 0.607456,0 h 0.486017 v 0.121698 l -0.364577,0.364318 h -0.12144 z m -2.429567,0.607456 h 0.485758 v 0.12144 l -0.364318,0.364577 h -0.12144 z m 0.607198,0 h 0.486017 v 0.12144 l -0.36432,0.364577 h -0.121697 z m 0.607457,0 h 0.245721 0.240296 v 0.12144 l -0.240296,0.240553 -0.124024,0.124024 h -0.121697 z m 0.607456,0 h 0.486016 v 0.12144 l -0.364318,0.364577 h -0.121698 z m 0.607456,0 h 0.486017 v 0.12144 l -0.364577,0.364577 h -0.12144 z"
+       inkscape:export-filename="C:\Dev\PlatformGame\level1\end.png"
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256" />
     <path
        id="rect5396-2"
-       style="fill:#dae3a1;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
-       d="m 45.740878,65.352083 -0.232545,0.232544 v 0.490927 h 0.480592 v 0.243395 l -0.480592,0.48059 v 0.490926 h 0.480592 v 0.24288 l -0.480592,0.481107 v 0.51263 h 3.175 v -3.174999 h -0.51263 l -0.481108,0.480591 H 47.446716 V 65.352083 H 46.955789 L 46.4752,65.832674 h -0.243395 v -0.480591 z m 0.490927,0.723471 h 0.972031 v 0.243395 L 46.4752,67.047585 h -0.243395 z m 1.214911,0 h 0.972034 v 0.243395 l -0.729155,0.728636 h -0.242879 z m -1.214911,1.214911 h 0.972031 v 0.24288 L 46.4752,68.262499 h -0.243395 z m 1.214911,0 h 0.972034 v 0.24288 l -0.729155,0.729154 h -0.242879 z"
-       inkscape:export-filename="C:\Dev\Platform Game\end4.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256" />
-    <path
-       id="rect5396-4"
-       style="fill:#a1b6e3;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
-       d="m 42.333333,70.114582 v 3.175 h 0.254249 v -0.491443 h 0.971515 v 0.243396 l -0.248047,0.248047 h 0.490927 v -0.491443 h 0.972034 v 0.243396 l -0.248047,0.248047 h 0.490927 v -0.491443 h 0.491442 v -0.490926 l -0.248047,0.248047 h -0.243395 v -0.972034 h 0.491442 v -0.490927 l -0.248047,0.248047 H 45.016891 V 70.36883 h 0.491442 v -0.254248 z m 0.254249,0.254248 h 0.971515 v 0.24288 l -0.728636,0.728636 h -0.242879 z m 1.214395,0 h 0.972034 v 0.24288 l -0.728639,0.728636 h -0.243395 z m -1.214395,1.214396 h 0.971515 v 0.243395 l -0.728636,0.728639 h -0.242879 z m 1.214395,0 h 0.972034 v 0.243395 l -0.728639,0.728639 h -0.243395 z"
-       inkscape:export-filename="C:\Dev\Platform Game\end1inv.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256" />
-    <path
-       id="rect5396-6-9"
-       style="fill:#a1b6e3;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
-       d="m 45.508333,70.124916 v 0.254249 h 0.480592 v 0.242879 l -0.480592,0.48059 v 0.490926 h 0.480592 v 0.243396 l -0.480592,0.480591 v 0.490927 h 0.480592 v 0.243395 l -0.248047,0.248047 h 0.490927 v -0.491442 h 0.972031 v 0.243395 l -0.248047,0.248047 h 0.490927 v -0.491442 h 0.972034 v 0.243395 l -0.248047,0.248047 h 0.51263 v -3.175 z m 0.723472,0.254249 h 0.972031 v 0.242879 L 46.4752,71.35068 h -0.243395 z m 1.214911,0 h 0.972034 v 0.242879 l -0.729155,0.728636 h -0.242879 z m -1.214911,1.214395 h 0.972031 v 0.243396 L 46.4752,72.565594 h -0.243395 z m 1.214911,0 h 0.972034 v 0.243396 l -0.729155,0.728638 h -0.242879 z"
-       inkscape:export-filename="C:\Dev\Platform Game\end2inv.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256" />
-    <path
-       id="rect5396-0-5"
-       style="fill:#a1b6e3;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
-       d="m 42.333333,73.289582 v 3.174999 h 3.175 v -0.51263 l -0.248047,0.248047 h -0.243395 v -0.972034 h 0.491442 v -0.490926 l -0.248047,0.248046 h -0.243395 v -0.972031 h 0.491442 v -0.490927 l -0.248047,0.248047 h -0.243395 v -0.480591 h -0.490927 l -0.480591,0.480591 h -0.243396 v -0.480591 h -0.490926 l -0.480589,0.480591 h -0.24288 v -0.480591 z m 0.254249,0.723471 h 0.971516 v 0.243395 l -0.728636,0.728636 h -0.24288 z m 1.214395,0 h 0.972034 v 0.243395 l -0.728638,0.728636 h -0.243396 z m -1.214395,1.214911 h 0.971516 v 0.24288 l -0.728636,0.729154 h -0.24288 z m 1.214395,0 h 0.972034 v 0.24288 l -0.728638,0.729154 h -0.243396 z"
-       inkscape:export-filename="C:\Dev\Platform Game\end3inv.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256" />
-    <path
-       id="rect5396-2-2"
-       style="fill:#a1b6e3;fill-opacity:1;stroke-width:0.960001;stroke-linecap:round"
-       d="m 45.740878,73.289582 -0.232545,0.232544 v 0.490927 h 0.480592 v 0.243395 l -0.480592,0.48059 v 0.490926 h 0.480592 v 0.24288 l -0.480592,0.481107 v 0.51263 h 3.175 v -3.174999 h -0.51263 l -0.481108,0.480591 H 47.446716 V 73.289582 H 46.955789 L 46.4752,73.770173 h -0.243395 v -0.480591 z m 0.490927,0.723471 h 0.972031 v 0.243395 L 46.4752,74.985084 h -0.243395 z m 1.214911,0 h 0.972034 v 0.243395 l -0.729155,0.728636 h -0.242879 z m -1.214911,1.214911 h 0.972031 v 0.24288 L 46.4752,76.199998 h -0.243395 z m 1.214911,0 h 0.972034 v 0.24288 l -0.729155,0.729154 h -0.242879 z"
-       inkscape:export-filename="C:\Dev\Platform Game\end4inv.png"
+       style="fill:#a1b6e3;fill-opacity:1;stroke-width:0.48;stroke-linecap:round"
+       d="m 42.333333,62.177083 v 1.587501 1.5875 h 1.5875 1.5875 v -1.582332 -0.0052 -1.582333 h -1.5875 v -0.0052 z m 0.127124,0.127126 h 0.485758 v 0.12144 l -0.364318,0.364318 h -0.12144 z m 0.607197,0 h 0.486018 v 0.12144 l -0.36432,0.364318 h -0.121698 z m 0.607457,0 h 0.245722 v 0.0052 h 0.240295 v 0.121439 l -0.240295,0.240296 v -0.0052 l -0.124024,0.124029 h -0.121698 z m 0.607457,0.0052 h 0.486016 v 0.12144 l -0.364318,0.364319 h -0.121698 z m 0.607456,0 h 0.486017 v 0.12144 l -0.364577,0.364319 h -0.12144 z m -2.429567,0.60203 h 0.485758 v 0.121697 l -0.364318,0.364319 h -0.12144 z m 0.607197,0 h 0.486018 v 0.121697 l -0.36432,0.364319 h -0.121698 z m 0.607457,0 h 0.245722 v 0.0052 h 0.240295 v 0.121699 l -0.240295,0.240284 v -0.0052 l -0.124024,0.124024 h -0.121698 z m 0.607457,0.0052 h 0.486016 v 0.121699 l -0.364318,0.364318 h -0.121698 z m 0.607456,0 h 0.486017 v 0.121699 l -0.364577,0.364318 h -0.12144 z m -2.429567,0.60229 h 0.485758 v 0.121697 l -0.124024,0.124023 -0.240294,0.240296 h -0.12144 v -0.240307 z m 0.607197,0 h 0.486018 v 0.121697 l -0.124024,0.124023 -0.240296,0.240296 h -0.121698 v -0.240307 z m 0.607457,0 h 0.245722 v 0.0052 h 0.240295 v 0.121698 l -0.118856,0.11884 h -0.0052 l -0.116267,0.116272 -0.124023,0.124024 h -0.121673 v -0.240372 z m 0.607457,0.0052 h 0.486016 v 0.121698 l -0.118855,0.11884 h -0.0052 l -0.240295,0.240296 h -0.121695 v -0.235129 -0.0052 z m 0.607456,0 h 0.486017 v 0.121698 l -0.118856,0.11884 h -0.0052 l -0.240554,0.240296 h -0.12144 v -0.235129 -0.0052 z m -2.429567,0.602289 h 0.485758 v 0.121697 l -0.364318,0.364318 h -0.12144 z m 0.607197,0 h 0.486018 v 0.121697 l -0.36432,0.364318 h -0.121698 z m 0.607457,0 h 0.245722 0.240295 v 0.121697 l -0.240295,0.24028 -0.124024,0.124022 h -0.121698 z m 0.607457,0 h 0.486016 v 0.121697 l -0.364318,0.364318 h -0.121698 z m 0.607456,0 h 0.486017 v 0.121697 l -0.364577,0.364318 h -0.12144 z m -2.429567,0.607456 h 0.485758 v 0.12144 l -0.364318,0.364554 h -0.12144 z m 0.607197,0 h 0.486018 v 0.12144 l -0.36432,0.364554 h -0.121698 z m 0.607457,0 h 0.245722 0.240295 v 0.12144 l -0.240295,0.24053 -0.124024,0.124024 h -0.121698 z m 0.607457,0 h 0.486016 v 0.12144 l -0.364318,0.364554 h -0.121698 z m 0.607456,0 h 0.486017 v 0.12144 l -0.364577,0.364554 h -0.12144 z"
+       inkscape:export-filename="C:\Dev\PlatformGame\level1\endinv.png"
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256" />
     <path
        id="path9481"
        style="fill:#ffdd55;fill-opacity:1;stroke:none;stroke-width:0.196364px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 38.541923,67.072632 c -0.59499,0.784599 0.478999,1.636547 1.073991,0.851949 l 0.163854,-0.21607 0.938434,0.737053 -0.298571,0.383593 0.206168,0.163544 0.291134,-0.373785 0.166735,0.12441 -0.287415,0.368881 0.248242,0.189067 0.46748,-0.626579 -1.556731,-1.19758 0.136662,-0.180213 c 0.594993,-0.7846 -0.478998,-1.63655 -1.07399,-0.851949 z m 0.235088,0.176669 0.470879,-0.620936 c 0.363415,-0.479224 0.95478,-0.0023 0.598728,0.474942 l -0.469804,0.629644 c -0.356051,0.477193 -0.963211,-0.0044 -0.599803,-0.48365 z"
-       inkscape:export-filename="C:\Dev\Platform Game\key.png"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\key.png"
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256" />
     <path
        id="path952"
-       style="fill:#bfe3a1;fill-opacity:1;stroke-width:2.32003;stroke-linecap:round"
-       d="M 149.0625 262.66992 A 4.6038096 4.6038096 0 0 0 145.82031 264.04688 A 4.6038096 4.6038096 0 0 0 145.87695 270.55664 A 4.6038096 4.6038096 0 0 0 151.12305 271.4082 L 154.37695 274.60547 L 156.52734 272.41602 L 153.27344 269.21875 A 4.6038096 4.6038096 0 0 0 152.33008 263.98828 A 4.6038096 4.6038096 0 0 0 149.0625 262.66992 z M 149.41406 264.13672 A 3.1747105 3.1747105 0 0 1 150.76758 264.55859 L 150.18359 265.04688 L 149.32031 264.2207 L 149.41406 264.13672 z M 148.89258 264.14062 L 148.9668 264.21289 L 148.17578 264.89844 L 147.75 264.46094 A 3.1747105 3.1747105 0 0 1 148.89258 264.14062 z M 149.14453 264.375 L 149.99219 265.20117 L 149.1582 265.90234 L 148.3457 265.07617 L 149.14453 264.375 z M 147.5293 264.58789 L 147.99219 265.06055 L 147.2168 265.74023 L 146.74805 265.25391 A 3.1747105 3.1747105 0 0 1 146.9082 265.07422 A 3.1747105 3.1747105 0 0 1 147.5293 264.58789 z M 150.98438 264.69727 A 3.1747105 3.1747105 0 0 1 151.39648 265.03516 A 3.1747105 3.1747105 0 0 1 151.70117 265.38281 L 151.0918 265.92578 L 150.36133 265.2168 L 150.98438 264.69727 z M 148.16211 265.23828 L 148.9668 266.05859 L 148.16211 266.73047 L 147.37891 265.91797 L 148.16211 265.23828 z M 150.16992 265.37109 L 150.9082 266.08789 L 150.06641 266.83398 L 149.32812 266.07227 L 150.16992 265.37109 z M 146.59375 265.45312 L 147.02539 265.90234 L 146.04492 266.76367 A 3.1747105 3.1747105 0 0 1 146.59375 265.45312 z M 151.8457 265.58984 A 3.1747105 3.1747105 0 0 1 152.3418 267.13086 L 151.27734 266.0957 L 151.8457 265.58984 z M 147.19531 266.08008 L 147.9707 266.89258 L 146.86914 267.80078 L 146.07227 267.07031 L 147.19531 266.08008 z M 149.13672 266.23633 L 149.88281 267.00391 L 149.0918 267.70508 L 148.32422 266.90625 L 149.13672 266.23633 z M 151.0918 266.25781 L 152.20703 267.33594 L 151.27734 268.07422 L 150.24414 267.00977 L 151.0918 266.25781 z M 148.14062 267.07031 L 148.9082 267.86719 L 147.91016 268.75195 L 147.05469 267.9707 L 148.14062 267.07031 z M 150.05859 267.17969 L 151.08594 268.22852 L 150.23633 268.90039 L 149.26172 267.88086 L 150.05859 267.17969 z M 146.00195 267.33789 L 146.67773 267.96289 L 146.1875 268.37109 A 3.1747105 3.1747105 0 0 1 146.00195 267.33789 z M 152.33594 267.55664 A 3.1747105 3.1747105 0 0 1 151.97656 268.78711 L 151.45508 268.25 L 152.33594 267.55664 z M 149.07812 268.04492 L 150.03711 269.05469 L 149.07031 269.82227 L 148.08789 268.92188 L 149.07812 268.04492 z M 146.86328 268.13281 L 147.71875 268.92188 L 146.9707 269.58594 A 3.1747105 3.1747105 0 0 1 146.94727 269.56445 A 3.1747105 3.1747105 0 0 1 146.28711 268.61328 L 146.86328 268.13281 z M 151.25586 268.40625 L 151.8457 269.00977 A 3.1747105 3.1747105 0 0 1 151.43555 269.52344 A 3.1747105 3.1747105 0 0 1 151.10352 269.8125 L 150.40625 269.07812 L 151.25586 268.40625 z M 147.9043 269.08398 L 148.87109 269.97852 L 148.37305 270.37109 A 3.1747105 3.1747105 0 0 1 147.15625 269.74805 L 147.9043 269.08398 z M 150.20703 269.23242 L 150.90234 269.95898 A 3.1747105 3.1747105 0 0 1 149.72656 270.42188 L 149.25391 269.98438 L 150.20703 269.23242 z M 149.05469 270.14844 L 149.39844 270.46484 A 3.1747105 3.1747105 0 0 1 148.68945 270.43555 L 149.05469 270.14844 z "
-       transform="scale(0.26458333)"
+       style="fill:#bfe3a1;fill-opacity:1;stroke-width:0.613841;stroke-linecap:round"
+       d="m 39.583609,70.119415 a 1.2180913,1.2180913 0 0 0 -0.85783,0.36432 1.2180913,1.2180913 0 0 0 0.01499,1.722374 1.2180913,1.2180913 0 0 0 1.388031,0.225309 l 0.860928,0.845944 0.568957,-0.579292 -0.860928,-0.845944 A 1.2180913,1.2180913 0 0 0 40.44816,70.468231 1.2180913,1.2180913 0 0 0 39.583613,70.119415 Z m 0.09302,0.388091 a 0.83997548,0.83997548 0 0 1 0.358118,0.111619 l -0.154514,0.129194 -0.228409,-0.218594 z m -0.137975,10e-4 0.01964,0.01912 -0.209291,0.181385 -0.112654,-0.115755 a 0.83997548,0.83997548 0 0 1 0.302308,-0.08475 z m 0.06666,0.06201 0.224277,0.21859 -0.22066,0.185518 -0.214974,-0.218591 z m -0.427362,0.05633 0.122473,0.125058 -0.205156,0.179832 -0.124023,-0.128673 a 0.83997548,0.83997548 0 0 1 0.04237,-0.04754 0.83997548,0.83997548 0 0 1 0.164333,-0.128674 z m 0.914156,0.02894 a 0.83997548,0.83997548 0 0 1 0.109035,0.0894 0.83997548,0.83997548 0 0 1 0.08062,0.09198 l -0.161229,0.143661 -0.193271,-0.187584 z m -0.746725,0.143142 0.212907,0.21704 -0.212907,0.177769 -0.207222,-0.214974 z m 0.531233,0.03514 0.195336,0.189654 -0.222723,0.197403 -0.19534,-0.201536 z m -0.946195,0.0217 0.114204,0.118856 -0.259416,0.227894 a 0.83997548,0.83997548 0 0 1 0.145212,-0.34675 z m 1.389578,0.03617 a 0.83997548,0.83997548 0 0 1 0.13126,0.407728 L 40.16962,71.02578 Z m -1.230416,0.129709 0.205156,0.214974 -0.291455,0.240295 -0.210838,-0.19327 z m 0.513665,0.04134 0.197403,0.203089 -0.209288,0.185518 -0.203089,-0.211357 z m 0.517282,0.0057 0.295071,0.285255 -0.245981,0.195336 -0.273367,-0.281635 z m -0.780833,0.214974 0.203089,0.210841 -0.264065,0.234093 -0.226343,-0.206706 z m 0.507463,0.02894 0.271819,0.277503 -0.224792,0.177765 -0.257866,-0.26975 z m -1.07332,0.04186 0.1788,0.165364 -0.129706,0.108003 a 0.83997548,0.83997548 0 0 1 -0.04909,-0.273367 z m 1.675868,0.05788 a 0.83997548,0.83997548 0 0 1 -0.09509,0.325562 l -0.137974,-0.14211 z m -0.861964,0.129191 0.253732,0.267168 -0.255799,0.203089 -0.259932,-0.238228 z m -0.58601,0.02325 0.226343,0.208775 -0.197922,0.175699 a 0.83997548,0.83997548 0 0 1 -0.0062,-0.0057 0.83997548,0.83997548 0 0 1 -0.174667,-0.251663 z m 1.162203,0.07235 0.156062,0.159681 a 0.83997548,0.83997548 0 0 1 -0.108519,0.135909 0.83997548,0.83997548 0 0 1 -0.08785,0.07648 l -0.184486,-0.194304 z m -0.886767,0.179316 0.255797,0.23668 -0.131773,0.103868 A 0.83997548,0.83997548 0 0 1 39.079249,71.99215 Z m 0.609264,0.03928 0.183968,0.192236 a 0.83997548,0.83997548 0 0 1 -0.311092,0.122475 l -0.125055,-0.115755 z m -0.30489,0.242363 0.09095,0.08371 a 0.83997548,0.83997548 0 0 1 -0.187587,-0.0078 z"
        inkscape:export-filename="C:\Dev\Platform Game\level2\paddle.png"
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256" />
     <g
-       id="g4667"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\end1.png"
+       id="g8115"
+       inkscape:export-filename="C:\Dev\PlatformGame\level2\end.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="matrix(0.5,0,0,0.5,13.229167,35.057291)">
+      <path
+         id="rect3411"
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.122834;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 220,235 v 12 12 h 12 12 v -12 -12 h -12 z"
+         transform="scale(0.26458333)" />
+      <path
+         id="rect3435"
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0868566;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 231,236 v 11 11 h 1 1 v -11 -11 h -1 z"
+         transform="scale(0.26458333)" />
+      <path
+         id="rect3435-7"
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.122834;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 221,236 v 11 11 h 2 v -11 -11 z"
+         transform="scale(0.26458333)" />
+      <path
+         id="rect3435-6"
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.122834;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 226,236 v 11 11 h 2 v -11 -11 z"
+         transform="scale(0.26458333)" />
+      <path
+         id="rect3435-7-2"
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.122834;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 241,236 v 11 11 h 2 v -11 -11 z"
+         transform="scale(0.26458333)" />
+      <path
+         id="rect3435-6-3"
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.122834;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 236,236 v 11 11 h 2 v -11 -11 z"
+         transform="scale(0.26458333)" />
+    </g>
+    <g
+       id="g8123"
+       inkscape:export-filename="C:\Dev\PlatformGame\level2\endinv.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256"
+       transform="matrix(0.49999999,0,0,0.49999999,9.9218754,39.026042)">
+      <path
+         id="rect3411-72"
+         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 64.822916,62.177083 v 3.175 3.175 h 3.175 3.175 v -3.175 -3.175 h -3.175 z" />
+      <path
+         id="rect3435-23"
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 67.733333,62.441666 v 2.910417 2.910416 h 0.264583 0.264583 v -2.910416 -2.910417 h -0.264583 z" />
+      <path
+         id="rect3435-7-6"
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 65.087499,62.441666 v 2.910417 2.910416 h 0.529167 v -2.910416 -2.910417 z" />
+      <path
+         id="rect3435-6-49"
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 66.410416,62.441666 v 2.910417 2.910416 h 0.529167 v -2.910416 -2.910417 z" />
+      <path
+         id="rect3435-7-2-4"
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 70.379166,62.441666 v 2.910417 2.910416 h 0.529167 v -2.910416 -2.910417 z" />
+      <path
+         id="rect3435-6-3-1"
+         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 69.056249,62.441666 v 2.910417 2.910416 h 0.529167 v -2.910416 -2.910417 z" />
+    </g>
+    <g
+       id="g2132"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\wall.png"
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256">
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3411"
-         width="3.1750002"
-         height="3.1749992"
-         x="58.208332"
-         y="62.177082" />
+         style="fill:#0400ff;fill-opacity:1;stroke:none;stroke-width:0.273861;stroke-linecap:round"
+         id="rect851-4-6-9"
+         height="3.1750026"
+         x="26.722918"
+         y="70.114586"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256"
+         width="2.6459999" />
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435"
-         width="0.26458094"
-         height="2.9104178"
-         x="61.118752"
-         y="62.441666" />
+         style="fill:#00f9ff;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect1921"
+         width="0.26458332"
+         height="3.175"
+         x="26.458332"
+         y="70.114586" />
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-7"
-         width="0.52916545"
-         height="2.9104178"
-         x="58.472916"
-         y="62.441666" />
-      <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-6"
-         width="0.52916545"
-         height="2.9104178"
-         x="59.795834"
-         y="62.441666" />
+         style="fill:#00f9ff;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect1945"
+         width="0.26458332"
+         height="3.175"
+         x="29.36875"
+         y="70.114586" />
+      <path
+         style="fill:#00f9ff;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+         d="m 26.722916,72.760416 1.058334,-1.058334 -1.058334,-1.058333 v -0.529167 l 1.322917,1.322917 1.322917,-1.322917 v 0.529167 l -1.058334,1.058333 1.058334,1.058334 v 0.529166 l -1.322917,-1.322916 -1.322917,1.322916 z"
+         id="path1980" />
     </g>
     <g
-       id="g4667-8"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\end4.png"
+       id="g2337"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\floor.png"
        inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="rotate(180,61.383333,65.352082)">
+       inkscape:export-ydpi="256">
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3411-76"
-         width="3.1750002"
-         height="3.1749992"
-         x="58.208332"
-         y="62.177082" />
+         style="fill:#00f9ff;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect1921-9"
+         width="0.26458332"
+         height="3.175"
+         x="74.083397"
+         y="-29.633156"
+         transform="rotate(89.999865)" />
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-01"
-         width="0.26458094"
-         height="2.9104178"
-         x="61.118752"
-         y="62.441666" />
+         style="fill:#00f9ff;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect1945-1"
+         width="0.26458332"
+         height="3.175"
+         x="76.99382"
+         y="-29.633156"
+         transform="rotate(89.999865)" />
+      <path
+         style="fill:#00f9ff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 26.987501,74.347921 1.058336,1.058331 1.058331,-1.058336 0.529167,-10e-7 -1.322914,1.32292 1.32292,1.322914 -0.529167,1e-6 -1.058336,-1.058332 -1.058331,1.058337 -0.529166,1e-6 1.322913,-1.32292 -1.322919,-1.322914 z"
+         id="path1980-3" />
+      <path
+         id="path1980-3-8"
+         style="fill:#00f9ff;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 106 281 L 111 286 L 106 291 L 108 291 L 112 287 L 112 285 L 108 281 L 106 281 z "
+         transform="scale(0.26458333)" />
+      <path
+         id="path1980-3-4"
+         style="fill:#00f9ff;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 104 281 L 100 285 L 100 287 L 104 291 L 106 291 L 101 286 L 106 281 L 104 281 z "
+         transform="scale(0.26458333)" />
+    </g>
+    <path
+       id="rect1921-9-4"
+       style="fill:url(#linearGradient2753);fill-opacity:1;stroke-width:0.245669;stroke-linecap:round"
+       d="M 100 295 L 100 296 L 102 298 L 100 300 L 100 302 L 102 304 L 100 306 L 102 306 L 103 305 L 104 306 L 106 306 L 104 304 L 106 302 L 108 304 L 106 306 L 107 307 L 109 305 L 110 306 L 112 306 L 110 304 L 112 302 L 112 300 L 110 298 L 112 296 L 112 295 L 100 295 z M 102 296 L 104 296 L 103 297 L 102 296 z M 106 296 L 108 298 L 106 300 L 104 298 L 106 296 z M 108 296 L 110 296 L 109 297 L 108 296 z M 103 299 L 105 301 L 103 303 L 101 301 L 103 299 z M 109 299 L 111 301 L 109 303 L 107 301 L 109 299 z "
+       transform="scale(0.26458333)"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\floorfall.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256" />
+    <g
+       id="g2943"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\web.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-7-2"
-         width="0.52916545"
-         height="2.9104178"
-         x="58.472916"
-         y="62.441666" />
+         style="fill:none;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-linecap:round"
+         id="rect851-4-6-7"
+         width="3.1750026"
+         height="3.1750026"
+         x="30.42708"
+         y="74.083328"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256" />
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-6-3"
-         width="0.52916545"
-         height="2.9104178"
-         x="59.795834"
-         y="62.441666" />
+         style="fill:#ff00f1;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect2383"
+         width="0.26458332"
+         height="3.175"
+         x="31.882292"
+         y="74.083336" />
     </g>
     <g
-       id="g4667-8-9"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\end3.png"
+       id="g9569"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\spider.png"
        inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="matrix(1,0,0,-1,-2.5431316e-7,130.70416)">
+       inkscape:export-ydpi="256">
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3411-76-0"
-         width="3.1750002"
-         height="3.1749992"
-         x="58.208332"
-         y="62.177082" />
+         style="fill:#ff00f1;fill-opacity:0;stroke:none;stroke-width:0.3;stroke-linecap:round"
+         id="rect851-4-6-7-7"
+         width="3.1750026"
+         height="3.1750026"
+         x="34.395828"
+         y="74.083328"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         inkscape:export-xdpi="256"
+         inkscape:export-ydpi="256" />
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-01-5"
-         width="0.26458094"
-         height="2.9104178"
-         x="61.118752"
-         y="62.441666" />
-      <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-7-2-7"
-         width="0.52916545"
-         height="2.9104178"
-         x="58.472916"
-         y="62.441666" />
-      <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-6-3-3"
-         width="0.52916545"
-         height="2.9104178"
-         x="59.795834"
-         y="62.441666" />
+         style="fill:#ff00f1;fill-opacity:1;stroke:none;stroke-width:0.0562916;stroke-linecap:round"
+         id="rect2383-2"
+         width="0.26458332"
+         height="2.3812456"
+         x="35.851044"
+         y="74.083336" />
+      <circle
+         style="fill:url(#radialGradient3375);fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-linecap:round"
+         id="path3365"
+         cx="35.983334"
+         cy="76.332291"
+         r="0.39687499" />
+      <path
+         style="fill:url(#radialGradient3418);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 35.71875,75.406249 -0.79375,-0.529167 -0.529167,-0.79375 0.396876,0.79375 0.926041,0.79375 v -0.264583"
+         id="path3410"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:url(#radialGradient3418-8);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 36.247918,75.406249 0.79375,-0.529167 0.529167,-0.79375 -0.396876,0.79375 -0.926041,0.79375 v -0.264583"
+         id="path3410-7"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:url(#radialGradient3418-5);fill-opacity:1;stroke:none;stroke-width:0.231525px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 35.718751,75.641922 -0.707836,-0.235673 -0.583979,-0.573083 0.488425,0.616997 0.870643,0.441339 -0.06725,-0.24958"
+         id="path3410-0"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:url(#radialGradient3418-5-6);fill-opacity:1;stroke:none;stroke-width:0.231525px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 35.718751,75.935416 -0.707836,0.235673 -0.583979,0.573083 0.488425,-0.616997 0.870643,-0.441339 -0.06725,0.24958"
+         id="path3410-0-8"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:url(#radialGradient3418-5-6-4);fill-opacity:1;stroke:none;stroke-width:0.231525px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 35.851043,75.935416 -0.579727,0.469564 0.05572,0.786248 -0.160612,-0.79375 0.659799,-0.71935 0.02482,0.257287"
+         id="path3410-0-8-6"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:url(#radialGradient3418-5-6-4-3);fill-opacity:1;stroke:none;stroke-width:0.231525px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 36.115626,75.935416 0.579727,0.469564 -0.05572,0.786248 0.160612,-0.79375 -0.659799,-0.71935 -0.02482,0.257287"
+         id="path3410-0-8-6-3"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:url(#radialGradient3418-5-6-0);fill-opacity:1;stroke:none;stroke-width:0.231525px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 36.247918,75.935416 0.707836,0.235673 0.583979,0.573083 -0.488425,-0.616997 -0.870643,-0.441339 0.06725,0.24958"
+         id="path3410-0-8-4"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:url(#radialGradient3418-5-3);fill-opacity:1;stroke:none;stroke-width:0.231525px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 36.247918,75.670832 0.707836,-0.235673 0.583979,-0.573083 -0.488425,0.616997 -0.870643,0.441339 0.06725,-0.24958"
+         id="path3410-0-0"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:url(#radialGradient3022);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 35.983333,74.612499 c 0,0 -0.661458,0.529167 -0.661458,0.79375 0,0.264583 0.264583,0.529167 0.661458,0.529167 0.396875,0 0.661458,-0.264584 0.661458,-0.529167 0,-0.264583 -0.661458,-0.79375 -0.661458,-0.79375 z"
+         id="path3014" />
     </g>
     <g
-       id="g4667-8-9-0"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\end2.png"
+       id="g9082"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\conveyor1.png"
        inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="matrix(-1,-2.1401814e-6,-2.1401814e-6,1,122.7668,1.2650575e-4)">
+       inkscape:export-ydpi="256">
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3411-76-0-9"
-         width="3.1750002"
-         height="3.1749992"
-         x="58.208332"
-         y="62.177082" />
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8308"
+         width="0.79374999"
+         height="0.52916664"
+         x="46.302082"
+         y="68.791664" />
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-01-5-2"
-         width="0.26458094"
-         height="2.9104178"
-         x="61.118752"
-         y="62.441666" />
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8310"
+         width="0.79374999"
+         height="0.52916664"
+         x="47.889584"
+         y="68.791664" />
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-7-2-7-8"
-         width="0.52916545"
-         height="2.9104178"
-         x="58.472916"
-         y="62.441666" />
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8600"
+         width="0.26458332"
+         height="0.26458332"
+         x="46.302082"
+         y="66.410416" />
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-6-3-3-9"
-         width="0.52916545"
-         height="2.9104178"
-         x="59.795834"
-         y="62.441666" />
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8602"
+         width="0.26458332"
+         height="0.26458332"
+         x="46.831249"
+         y="66.410416" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0726721;stroke-linecap:round"
+         id="rect8604"
+         width="1.322915"
+         height="0.79374999"
+         x="47.360416"
+         y="66.145836" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8606"
+         width="0.26458332"
+         height="0.26458332"
+         x="48.947918"
+         y="66.410416" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8600-5"
+         width="0.26458332"
+         height="0.26458332"
+         x="49.212498"
+         y="67.733337" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8602-6"
+         width="0.26458332"
+         height="0.26458332"
+         x="46.566669"
+         y="67.73333" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0726721;stroke-linecap:round"
+         id="rect8604-9"
+         width="1.322915"
+         height="0.79374999"
+         x="47.095837"
+         y="67.46875" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8606-3"
+         width="0.26458332"
+         height="0.26458332"
+         x="48.683338"
+         y="67.73333" />
+    </g>
+    <g
+       id="g9120"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\conveyor4.png"
+       inkscape:export-xdpi="256"
+       inkscape:export-ydpi="256">
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8308-2"
+         width="0.79374999"
+         height="0.52916664"
+         x="50.270832"
+         y="72.760414" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8310-5"
+         width="0.79374999"
+         height="0.52916664"
+         x="51.858334"
+         y="72.760414" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8600-8"
+         width="0.26458332"
+         height="0.26458332"
+         x="51.064583"
+         y="70.379166" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8602-3"
+         width="0.26458332"
+         height="0.26458332"
+         x="51.59375"
+         y="70.379166" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0726721;stroke-linecap:round"
+         id="rect8604-8"
+         width="1.322915"
+         height="0.79374999"
+         x="52.122917"
+         y="70.114586" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8606-5"
+         width="0.26458332"
+         height="0.26458332"
+         x="50.535416"
+         y="70.379166" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8600-5-6"
+         width="0.26458332"
+         height="0.26458332"
+         x="52.387497"
+         y="71.702087" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8602-6-5"
+         width="0.26458332"
+         height="0.26458332"
+         x="52.916664"
+         y="71.702087" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0726721;stroke-linecap:round"
+         id="rect8604-9-2"
+         width="1.322915"
+         height="0.79374999"
+         x="50.270836"
+         y="71.4375" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8606-3-0"
+         width="0.26458332"
+         height="0.26458332"
+         x="51.858337"
+         y="71.70208" />
     </g>
     <g
        id="g9094"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\end1inv.png"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\conveyor2.png"
        inkscape:export-xdpi="256"
        inkscape:export-ydpi="256">
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3411-7"
-         width="3.1750002"
-         height="3.1749992"
-         x="58.208332"
-         y="70.114586"
-         inkscape:export-filename="C:\Dev\Platform Game\level2\end1inv.png"
-         inkscape:export-xdpi="256"
-         inkscape:export-ydpi="256" />
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8308-3"
+         width="0.79374999"
+         height="0.52916664"
+         x="50.270836"
+         y="68.791664" />
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-2"
-         width="0.26458094"
-         height="2.9104178"
-         x="61.118752"
-         y="70.379166" />
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8310-1"
+         width="0.79374999"
+         height="0.52916664"
+         x="51.858337"
+         y="68.791664" />
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-7-0"
-         width="0.52916545"
-         height="2.9104178"
-         x="58.472916"
-         y="70.379166" />
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8600-3"
+         width="0.26458332"
+         height="0.26458332"
+         x="52.652081"
+         y="66.410416" />
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-6-4"
-         width="0.52916545"
-         height="2.9104178"
-         x="59.795834"
-         y="70.379166" />
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8602-7"
+         width="0.26458332"
+         height="0.26458332"
+         x="53.181248"
+         y="66.410416" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0726721;stroke-linecap:round"
+         id="rect8604-6"
+         width="1.322915"
+         height="0.79374999"
+         x="50.535419"
+         y="66.145836" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8606-6"
+         width="0.26458332"
+         height="0.26458332"
+         x="52.122921"
+         y="66.410416" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8600-5-2"
+         width="0.26458332"
+         height="0.26458332"
+         x="50.799999"
+         y="67.73333" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8602-6-4"
+         width="0.26458332"
+         height="0.26458332"
+         x="51.329166"
+         y="67.73333" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0726721;stroke-linecap:round"
+         id="rect8604-9-6"
+         width="1.322915"
+         height="0.79374999"
+         x="51.858334"
+         y="67.46875" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8606-3-8"
+         width="0.26458332"
+         height="0.26458332"
+         x="50.270832"
+         y="67.733337" />
     </g>
     <g
-       id="g9094-4"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\end4inv.png"
+       id="g9108"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\conveyor3.png"
        inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="rotate(-179.99971,61.383334,73.289579)">
+       inkscape:export-ydpi="256">
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3411-7-2"
-         width="3.1750002"
-         height="3.1749992"
-         x="58.208332"
-         y="70.114586"
-         inkscape:export-filename="C:\Dev\Platform Game\level2\end1inv.png"
-         inkscape:export-xdpi="256"
-         inkscape:export-ydpi="256" />
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8308-3-8"
+         width="0.79374999"
+         height="0.52916664"
+         x="46.302082"
+         y="72.760414" />
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-2-4"
-         width="0.26458094"
-         height="2.9104178"
-         x="61.118752"
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8310-1-6"
+         width="0.79374999"
+         height="0.52916664"
+         x="47.889584"
+         y="72.760414" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8600-3-6"
+         width="0.26458332"
+         height="0.26458332"
+         x="47.88958"
          y="70.379166" />
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-7-0-7"
-         width="0.52916545"
-         height="2.9104178"
-         x="58.472916"
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8602-7-6"
+         width="0.26458332"
+         height="0.26458332"
+         x="48.418747"
          y="70.379166" />
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-6-4-4"
-         width="0.52916545"
-         height="2.9104178"
-         x="59.795834"
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0562916;stroke-linecap:round"
+         id="rect8604-6-2"
+         width="0.79375088"
+         height="0.79374999"
+         x="46.302082"
+         y="70.114586" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0459618;stroke-linecap:round"
+         id="rect8604-6-2-4"
+         width="0.52916509"
+         height="0.79374999"
+         x="48.947918"
+         y="70.114586" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8606-6-0"
+         width="0.26458332"
+         height="0.26458332"
+         x="47.36042"
          y="70.379166" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8600-5-2-4"
+         width="0.26458332"
+         height="0.26458332"
+         x="47.625"
+         y="71.70208" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8602-6-4-5"
+         width="0.26458332"
+         height="0.26458332"
+         x="48.154167"
+         y="71.70208" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0562916;stroke-linecap:round"
+         id="rect8604-9-6-5"
+         width="0.79375094"
+         height="0.79374999"
+         x="48.683334"
+         y="71.4375" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0459619;stroke-linecap:round"
+         id="rect8604-9-6-5-6"
+         width="0.52916658"
+         height="0.79374999"
+         x="46.302082"
+         y="71.4375" />
+      <rect
+         style="fill:#e32424;fill-opacity:1;stroke-width:0.0649999;stroke-linecap:round"
+         id="rect8606-3-8-2"
+         width="0.26458332"
+         height="0.26458332"
+         x="47.095833"
+         y="71.702087" />
     </g>
     <g
-       id="g9094-4-2"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\end3inv.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="matrix(1,-5.0614548e-6,-5.0614548e-6,-1,3.5672959e-4,146.57946)">
+       id="g11919"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\end.png"
+       inkscape:export-xdpi="511.99869"
+       inkscape:export-ydpi="511.99869">
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3411-7-2-4"
-         width="3.1750002"
-         height="3.1749992"
-         x="58.208332"
-         y="70.114586"
-         inkscape:export-filename="C:\Dev\Platform Game\level2\end1inv.png"
+         style="fill:#0c00d2;fill-opacity:1;stroke:none;stroke-width:0.287228;stroke-linecap:round"
+         id="rect851-4-6-95"
+         width="3.1750014"
+         height="2.9104168"
+         x="38.364582"
+         y="74.21563"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
          inkscape:export-xdpi="256"
          inkscape:export-ydpi="256" />
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-2-4-4"
-         width="0.26458094"
-         height="2.9104178"
-         x="61.118752"
-         y="70.379166" />
+         style="fill:#efff00;fill-opacity:1;stroke-width:0.0325;stroke-linecap:round"
+         id="rect9754"
+         width="3.1750014"
+         height="0.13229172"
+         x="38.364582"
+         y="74.083336" />
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-7-0-7-2"
-         width="0.52916545"
-         height="2.9104178"
-         x="58.472916"
-         y="70.379166" />
-      <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-6-4-4-0"
-         width="0.52916545"
-         height="2.9104178"
-         x="59.795834"
-         y="70.379166" />
+         style="fill:#efff00;fill-opacity:1;stroke-width:0.0325;stroke-linecap:round"
+         id="rect10108"
+         width="3.1750014"
+         height="0.13229172"
+         x="38.364582"
+         y="77.126045" />
+      <path
+         id="path10143"
+         style="color:#000000;fill:#fbff00;fill-opacity:1;stroke-width:0.500001;-inkscape-stroke:none"
+         d="m 40.134502,74.215626 c 0.03404,0.03698 0.04883,0.08494 0.04883,0.132809 0,0.09922 -0.06247,0.198178 -0.231511,0.198178 -0.227835,0 -0.363286,0.16459 -0.363286,0.329954 0,0.165365 0.135451,0.330989 0.363286,0.330989 0.16904,0 0.231511,0.09922 0.231511,0.198437 0,0.09922 -0.06247,0.199213 -0.231511,0.199213 -0.227835,0 -0.363286,0.16459 -0.363286,0.329954 0,0.165365 0.135451,0.331246 0.363286,0.331246 0.16904,0 0.231511,0.09896 0.231511,0.198179 0,0.09922 -0.06247,0.19818 -0.231511,0.19818 -0.227835,0 -0.363286,0.165622 -0.363286,0.330987 0,0.04523 0.01033,0.09041 0.02971,0.132292 h 0.150637 c -0.03396,-0.03667 -0.04857,-0.08446 -0.04857,-0.132292 0,-0.09922 0.06247,-0.198178 0.23151,-0.198179 0.227836,0 0.364318,-0.165623 0.364318,-0.330988 0,-0.165364 -0.136482,-0.331246 -0.364318,-0.331246 -0.16904,0 -0.23151,-0.09896 -0.23151,-0.198179 0,-0.09922 0.06247,-0.198179 0.23151,-0.198179 0.227836,0 0.364318,-0.165624 0.364318,-0.330988 0,-0.165364 -0.136482,-0.330213 -0.364318,-0.330213 -0.16904,0 -0.23151,-0.09999 -0.23151,-0.199213 0,-0.09922 0.06247,-0.198178 0.23151,-0.198178 0.227836,0 0.364318,-0.164589 0.364318,-0.329954 0,-0.04544 -0.01056,-0.09075 -0.03023,-0.132809 z" />
+      <path
+         id="path10143-9"
+         style="color:#000000;fill:#fbff00;fill-opacity:1;stroke-width:0.5;-inkscape-stroke:none"
+         d="m 40.84686,74.215626 c 0.03404,0.03697 0.04884,0.08494 0.04884,0.132809 0,0.09922 -0.06247,0.198178 -0.23151,0.198178 -0.227836,0 -0.363287,0.164589 -0.363287,0.329954 0,0.165365 0.135451,0.330988 0.363287,0.330988 0.169039,0 0.23151,0.09922 0.23151,0.198438 0,0.09922 -0.06247,0.199213 -0.23151,0.199213 -0.227836,0 -0.363287,0.16459 -0.363287,0.329954 0,0.165365 0.135451,0.331245 0.363287,0.331245 0.169039,0 0.23151,0.09896 0.23151,0.19818 0,0.09922 -0.06247,0.19818 -0.23151,0.19818 -0.227836,0 -0.363287,0.165622 -0.363287,0.330987 0,0.04523 0.01033,0.09041 0.02972,0.132292 h 0.150637 c -0.03396,-0.03667 -0.04857,-0.08446 -0.04857,-0.132292 0,-0.09922 0.06247,-0.198178 0.231511,-0.19818 0.227835,0 0.364318,-0.165622 0.364318,-0.330987 0,-0.165365 -0.136483,-0.331247 -0.364318,-0.331247 -0.16904,0 -0.231511,-0.09896 -0.231511,-0.198178 0,-0.09922 0.06247,-0.198179 0.231511,-0.198179 0.227835,0 0.364318,-0.165624 0.364318,-0.330988 0,-0.165365 -0.136483,-0.330213 -0.364318,-0.330213 -0.16904,0 -0.231511,-0.09999 -0.231511,-0.199213 0,-0.09922 0.06247,-0.198178 0.231511,-0.198178 0.227835,0 0.364318,-0.16459 0.364318,-0.329954 0,-0.04544 -0.01055,-0.09075 -0.03023,-0.132809 z" />
+      <path
+         id="path10143-6"
+         style="color:#000000;fill:#fbff00;fill-opacity:1;stroke-width:0.500001;-inkscape-stroke:none"
+         d="m 41.539584,74.480727 c -0.03652,0.03927 -0.09526,0.06589 -0.182676,0.06589 -0.227836,0 -0.363285,0.16459 -0.363285,0.329954 0,0.165365 0.135449,0.330989 0.363285,0.330989 0.08736,0 0.146154,0.02658 0.182676,0.06589 v -0.155546 c -0.05143,-0.02633 -0.112718,-0.04212 -0.182676,-0.04212 -0.16904,0 -0.231511,-0.09999 -0.231511,-0.199213 0,-0.09922 0.06247,-0.198178 0.231511,-0.198178 0.06995,0 0.131254,-0.01557 0.182676,-0.04186 z m 0,1.058074 c -0.03652,0.03954 -0.09526,0.0664 -0.182676,0.0664 -0.227836,0 -0.363285,0.16459 -0.363285,0.329954 0,0.165365 0.135449,0.331246 0.363285,0.331246 0.08736,0 0.146154,0.02639 0.182676,0.06563 V 76.17545 c -0.05142,-0.02646 -0.112726,-0.04212 -0.182676,-0.04212 -0.16904,0 -0.231511,-0.09896 -0.231511,-0.198179 0,-0.09922 0.06247,-0.198179 0.231511,-0.198179 0.06995,0 0.131254,-0.01569 0.182676,-0.04212 z m 0,1.058076 c -0.03652,0.03928 -0.09526,0.06589 -0.182676,0.06589 -0.227836,0 -0.363285,0.165622 -0.363285,0.330987 0,0.04523 0.01033,0.09041 0.02971,0.132292 h 0.150636 c -0.03396,-0.03667 -0.04858,-0.08446 -0.04858,-0.132292 0,-0.09922 0.06247,-0.198178 0.231511,-0.198179 0.06995,0 0.131254,-0.01569 0.182676,-0.04212 z" />
+      <path
+         id="path10143-7"
+         style="color:#000000;fill:#fbff00;fill-opacity:1;stroke-width:0.5;-inkscape-stroke:none"
+         d="m 39.391652,74.215626 c 0.03404,0.03697 0.04883,0.08494 0.04883,0.132809 0,0.09922 -0.06247,0.198178 -0.231511,0.198178 -0.227835,0 -0.363286,0.16459 -0.363286,0.329954 0,0.165365 0.135451,0.330989 0.363286,0.330989 0.16904,0 0.231511,0.09922 0.231511,0.198438 0,0.09922 -0.06247,0.199212 -0.231511,0.199212 -0.227835,0 -0.363286,0.16459 -0.363286,0.329954 0,0.165365 0.135451,0.331245 0.363286,0.331245 0.16904,0 0.231511,0.09896 0.231511,0.19818 0,0.09922 -0.06247,0.19818 -0.231511,0.19818 -0.227835,0 -0.363286,0.165622 -0.363286,0.330987 0,0.04523 0.01033,0.09041 0.02972,0.132292 h 0.150636 c -0.03396,-0.03667 -0.04857,-0.08446 -0.04857,-0.132292 0,-0.09922 0.06247,-0.198178 0.23151,-0.198179 0.227836,0 0.364319,-0.165623 0.364319,-0.330988 0,-0.165365 -0.136483,-0.331247 -0.364319,-0.331247 -0.169039,0 -0.23151,-0.09896 -0.23151,-0.198178 0,-0.09922 0.06247,-0.198179 0.23151,-0.198179 0.227836,0 0.364319,-0.165624 0.364319,-0.330987 0,-0.165365 -0.136483,-0.330214 -0.364319,-0.330214 -0.169039,0 -0.23151,-0.09999 -0.23151,-0.199213 0,-0.09922 0.06247,-0.198178 0.23151,-0.198178 0.227836,0 0.364319,-0.164589 0.364319,-0.329954 0,-0.04544 -0.01056,-0.09074 -0.03023,-0.132809 z" />
+      <path
+         id="path10143-2"
+         style="color:#000000;fill:#fbff00;fill-opacity:1;stroke-width:0.500001;-inkscape-stroke:none"
+         d="m 38.629166,74.215626 c 0.03404,0.03697 0.04883,0.08494 0.04883,0.132809 0,0.09922 -0.06247,0.198178 -0.23151,0.198178 -0.02878,0 -0.05616,0.0028 -0.08191,0.0078 v 0.133325 c 0.02395,-0.0059 0.05118,-0.0093 0.08191,-0.0093 0.227835,0 0.364319,-0.164589 0.364319,-0.329954 0,-0.04544 -0.01055,-0.09075 -0.03023,-0.132809 z m -0.264584,0.850853 v 0.133325 c 0.02574,0.005 0.05313,0.0078 0.08191,0.0078 0.169039,0 0.23151,0.09922 0.23151,0.198437 0,0.09922 -0.06247,0.199213 -0.23151,0.199213 -0.02878,0 -0.05616,0.0028 -0.08191,0.0078 v 0.133325 c 0.02395,-0.0059 0.05118,-0.0093 0.08191,-0.0093 0.227835,0 0.364319,-0.165624 0.364319,-0.330988 0,-0.165364 -0.136484,-0.330213 -0.364319,-0.330213 -0.03072,0 -0.05796,-0.0033 -0.08191,-0.0093 z m 0,1.057558 v 0.134618 c 0.02574,0.005 0.05313,0.0078 0.08191,0.0078 0.169039,0 0.23151,0.09896 0.23151,0.198179 0,0.09922 -0.06247,0.19818 -0.23151,0.19818 -0.02878,0 -0.05616,0.0028 -0.08191,0.0078 v 0.134359 c 0.02395,-0.0059 0.05118,-0.0093 0.08191,-0.0093 0.227835,0 0.364319,-0.165623 0.364319,-0.330988 0,-0.165364 -0.136484,-0.331246 -0.364319,-0.331246 -0.03072,0 -0.05796,-0.0034 -0.08191,-0.0093 z" />
     </g>
     <g
-       id="g9094-4-2-6"
-       inkscape:export-filename="C:\Dev\Platform Game\level2\end2inv.png"
-       inkscape:export-xdpi="256"
-       inkscape:export-ydpi="256"
-       transform="matrix(-1,-4.3263601e-6,-4.3263601e-6,1,122.76697,2.5882889e-4)">
+       id="g11929"
+       inkscape:export-filename="C:\Dev\PlatformGame\level3\endinv.png"
+       inkscape:export-xdpi="511.99869"
+       inkscape:export-ydpi="511.99869">
       <rect
-         style="fill:#e324a1;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3411-7-2-4-7"
-         width="3.1750002"
-         height="3.1749992"
-         x="58.208332"
-         y="70.114586"
-         inkscape:export-filename="C:\Dev\Platform Game\level2\end1inv.png"
+         style="fill:#fff700;fill-opacity:1;stroke:none;stroke-width:0.287228;stroke-linecap:round"
+         id="rect851-4-6-95-2"
+         width="3.1750014"
+         height="2.9104168"
+         x="42.333332"
+         y="74.21563"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
          inkscape:export-xdpi="256"
          inkscape:export-ydpi="256" />
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0229808;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-2-4-4-2"
-         width="0.26458094"
-         height="2.9104178"
-         x="61.118752"
-         y="70.379166" />
+         style="fill:#0008fe;fill-opacity:1;stroke-width:0.0325;stroke-linecap:round"
+         id="rect9754-4"
+         width="3.1750014"
+         height="0.13229172"
+         x="42.333332"
+         y="74.083336" />
       <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-7-0-7-2-1"
-         width="0.52916545"
-         height="2.9104178"
-         x="58.472916"
-         y="70.379166" />
-      <rect
-         style="fill:#e0a1e3;fill-opacity:1;stroke-width:0.0324999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3435-6-4-4-0-8"
-         width="0.52916545"
-         height="2.9104178"
-         x="59.795834"
-         y="70.379166" />
+         style="fill:#0008fe;fill-opacity:1;stroke-width:0.0325;stroke-linecap:round"
+         id="rect10108-8"
+         width="3.1750014"
+         height="0.13229172"
+         x="42.333332"
+         y="77.126045" />
+      <path
+         id="path10143-0"
+         style="color:#000000;fill:#0008fe;fill-opacity:1;stroke-width:0.500001;-inkscape-stroke:none"
+         d="m 44.103252,74.215623 c 0.03404,0.03698 0.04883,0.08494 0.04883,0.132809 0,0.09922 -0.06247,0.198178 -0.231511,0.198178 -0.227835,0 -0.363286,0.16459 -0.363286,0.329954 0,0.165365 0.135451,0.330989 0.363286,0.330989 0.16904,0 0.231511,0.09922 0.231511,0.198437 0,0.09922 -0.06247,0.199213 -0.231511,0.199213 -0.227835,0 -0.363286,0.16459 -0.363286,0.329954 0,0.165365 0.135451,0.331246 0.363286,0.331246 0.16904,0 0.231511,0.09896 0.231511,0.198179 0,0.09922 -0.06247,0.19818 -0.231511,0.19818 -0.227835,0 -0.363286,0.165622 -0.363286,0.330987 0,0.04523 0.01033,0.09041 0.02971,0.132292 h 0.150637 c -0.03396,-0.03667 -0.04857,-0.08446 -0.04857,-0.132292 0,-0.09922 0.06247,-0.198178 0.23151,-0.198179 0.227836,0 0.364318,-0.165623 0.364318,-0.330988 0,-0.165364 -0.136482,-0.331246 -0.364318,-0.331246 -0.16904,0 -0.23151,-0.09896 -0.23151,-0.198179 0,-0.09922 0.06247,-0.198179 0.23151,-0.198179 0.227836,0 0.364318,-0.165624 0.364318,-0.330988 0,-0.165364 -0.136482,-0.330213 -0.364318,-0.330213 -0.16904,0 -0.23151,-0.09999 -0.23151,-0.199213 0,-0.09922 0.06247,-0.198178 0.23151,-0.198178 0.227836,0 0.364318,-0.164589 0.364318,-0.329954 0,-0.04544 -0.01056,-0.09075 -0.03023,-0.132809 z" />
+      <path
+         id="path10143-9-5"
+         style="color:#000000;fill:#0008fe;fill-opacity:1;stroke-width:0.5;-inkscape-stroke:none"
+         d="m 44.81561,74.215623 c 0.03404,0.03697 0.04884,0.08494 0.04884,0.132809 0,0.09922 -0.06247,0.198178 -0.23151,0.198178 -0.227836,0 -0.363287,0.164589 -0.363287,0.329954 0,0.165365 0.135451,0.330988 0.363287,0.330988 0.169039,0 0.23151,0.09922 0.23151,0.198438 0,0.09922 -0.06247,0.199213 -0.23151,0.199213 -0.227836,0 -0.363287,0.16459 -0.363287,0.329954 0,0.165365 0.135451,0.331245 0.363287,0.331245 0.169039,0 0.23151,0.09896 0.23151,0.19818 0,0.09922 -0.06247,0.19818 -0.23151,0.19818 -0.227836,0 -0.363287,0.165622 -0.363287,0.330987 0,0.04523 0.01033,0.09041 0.02972,0.132292 h 0.150637 c -0.03396,-0.03667 -0.04857,-0.08446 -0.04857,-0.132292 0,-0.09922 0.06247,-0.198178 0.231511,-0.19818 0.227835,0 0.364318,-0.165622 0.364318,-0.330987 0,-0.165365 -0.136483,-0.331247 -0.364318,-0.331247 -0.16904,0 -0.231511,-0.09896 -0.231511,-0.198178 0,-0.09922 0.06247,-0.198179 0.231511,-0.198179 0.227835,0 0.364318,-0.165624 0.364318,-0.330988 0,-0.165365 -0.136483,-0.330213 -0.364318,-0.330213 -0.16904,0 -0.231511,-0.09999 -0.231511,-0.199213 0,-0.09922 0.06247,-0.198178 0.231511,-0.198178 0.227835,0 0.364318,-0.16459 0.364318,-0.329954 0,-0.04544 -0.01055,-0.09075 -0.03023,-0.132809 z" />
+      <path
+         id="path10143-6-2"
+         style="color:#000000;fill:#0008fe;fill-opacity:1;stroke-width:0.500001;-inkscape-stroke:none"
+         d="m 45.508334,74.480724 c -0.03652,0.03927 -0.09526,0.06589 -0.182676,0.06589 -0.227836,0 -0.363285,0.16459 -0.363285,0.329954 0,0.165365 0.135449,0.330989 0.363285,0.330989 0.08736,0 0.146154,0.02658 0.182676,0.06589 v -0.155546 c -0.05143,-0.02633 -0.112718,-0.04212 -0.182676,-0.04212 -0.16904,0 -0.231511,-0.09999 -0.231511,-0.199213 0,-0.09922 0.06247,-0.198178 0.231511,-0.198178 0.06995,0 0.131254,-0.01557 0.182676,-0.04186 z m 0,1.058074 c -0.03652,0.03954 -0.09526,0.0664 -0.182676,0.0664 -0.227836,0 -0.363285,0.16459 -0.363285,0.329954 0,0.165365 0.135449,0.331246 0.363285,0.331246 0.08736,0 0.146154,0.02639 0.182676,0.06563 v -0.156581 c -0.05142,-0.02646 -0.112726,-0.04212 -0.182676,-0.04212 -0.16904,0 -0.231511,-0.09896 -0.231511,-0.198179 0,-0.09922 0.06247,-0.198179 0.231511,-0.198179 0.06995,0 0.131254,-0.01569 0.182676,-0.04212 z m 0,1.058076 c -0.03652,0.03928 -0.09526,0.06589 -0.182676,0.06589 -0.227836,0 -0.363285,0.165622 -0.363285,0.330987 0,0.04523 0.01033,0.09041 0.02971,0.132292 h 0.150636 c -0.03396,-0.03667 -0.04858,-0.08446 -0.04858,-0.132292 0,-0.09922 0.06247,-0.198178 0.231511,-0.198179 0.06995,0 0.131254,-0.01569 0.182676,-0.04212 z" />
+      <path
+         id="path10143-7-6"
+         style="color:#000000;fill:#0008fe;fill-opacity:1;stroke-width:0.5;-inkscape-stroke:none"
+         d="m 43.360402,74.215623 c 0.03404,0.03697 0.04883,0.08494 0.04883,0.132809 0,0.09922 -0.06247,0.198178 -0.231511,0.198178 -0.227835,0 -0.363286,0.16459 -0.363286,0.329954 0,0.165365 0.135451,0.330989 0.363286,0.330989 0.16904,0 0.231511,0.09922 0.231511,0.198438 0,0.09922 -0.06247,0.199212 -0.231511,0.199212 -0.227835,0 -0.363286,0.16459 -0.363286,0.329954 0,0.165365 0.135451,0.331245 0.363286,0.331245 0.16904,0 0.231511,0.09896 0.231511,0.19818 0,0.09922 -0.06247,0.19818 -0.231511,0.19818 -0.227835,0 -0.363286,0.165622 -0.363286,0.330987 0,0.04523 0.01033,0.09041 0.02972,0.132292 h 0.150636 c -0.03396,-0.03667 -0.04857,-0.08446 -0.04857,-0.132292 0,-0.09922 0.06247,-0.198178 0.23151,-0.198179 0.227836,0 0.364319,-0.165623 0.364319,-0.330988 0,-0.165365 -0.136483,-0.331247 -0.364319,-0.331247 -0.169039,0 -0.23151,-0.09896 -0.23151,-0.198178 0,-0.09922 0.06247,-0.198179 0.23151,-0.198179 0.227836,0 0.364319,-0.165624 0.364319,-0.330987 0,-0.165365 -0.136483,-0.330214 -0.364319,-0.330214 -0.169039,0 -0.23151,-0.09999 -0.23151,-0.199213 0,-0.09922 0.06247,-0.198178 0.23151,-0.198178 0.227836,0 0.364319,-0.164589 0.364319,-0.329954 0,-0.04544 -0.01056,-0.09074 -0.03023,-0.132809 z" />
+      <path
+         id="path10143-2-8"
+         style="color:#000000;fill:#0008fe;fill-opacity:1;stroke-width:0.500001;-inkscape-stroke:none"
+         d="m 42.597916,74.215623 c 0.03404,0.03697 0.04883,0.08494 0.04883,0.132809 0,0.09922 -0.06247,0.198178 -0.23151,0.198178 -0.02878,0 -0.05616,0.0028 -0.08191,0.0078 v 0.133325 c 0.02395,-0.0059 0.05118,-0.0093 0.08191,-0.0093 0.227835,0 0.364319,-0.164589 0.364319,-0.329954 0,-0.04544 -0.01055,-0.09075 -0.03023,-0.132809 z m -0.264584,0.850853 v 0.133325 c 0.02574,0.005 0.05313,0.0078 0.08191,0.0078 0.169039,0 0.23151,0.09922 0.23151,0.198437 0,0.09922 -0.06247,0.199213 -0.23151,0.199213 -0.02878,0 -0.05616,0.0028 -0.08191,0.0078 v 0.133325 c 0.02395,-0.0059 0.05118,-0.0093 0.08191,-0.0093 0.227835,0 0.364319,-0.165624 0.364319,-0.330988 0,-0.165364 -0.136484,-0.330213 -0.364319,-0.330213 -0.03072,0 -0.05796,-0.0033 -0.08191,-0.0093 z m 0,1.057558 v 0.134618 c 0.02574,0.005 0.05313,0.0078 0.08191,0.0078 0.169039,0 0.23151,0.09896 0.23151,0.198179 0,0.09922 -0.06247,0.19818 -0.23151,0.19818 -0.02878,0 -0.05616,0.0028 -0.08191,0.0078 v 0.134359 c 0.02395,-0.0059 0.05118,-0.0093 0.08191,-0.0093 0.227835,0 0.364319,-0.165623 0.364319,-0.330988 0,-0.165364 -0.136484,-0.331246 -0.364319,-0.331246 -0.03072,0 -0.05796,-0.0034 -0.08191,-0.0093 z" />
     </g>
   </g>
 </svg>

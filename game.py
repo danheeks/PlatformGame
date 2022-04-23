@@ -24,9 +24,9 @@ levels = [
             [0, False, 288, 288, 272, 528],
         ],
         [
-         'brick','floor','thorn bush','','stalactite','floorfall','floorfall1','floorfall2',
-         'floorfall3','floorfall4','floorfall5','floorfall6','floorfall7','end1','end2','end3',
-         'end4','end1inv','end2inv','end3inv','end4inv','key',''
+         'brick','floor','thorn bush','','stalactite','floorfall','','',
+         '','','','','','end','','',
+         '','endinv','','','','key',''
          ],
     [  
      # list of lines
@@ -58,9 +58,9 @@ levels = [
             [0, True, 976, 480, 400, 976],
         ],
         [
-         'brick','floor','','','stalactite','floorfall','floorfall1','floorfall2',
-         'floorfall3','floorfall4','floorfall5','floorfall6','floorfall7','end1','end2','end3',
-         'end4','end1inv','end2inv','end3inv','end4inv','paddle',''
+         'brick','floor','','','stalactite','floorfall','','',
+         '','','','','','end','','',
+         '','endinv','','','','paddle',''
          ],
     [  
      # list of lines
@@ -81,7 +81,42 @@ levels = [
     'A                            PQA',
     'ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBA',
     ],
-    ], # end of level 1
+    ], # end of level 2
+    
+          # level 3
+     [   
+       ['The Menagerie', 'level3',[0,0,0]],
+        [
+         # list of monsters
+            [0, True, 560, 160, 48, 560],
+            [0, False, 592, 160, 592, 976],
+            [0, True, 656, 480, 48, 656],
+        ],
+        [
+         'wall','floor','web','','spider','floorfall','','',
+         '','','','','','end','','',
+         '','endinv','','','','key',''
+         ],
+    [  
+     # list of lines
+    'A     V   E    V  C    V   E   A',
+    'A                 E            A',
+    'A                              A',
+    'A                              A',
+    'A                              A',
+    'ABBBBFFFFFFFFFFFFFFFFFFFFFFFFFFA',
+    'A                    V        VA',
+    'ABBBBBB                    BBBBA',
+    'AC                             A',
+    'AC    DDDDDD                   A',
+    'AC                       BBBBBBA',
+    'AE            BBBBB          NOA',
+    'A    BBBBBB                  PQA',
+    'A                    BBBBBBBBBBA',
+    'A                              A',
+    'ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBA',
+    ],
+    ], # end of level 2
     
      ]
 
@@ -105,7 +140,7 @@ keys_left = 1
 air = 2000
 score = 0
 high_score = 0
-level_number = 1
+level_number = 0
 conveyor = []
 level_title = ''
 background_color = pygame.Color(0,0,0)
@@ -190,6 +225,12 @@ def load_level():
             except Exception:
                 print(traceback.format_exc())
                 print('image_name = ' + image_name)
+                
+    # create floorfall images
+    for i in range(0,7):
+        images[6+i] = pygame.Surface((pixel_scale, pixel_scale), pygame.SRCALPHA)
+        images[6+i].blit(images[5],(0,4*(i+1)))        
+    
     conveyor = []
     for i in range(0,4):
         conveyor.append(pygame.image.load(image_folder_name + '/conveyor' + str(i+1) + '.png'))
@@ -589,7 +630,17 @@ class Man(Being):
         tests = [[i,j],[i+1,j],[i,j-1],[i+1,j-1]]
         for test in tests:
             on = on_flag(test[0], test[1])
-            if on != 0:
+            if on == 1:
+                # death, check with mask
+                man.update_mask()
+                img_char = level[test[1]][test[0]]
+                img = images[ord(img_char)-65]
+                mask = pygame.mask.from_surface(img)
+                shiftx = test[0]*pixel_scale
+                shifty = test[1]*pixel_scale
+                if man.mask.overlap(mask, (shiftx - man.image_shift[0], shifty - man.image_shift[1])):
+                    return 1
+            elif on != 0:
                 return on
         return 0
             
@@ -611,13 +662,14 @@ def draw_level(offset = [0,0]):
                 elif line[x] == 'W':
                     img = conveyor[3-(animation_index & 3)]
                 else:
-                    flash = False
-                    if ((animation_index & 3) > 1) and (keys_left == 0) and (line[x] >= 'N') and (line[x] <= 'Q'):
-                        flash = True
-                    img = images[ord(line[x])-65 + (4 if flash else 0)]
-                if pixel_scale != 32:
-                    img = pygame.transform.scale(img, (int(img.get_width() * pixel_scale/32), int(img.get_height() * pixel_scale/32)))
-                screen.blit(img, pos)
+                    img_char = line[x]
+                    if (animation_index & 3) > 1 and keys_left == 0 and img_char == 'N':
+                        img_char = 'R'
+                    img = images[ord(img_char)-65]
+                if img != None:
+                    if pixel_scale != 32:
+                        img = pygame.transform.scale(img, (int(img.get_width() * pixel_scale/32), int(img.get_height() * pixel_scale/32)))
+                    screen.blit(img, pos)
             if line[x] == 'V':
                 local_keys_left += 1
         y += pixel_scale
@@ -640,6 +692,7 @@ load_level()
 def draw_score():
     screen.blit(myfont.render("High Score " + "{:06d}".format(high_score), False, pygame.Color(255,255,255)),(0,580))
     screen.blit(myfont.render("Score " + "{:06d}".format(score), False, pygame.Color(255,255,255)),(512,580))
+    screen.blit(myfont.render("Keys " + "{:d}".format(keys_left), False, pygame.Color(255,255,255)),(512,612))
     
 man_for_lives = Man()
 
