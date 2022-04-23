@@ -125,7 +125,7 @@ blocks =      'ABCDEFGHIJKLMNOPQRSTUVW'
 wall_flags =  '1                      '
 floor_flags = '11 2 11111111         3'
 on_flags =    '  1 1        2222      '   # 1 = death,  2 = end
-jump_dir = [-16, -16, -14, -10, -8,   -6, -4, -2, 0, 0, 2, 4, 6,  8, 10, 14, 16,]
+jump_dir = [-16, -16, -14, -10, -8, -6, -4, -2, 0, 0, 2, 4, 6,  8, 10, 14, 16,]
 images = []
 pixel_scale = 32 # pixels per metre
 font_height = 30
@@ -145,7 +145,6 @@ conveyor = []
 level_title = ''
 background_color = pygame.Color(0,0,0)
 
-#GIRL_OFFSETS = [ [97, 356], [83, 352], [81, 356], [96, 377], [99, 378], [105, 379], [99, 386], [96, 379] ]
 GIRL_OFFSETS = [ [97, 348], [83, 351], [81, 356], [96, 365], [99, 361], [105, 365], [99, 375], [96, 366] ]
 GIRL_PIXEL_SCALE = 175
 DAN_OFFSETS = [ [178,470], [140, 475], [80,465], [110,464], [151,453], [120,459], [74, 459], [108, 465] ]
