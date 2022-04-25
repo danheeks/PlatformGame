@@ -18,7 +18,7 @@ h = screen.get_height()
 levels = [
           # level 1
      [   
-       ['Central Cavern', 'level1',[0,0,0]],
+       ['Central Cavern', 'level1',[0,0,0], 80, 480, False],
         [
          # list of monsters
             [0, False, 288, 288, 272, 528],
@@ -51,7 +51,7 @@ levels = [
     
           # level 2
      [   
-       ['The Cold Room', 'level2',[0,0,255]],
+       ['The Cold Room', 'level2',[0,0,255], 80, 480, False],
         [
          # list of monsters
             [0, True, 624, 160, 48, 624],
@@ -85,7 +85,7 @@ levels = [
     
           # level 3
      [   
-       ['The Menagerie', 'level3',[0,0,0]],
+       ['The Menagerie', 'level3',[0,0,0], 80, 480, False],
         [
          # list of monsters
             [0, True, 560, 160, 48, 560],
@@ -116,7 +116,41 @@ levels = [
     'A                              A',
     'ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBA',
     ],
-    ], # end of level 2
+    ], # end of level
+        
+          # level 4
+     [   
+       ['Abandoned Uranium Workings', 'level3',[0,0,0], 976, 480, True],
+        [
+         # list of monsters
+            [0, False, 48, 480, 48, 256],
+            [0, False, 288, 480, 288, 976],
+        ],
+        [
+         'wall','floor','web','','spider','floorfall','','',
+         '','','','','','end','','',
+         '','endinv','','','','key',''
+         ],
+    [  
+     # list of lines
+    'AV     E      AAAAAAAAAAAAAAAAAA',
+    'A           V            V   NOA',
+    'A                            PQA',
+    'A                  BBBBBB      A',
+    'A                          BBBBA',
+    'AB     B         B             A',
+    'A           BB  V    BBB      VA',
+    'AFFF                           A',
+    'A      BB                 BBB  A',
+    'A                 BBB          A',
+    'AWWW                          BA',
+    'A           BBB       BBB      A',
+    'A     BB               E    BBBA',
+    'A                 BB           A',
+    'A                              A',
+    'ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBA',
+    ],
+    ], # end of level
     
      ]
 
@@ -140,7 +174,7 @@ keys_left = 1
 air = 2000
 score = 0
 high_score = 0
-level_number = 0
+level_number = 3
 conveyor = []
 level_title = ''
 background_color = pygame.Color(0,0,0)
@@ -206,7 +240,10 @@ def load_level():
         for i in range(0,32):
             line_list.append(line[i])
         level.append(line_list)
-    man = Man()
+    man_x = levels[level_number][0][3]
+    man_y = levels[level_number][0][4]
+    leftward = levels[level_number][0][5]
+    man = Man(man_x, man_y, leftward)
     monsters = []
     for m in levels[level_number][1]:
         monsters.append(Monster(m[0], m[1], m[2], m[3], m[4], m[5]))
@@ -369,11 +406,12 @@ def on_end_level():
     load_level()
 
 class Being(pygame.sprite.Sprite):
-    def __init__(self):
+    def __init__(self, x, y, leftward):
         pygame.sprite.Sprite.__init__(self)
+        self.leftward = leftward
         self.images = []
         self.leftward_images = []
-        self.pos = [80,480]
+        self.pos = [x, y]
         self.move_step = pixel_scale * 0.25
         self.leftward = False
         self.move_dir = 0
@@ -445,9 +483,7 @@ class Being(pygame.sprite.Sprite):
 
 class Monster(Being):
     def __init__(self, version, leftward, x, y, minx, max_x):
-        Being.__init__(self)
-        self.pos = [x, y]
-        self.leftward = leftward
+        Being.__init__(self, x, y, leftward)
         #self.load_images('walking man/t', DAN_OFFSETS, DAN_PIXEL_SCALE, False)
         if version == 0:
             self.load_images('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, True)
@@ -471,8 +507,8 @@ class Monster(Being):
             self.image_index = 7
 
 class Man(Being):
-    def __init__(self):
-        Being.__init__(self)
+    def __init__(self, x = 0, y = 0, leftward = False):
+        Being.__init__(self, x, y, leftward)
         self.load_images('walking man/t', DAN_OFFSETS, DAN_PIXEL_SCALE, False)
         #self.load_images('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, True)
         self.in_jump = False
