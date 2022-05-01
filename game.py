@@ -180,7 +180,7 @@ level_title = ''
 background_color = pygame.Color(0,0,0)
 
 GIRL_OFFSETS = [ [97, 348], [83, 351], [81, 356], [96, 365], [99, 361], [105, 365], [99, 375], [96, 366] ]
-GIRL_PIXEL_SCALE = 175
+GIRL_PIXEL_SCALE = 185
 DAN_OFFSETS = [ [178,470], [140, 475], [80,465], [110,464], [151,453], [120,459], [74, 459], [108, 465] ]
 DAN_PIXEL_SCALE = 230
 
@@ -419,9 +419,9 @@ class Being(pygame.sprite.Sprite):
         
     def draw(self):
         if self.leftward:
-            i = 8 - self.image_index
-            if i == 8:
-                i = 0
+            i = 9 - self.image_index
+            if i > 7:
+                i -= 8
             self.image = self.leftward_images[i]
             self.image_shift = [int(self.pos[0] - self.left_offsets[i][0]), int(self.pos[1] - self.left_offsets[i][1])]
         else:
@@ -609,7 +609,15 @@ class Man(Being):
         return floor_found
     
     def wall_in_front(self):
-        if self.image_index == 0 or self.image_index == 4:
+        wall_step = False
+        if self.leftward:
+            if self.image_index == 1 or self.image_index == 5:
+                wall_step = True
+        else:
+            if self.image_index == 0 or self.image_index == 4:
+                wall_step = True
+        
+        if wall_step:
             knee_block_j = int(self.pos[1] / pixel_scale) - 1
             block_right = int(self.pos[0]/pixel_scale + (-1.5 if self.leftward else 0.5))
             
