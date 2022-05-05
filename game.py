@@ -151,6 +151,41 @@ levels = [
     'ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBA',
     ],
     ], # end of level
+            
+          # level 5
+     [   
+       ["Eugene's Lair", 'level5',[240,0,0], 80, 160, False],
+        [
+         # list of monsters
+            [2, True, 416, 160, 48, 416],
+            [2, False, 128, 288, 128, 416],
+            [1, False, 512, 64, 64, 416],
+        ],
+        [
+         'brick','floor','thorn bush','','stalactite','floorfall','','',
+         '','','','','','end','','',
+         '','endinv','','','','key',''
+         ],
+    [  
+     # list of lines
+    'A                   E          A',
+    'A                             VA',
+    'A                              A',
+    'A                              A',
+    'A                       C      A',
+    'ABBBBBBBBBBBBB    FFFFBBBBBB   A',
+    'A                            BBA',
+    'A                    C       V A',
+    'A                 DDDDDDDDDD   A',
+    'A   BBBBBBBBBB                 A',
+    'A                              A',
+    'AFFBBBBBBBBBBB    BBBBBBB     BA',
+    'A      VAV                     A',
+    'ABB     A     ANOA             A',
+    'A    C  A     APQAAAAAAACC     A',
+    'ABBBBBBBAAAAAAAAAAAAAAAABBBBBBBA',
+    ],
+    ], # end of level
     
      ]
 
@@ -174,7 +209,7 @@ keys_left = 1
 air = 2000
 score = 0
 high_score = 0
-level_number = 3
+level_number = 0
 conveyor = []
 level_title = ''
 background_color = pygame.Color(0,0,0)
@@ -183,6 +218,10 @@ GIRL_OFFSETS = [ [97, 348], [83, 351], [81, 356], [96, 365], [99, 361], [105, 36
 GIRL_PIXEL_SCALE = 185
 DAN_OFFSETS = [ [178,470], [140, 475], [80,465], [110,464], [151,453], [120,459], [74, 459], [108, 465] ]
 DAN_PIXEL_SCALE = 230
+EUGENE_OFFSETS = [ [240,480], ]
+EUGENE_PIXEL_SCALE = 240
+TOILET_OFFSETS = [ [25, 63], [25, 63], [25, 63], [25, 63], [25, 63], [25, 63], [25, 63], [25, 63],  ]
+TOILET_PIXEL_SCALE = 32
 
 num_lives = 3
 
@@ -246,7 +285,10 @@ def load_level():
     man = Man(man_x, man_y, leftward)
     monsters = []
     for m in levels[level_number][1]:
-        monsters.append(Monster(m[0], m[1], m[2], m[3], m[4], m[5]))
+        if m[0] == 1:
+            monsters.append(Eugene( m[1], m[2], m[3], m[4], m[5]))
+        else:
+            monsters.append(Monster(m[0], m[1], m[2], m[3], m[4], m[5]))
     images = []
     image_folder_name = levels[level_number][0][1]
     level_title = levels[level_number][0][0]
@@ -277,8 +319,8 @@ def animated_zoom():
     half_width = man.image.get_width() * 0.5
     half_height = man.image.get_height() * 0.5
     
-    multiplier = 1.1
-    frames = 25
+    multiplier = 1.27
+    frames = 10
     
     final_scale = math.pow(multiplier, frames)
     final_man_pos = [512, 700]
@@ -288,7 +330,7 @@ def animated_zoom():
         pixel_scale *= multiplier
         man.images = []
         man.leftward_images = []
-        man.load_images('walking man/t', DAN_OFFSETS, DAN_PIXEL_SCALE, False)
+        man.load_images()
         draw_background()
         
         man_shift = [(final_man_pos[0] - save_man_pos[0]) * (i+1)/frames,
@@ -302,7 +344,7 @@ def animated_zoom():
         for monster in monsters:
             monster.images = []
             monster.leftward_images = []
-            monster.load_images('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, True)
+            monster.load_images()
             
             save_monster_pos = [monster.pos[0], monster.pos[1]]
             monster.pos[0] -= save_man_pos[0]
@@ -416,6 +458,7 @@ class Being(pygame.sprite.Sprite):
         self.leftward = False
         self.move_dir = 0
         self.image_index = 0
+        self.load_images()
         
     def draw(self):
         if self.leftward:
@@ -434,7 +477,7 @@ class Being(pygame.sprite.Sprite):
         # draw a yellow rectangle for debugging
         #pygame.draw.rect(screen, pygame.Color(255,255,0), self.rect, width = 1)
 
-    def load_images(self, root_path, offsets, character_pixel_scale, leftward):
+    def load_images2(self, root_path, offsets, character_pixel_scale, leftward, num_images = 8):
         if leftward:
             self.left_offsets = []
             for offset in offsets:
@@ -447,8 +490,15 @@ class Being(pygame.sprite.Sprite):
             self.left_offsets = []
         image_pixel_scale = character_pixel_scale
         image_scale = pixel_scale / image_pixel_scale
-        for i in range(0,8):
-            img = pygame.image.load(root_path + '{}.png'.format(i))
+        for i in range(0,num_images):
+            image_name = root_path + '.png'
+            if num_images > 1:
+                image_name = root_path + '{}.png'.format(i)
+            try:
+                img = pygame.image.load(image_name)
+            except Exception:
+                print(traceback.format_exc())
+                print('image_name = ' + image_name)
             img = pygame.transform.scale(img, (int(img.get_width()*image_scale), int(img.get_height()*image_scale)))
             if leftward:
                 self.left_offsets[i][0] *= image_scale
@@ -483,13 +533,17 @@ class Being(pygame.sprite.Sprite):
 
 class Monster(Being):
     def __init__(self, version, leftward, x, y, minx, max_x):
+        self.version = version
         Being.__init__(self, x, y, leftward)
-        #self.load_images('walking man/t', DAN_OFFSETS, DAN_PIXEL_SCALE, False)
-        if version == 0:
-            self.load_images('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, True)
         self.min_x = minx
         self.max_x = max_x
-
+        
+    def load_images(self):
+        if self.version == 0:
+            self.load_images2('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, True)
+        elif self.version == 2:
+            self.load_images2('toilet/', TOILET_OFFSETS, TOILET_PIXEL_SCALE, False)
+            
     def move(self):
         if self.leftward:
             self.pos[0] -= self.move_step
@@ -505,16 +559,41 @@ class Monster(Being):
             self.image_index = 0
         elif self.image_index < 0:
             self.image_index = 7
+            
+class Eugene(Being):
+    def __init__(self, upward, x, y, miny, max_y):
+        Being.__init__(self, x, y, False)
+        self.upward = upward
+        self.min_y = miny
+        self.max_y = max_y
+
+    def load_images(self):
+        self.load_images2('eugene', EUGENE_OFFSETS, EUGENE_PIXEL_SCALE, False, 1)
+
+    def move(self):
+        global keys_left
+        if keys_left == 0:
+            self.upward = False
+        if self.upward:
+            self.pos[1] -= self.move_step
+            if self.pos[1] <= self.min_y:
+                self.upward = False
+        else:
+            self.pos[1] += self.move_step
+            if self.pos[1] >= self.max_y:
+                self.pos[1] = self.max_y
+                self.upward = True
 
 class Man(Being):
     def __init__(self, x = 0, y = 0, leftward = False):
         Being.__init__(self, x, y, leftward)
-        self.load_images('walking man/t', DAN_OFFSETS, DAN_PIXEL_SCALE, False)
-        #self.load_images('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, True)
         self.in_jump = False
         self.move_dir_on_jump = 0
         self.jump_index = 0
         self.fall_count = 0
+
+    def load_images(self):
+        self.load_images2('walking man/t', DAN_OFFSETS, DAN_PIXEL_SCALE, False)
 
     def add_move_dir(self):
         if not self.wall_in_front():
