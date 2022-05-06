@@ -3,7 +3,11 @@ import pygame
 import traceback
 
 pygame.init()
-screen = pygame.display.set_mode((1024, 710))
+
+SCREEN_WIDTH = 1024
+SCREEN_HEIGHT = 710
+
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 clock = pygame.time.Clock()
 w = screen.get_width()
 h = screen.get_height()
@@ -88,9 +92,9 @@ levels = [
        ['The Menagerie', 'level3',[0,0,0], 80, 480, False],
         [
          # list of monsters
-            [0, True, 560, 160, 48, 560],
-            [0, False, 592, 160, 592, 976],
-            [0, True, 656, 480, 48, 656],
+            [3, True, 560, 160, 48, 560],
+            [3, False, 592, 160, 592, 976],
+            [3, True, 656, 480, 48, 656],
         ],
         [
          'wall','floor','web','','spider','floorfall','','',
@@ -213,6 +217,7 @@ level_number = 0
 conveyor = []
 level_title = ''
 background_color = pygame.Color(0,0,0)
+num_lives = 3
 
 GIRL_OFFSETS = [ [97, 348], [83, 351], [81, 356], [96, 365], [99, 361], [105, 365], [99, 375], [96, 366] ]
 GIRL_PIXEL_SCALE = 185
@@ -222,8 +227,8 @@ EUGENE_OFFSETS = [ [240,480], ]
 EUGENE_PIXEL_SCALE = 240
 TOILET_OFFSETS = [ [25, 63], [25, 63], [25, 63], [25, 63], [25, 63], [25, 63], [25, 63], [25, 63],  ]
 TOILET_PIXEL_SCALE = 32
-
-num_lives = 3
+GOOSE_OFFSETS = [ [144,242], [144,242], [144,242], [144,242], [144,242], [144,242], [144,242], [144,242], ]
+GOOSE_PIXEL_SCALE = 118
 
 def is_wall(c):
     if c == ' ':
@@ -543,6 +548,8 @@ class Monster(Being):
             self.load_images2('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, True)
         elif self.version == 2:
             self.load_images2('toilet/', TOILET_OFFSETS, TOILET_PIXEL_SCALE, False)
+        elif self.version == 3:
+            self.load_images2('Goose/', GOOSE_OFFSETS, GOOSE_PIXEL_SCALE, True)
             
     def move(self):
         if self.leftward:
@@ -825,6 +832,32 @@ def draw_lives():
     man_for_lives.image_index += 1
     if man_for_lives.image_index == 8:
         man_for_lives.image_index = 0
+        
+def draw_everything():
+    draw_background()
+    man.draw()
+    for monster in monsters:
+        monster.draw()
+    draw_level()
+    draw_air()
+    draw_score()
+    draw_lives()
+        
+def on_pause():
+    draw_everything()
+    s = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
+    s.fill((255,255,255,128))
+    screen.blit(s, (0,0))
+    pygame.display.flip()
+    
+    # gray over it
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                exit()
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    return    
 
 while num_lives > 0:
     for event in pygame.event.get():
@@ -832,7 +865,7 @@ while num_lives > 0:
             exit()
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
-                exit()
+                on_pause()
             if event.key == pygame.K_RIGHT:
                 right_pressed = True
             if event.key == pygame.K_LEFT:
@@ -853,16 +886,11 @@ while num_lives > 0:
             if event.key == pygame.K_SPACE:
                 space_pressed = False
 
-    draw_background()
+    draw_everything()
     man.move()
-    man.draw()
+
     for monster in monsters:
         monster.move()
-        monster.draw()
-    draw_level()
-    draw_air()
-    draw_score()
-    draw_lives()
     
     life_lost = False
     
