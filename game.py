@@ -198,7 +198,7 @@ blocks =      'ABCDEFGHIJKLMNOPQRSTUVW'
 wall_flags =  '1                      '
 floor_flags = '11 2 11111111         3'
 on_flags =    '  1 1        2222      '   # 1 = death,  2 = end
-jump_dir = [-16, -16, -14, -10, -8, -6, -4, -2, 0, 0, 2, 4, 6,  8, 10, 14, 16,]
+jump_dir = [-16, -16, -14, -10, -8, -6, -4, -2, 0, 0, 2, 4, 6,  8, 10, 14, 16, 16]
 images = []
 pixel_scale = 32 # pixels per metre
 font_height = 30
@@ -213,7 +213,7 @@ keys_left = 1
 air = 2000
 score = 0
 high_score = 0
-level_number = 0
+level_number = 0 
 conveyor = []
 level_title = ''
 background_color = pygame.Color(0,0,0)
@@ -402,6 +402,10 @@ def on_game_over():
         man_for_squashing.draw()
         screen.blit(foot, [400, i * 20 -768])
         screen.blit(flipped_img, [360, 570])
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                exit()
         
         clock.tick(12.5)
         pygame.display.flip()
@@ -573,6 +577,7 @@ class Eugene(Being):
         self.upward = upward
         self.min_y = miny
         self.max_y = max_y
+        self.move_step = pixel_scale * 0.125
 
     def load_images(self):
         self.load_images2('eugene', EUGENE_OFFSETS, EUGENE_PIXEL_SCALE, False, 1)
@@ -617,12 +622,12 @@ class Man(Being):
         if on == 1:
             animated_zoom()
             on_lose_life()
-            return
+            return True
         elif on == 2 and keys_left == 0:
             on_end_level()
-            
+            return True
         if self.in_jump:
-            if self.jump_index >= 16:
+            if self.jump_index >= len(jump_dir):
                 self.in_jump = False
                 
         if self.in_jump:
@@ -638,7 +643,7 @@ class Man(Being):
                 if self.fall_count > 8:
                     animated_zoom()
                     on_lose_life()
-                    return
+                    return True
                 self.fall_count = 0                
                 if left_pressed:
                     self.move_dir = -1
@@ -669,6 +674,8 @@ class Man(Being):
             else:
                 self.pos[1] += jump_dir[self.jump_index]
                 self.jump_index += 1            
+                
+        return False # not life lost
         
     def on_floor(self):
         if self.pos[1] % pixel_scale != 0:
@@ -842,22 +849,154 @@ def draw_everything():
     draw_air()
     draw_score()
     draw_lives()
+    
+BUTTON_WIDTH = 400
+BUTTON_COLOR = pygame.Color(0,0,64)
+BUTTON_SEL_BORDER_COLOR = pygame.Color(0,48,255)
+BUTTON_TEXT_COLOR = pygame.Color(255,255,255)
+BUTTON_HEIGHT = 40
+BUTTON_SPACE = 10
+BUTTTON_MARGIN = 15
+BUTTON_KEY_DELAY = 8
+
+class Buttons:
+    def __init__(self):
+        self.next_index = 0
+        self.buttons = []
+        self.selected = None
+        
+    def add(self, text):
+        self.buttons.append(Button(self.next_index, text))
+        self.next_index += 1
+        self.selected = self.buttons[0]    
+        
+    def draw(self):
+        w, h = self.get_size()
+        x = ( SCREEN_WIDTH - w ) * 0.5
+        y = ( SCREEN_HEIGHT - h ) * 0.5
+        
+        for button in self.buttons:
+            sel = (button == self.selected)
+            button.draw(x, y, sel)
+            
+    def get_size(self):
+        w = 0
+        h = 0
+        for button in self.buttons:
+            if h != 0:
+                h += BUTTON_SPACE
+            h += BUTTON_HEIGHT
+            bw = button.get_width()
+            if bw > w:
+                w = bw
+        return w,h
+    
+    def get_button_from_pos(self, pos):
+        for button in self.buttons:
+            if button.rect.collidepoint(pos):
+                return button
+
+class Button:
+    def __init__(self, index, text):
+        self.index = index
+        self.text = text
+        
+    def get_width(self):
+        s = myfont.size(self.text)
+        return s[0] + 2 * BUTTTON_MARGIN
+        
+    def draw(self, x, y, sel):
+        self.rect = pygame.Rect(x, self.index * ( BUTTON_HEIGHT + BUTTON_SPACE ) + y, BUTTON_WIDTH, BUTTON_HEIGHT)
+        pygame.draw.rect(screen, BUTTON_COLOR, self.rect, border_radius =10)
+        if sel:
+            pygame.draw.rect(screen, BUTTON_SEL_BORDER_COLOR, self.rect, 3, border_radius =10)
+        s = myfont.size(self.text)
+        tx = self.rect.x + (BUTTON_WIDTH - s[0]) * 0.5
+        ty = self.rect.y + (BUTTON_HEIGHT - s[1]) * 0.5
+        screen.blit(myfont.render(self.text, False, BUTTON_TEXT_COLOR),(tx, ty))
         
 def on_pause():
-    draw_everything()
-    s = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
-    s.fill((255,255,255,128))
-    screen.blit(s, (0,0))
-    pygame.display.flip()
     
-    # gray over it
+    buttons = Buttons()
+    buttons.add('Resume Game')
+    for level in levels:
+        title = level[0][0]
+        buttons.add(title)
+    buttons.add('Quit Game')
+        
+    up = False
+    down = False
+    key_delay = 0
+    
     while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                exit()
-            elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_ESCAPE:
-                    return    
+            
+        draw_everything()
+        # gray over screen
+        s = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
+        s.fill((128,128,128,128))
+        screen.blit(s, (0,0))
+        buttons.draw()
+        
+        clock.tick(12.5)
+        
+        pygame.display.flip()
+        
+        if key_delay > 0:
+            key_delay -= 1
+
+        while True:
+            button_chosen = None
+            
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    exit()
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_ESCAPE:
+                        return    
+                    elif event.key == pygame.K_UP:
+                        up = True
+                        key_delay = BUTTON_KEY_DELAY
+                    elif event.key == pygame.K_DOWN:
+                        down = True
+                        key_delay = BUTTON_KEY_DELAY
+                    elif event.key == pygame.K_RETURN:
+                        button_chosen = buttons.selected
+                    
+                elif event.type == pygame.KEYUP:
+                    if event.key == pygame.K_UP:
+                        up = False
+                    elif event.key == pygame.K_DOWN:
+                        down = False
+
+                elif event.type == pygame.MOUSEBUTTONDOWN:
+                    button_chosen = buttons.get_button_from_pos(event.pos)
+                    
+            if button_chosen != None:
+                if button_chosen.index == 0:
+                    return
+                if button_chosen.index == len(buttons.buttons)-1:
+                    exit()
+                else:
+                    global level_number
+                    level_number = button_chosen.index - 1
+                    load_level()
+                    return
+
+            if up:
+                if key_delay == 0 or key_delay == BUTTON_KEY_DELAY:
+                    index = buttons.selected.index -1
+                    if index < 0:
+                        index += len(buttons.buttons)
+                    buttons.selected = buttons.buttons[index]
+                break
+            if down:
+                if key_delay == 0 or key_delay == BUTTON_KEY_DELAY:
+                    index = buttons.selected.index + 1
+                    if index >= len(buttons.buttons):
+                        index = 0
+                    buttons.selected = buttons.buttons[index]
+                break
+
 
 while num_lives > 0:
     for event in pygame.event.get():
@@ -887,7 +1026,10 @@ while num_lives > 0:
                 space_pressed = False
 
     draw_everything()
-    man.move()
+    life_lost = man.move()
+    
+    if life_lost:
+        continue
 
     for monster in monsters:
         monster.move()
