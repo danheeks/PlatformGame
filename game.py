@@ -907,9 +907,14 @@ class Button:
         
     def draw(self, x, y, sel):
         self.rect = pygame.Rect(x, self.index * ( BUTTON_HEIGHT + BUTTON_SPACE ) + y, BUTTON_WIDTH, BUTTON_HEIGHT)
-        pygame.draw.rect(screen, BUTTON_COLOR, self.rect, border_radius =10)
-        if sel:
-            pygame.draw.rect(screen, BUTTON_SEL_BORDER_COLOR, self.rect, 3, border_radius =10)
+        if int(pygame.ver[0]) >= 2:
+            pygame.draw.rect(screen, BUTTON_COLOR, self.rect, border_radius =10)
+            if sel:
+                pygame.draw.rect(screen, BUTTON_SEL_BORDER_COLOR, self.rect, 3, border_radius =10)
+        else:
+            col = BUTTON_SEL_BORDER_COLOR if sel else BUTTON_COLOR
+            pygame.draw.rect(screen, col, self.rect)
+            
         s = myfont.size(self.text)
         tx = self.rect.x + (BUTTON_WIDTH - s[0]) * 0.5
         ty = self.rect.y + (BUTTON_HEIGHT - s[1]) * 0.5
