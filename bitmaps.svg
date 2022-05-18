@@ -2,18 +2,32 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
    height="297mm"
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="bitmaps.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="bitmaps.svg">
+  <metadata
+     id="metadata856">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#ffffff"
@@ -24,13 +38,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="16.000001"
-     inkscape:cx="174.34374"
-     inkscape:cy="312.03123"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:zoom="11.313709"
+     inkscape:cx="183.26989"
+     inkscape:cy="804.78113"
+     inkscape:window-width="1280"
+     inkscape:window-height="969"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:snap-global="true"
@@ -2691,44 +2705,30 @@
          id="path1168-7" />
     </g>
     <g
-       id="g6385"
-       inkscape:export-filename="C:\Dev\PlatformGame\button.png"
-       inkscape:export-xdpi="1460.5999"
-       inkscape:export-ydpi="1460.5999">
+       id="g5383"
+       inkscape:export-xdpi="1462.4399"
+       inkscape:export-ydpi="1462.4399">
+      <path
+         id="path5370"
+         d="m 46.566666,82.481889 a 0.20433164,0.20433164 0 0 0 -0.204332,0.204332 v 0.408663 a 0.20433164,0.20433164 0 0 0 0.204332,0.204332 h 6.538612 a 0.20433164,0.20433164 0 0 0 0.204332,-0.204332 v -0.408663 a 0.20433164,0.20433164 0 0 0 -0.204332,-0.204332 z"
+         style="fill:#a97e26;fill-opacity:1;stroke:none;stroke-width:0.0895844;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71370999" />
       <path
          id="rect3944"
-         style="fill:#503c12;fill-opacity:1;stroke:none;stroke-width:0.0895844;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71371"
-         d="m 46.566666,82.481889 a 0.20433164,0.20433164 0 0 0 -0.204332,0.204332 v 0.408663 a 0.20433164,0.20433164 0 0 0 0.204332,0.204332 h 6.538612 a 0.20433164,0.20433164 0 0 0 0.204332,-0.204332 v -0.408663 a 0.20433164,0.20433164 0 0 0 -0.204332,-0.204332 z m 0,0.06811 h 6.538612 a 0.1362211,0.1362211 0 0 1 0.136222,0.136222 v 0.408663 a 0.1362211,0.1362211 0 0 1 -0.136222,0.136221 h -6.538612 a 0.1362211,0.1362211 0 0 1 -0.136221,-0.136221 v -0.408663 a 0.1362211,0.1362211 0 0 1 0.136221,-0.136222 z" />
-      <path
-         style="fill:#503c12;fill-opacity:0.733871;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71371"
-         id="rect1236-3"
-         width="6.8110557"
-         height="0.68114722"
-         x="46.430447"
-         y="-83.231102"
-         sodipodi:type="rect"
-         transform="scale(1,-1)"
-         d="m 46.430447,-83.231102 h 6.811055 v 0.681147 h -6.811055 z" />
+         d="m 46.566666,82.549999 h 6.538612 a 0.1362211,0.1362211 0 0 1 0.136222,0.136222 v 0.408663 a 0.1362211,0.1362211 0 0 1 -0.136222,0.136221 h -6.538612 a 0.1362211,0.1362211 0 0 1 -0.136221,-0.136221 v -0.408663 a 0.1362211,0.1362211 0 0 1 0.136221,-0.136222 z"
+         style="fill:#503c12;fill-opacity:1;stroke:none;stroke-width:0.0895844;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71370999" />
     </g>
     <g
-       id="g6389"
-       inkscape:export-filename="C:\Dev\PlatformGame\buttonsel.png"
-       inkscape:export-xdpi="1462.444"
-       inkscape:export-ydpi="1462.444">
+       id="g5379"
+       inkscape:export-xdpi="1462.4399"
+       inkscape:export-ydpi="1462.4399">
       <path
-         style="fill:#222a32;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71371"
-         id="rect1236-3-8"
-         width="6.8110557"
-         height="0.68114722"
-         x="46.430447"
-         y="-84.818604"
-         sodipodi:type="rect"
-         transform="scale(1,-1)"
-         d="m 46.430447,-84.818604 h 6.811055 v 0.681148 h -6.811055 z" />
+         id="path5375"
+         d="m 46.566666,84.069389 a 0.20433164,0.20433164 0 0 0 -0.204332,0.204332 v 0.408663 a 0.20433164,0.20433164 0 0 0 0.204332,0.204332 h 6.538612 a 0.20433164,0.20433164 0 0 0 0.204332,-0.204332 v -0.408663 a 0.20433164,0.20433164 0 0 0 -0.204332,-0.204332 z"
+         style="fill:#39f5ff;fill-opacity:1;stroke:none;stroke-width:0.0895844;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71370999" />
       <path
          id="rect3944-8"
-         style="fill:#39f5ff;fill-opacity:1;stroke:none;stroke-width:0.0895844;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71371"
-         d="m 46.566666,84.069389 a 0.20433164,0.20433164 0 0 0 -0.204332,0.204332 v 0.408663 a 0.20433164,0.20433164 0 0 0 0.204332,0.204332 h 6.538612 a 0.20433164,0.20433164 0 0 0 0.204332,-0.204332 v -0.408663 a 0.20433164,0.20433164 0 0 0 -0.204332,-0.204332 z m 0,0.06811 h 6.538612 a 0.1362211,0.1362211 0 0 1 0.136222,0.136222 v 0.408663 a 0.1362211,0.1362211 0 0 1 -0.136222,0.136221 h -6.538612 a 0.1362211,0.1362211 0 0 1 -0.136221,-0.136221 v -0.408663 a 0.1362211,0.1362211 0 0 1 0.136221,-0.136222 z" />
+         d="m 46.566666,84.137499 h 6.538612 a 0.1362211,0.1362211 0 0 1 0.136222,0.136222 v 0.408663 a 0.1362211,0.1362211 0 0 1 -0.136222,0.136221 h -6.538612 a 0.1362211,0.1362211 0 0 1 -0.136221,-0.136221 v -0.408663 a 0.1362211,0.1362211 0 0 1 0.136221,-0.136222 z"
+         style="fill:#00474b;fill-opacity:1;stroke:none;stroke-width:0.0895844;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71370999" />
     </g>
   </g>
 </svg>

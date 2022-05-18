@@ -851,13 +851,13 @@ def draw_everything():
     draw_lives()
     
 BUTTON_WIDTH = 400
-BUTTON_COLOR = pygame.Color(0,0,64)
-BUTTON_SEL_BORDER_COLOR = pygame.Color(0,48,255)
 BUTTON_TEXT_COLOR = pygame.Color(255,255,255)
 BUTTON_HEIGHT = 40
 BUTTON_SPACE = 10
 BUTTTON_MARGIN = 15
 BUTTON_KEY_DELAY = 8
+button_img = pygame.image.load('button.png')
+button_img_sel = pygame.image.load('buttonsel.png')
 
 class Buttons:
     def __init__(self):
@@ -906,15 +906,13 @@ class Button:
         return s[0] + 2 * BUTTTON_MARGIN
         
     def draw(self, x, y, sel):
-        self.rect = pygame.Rect(x, self.index * ( BUTTON_HEIGHT + BUTTON_SPACE ) + y, BUTTON_WIDTH, BUTTON_HEIGHT)
-        if int(pygame.ver[0]) >= 2:
-            pygame.draw.rect(screen, BUTTON_COLOR, self.rect, border_radius =10)
-            if sel:
-                pygame.draw.rect(screen, BUTTON_SEL_BORDER_COLOR, self.rect, 3, border_radius =10)
+        button_y = self.index * ( BUTTON_HEIGHT + BUTTON_SPACE ) + y
+        if sel:
+            img = button_img_sel
         else:
-            col = BUTTON_SEL_BORDER_COLOR if sel else BUTTON_COLOR
-            pygame.draw.rect(screen, col, self.rect)
-            
+            img = button_img
+        screen.blit(img, [x, button_y])
+        self.rect = pygame.Rect(x, button_y, BUTTON_WIDTH, BUTTON_HEIGHT)
         s = myfont.size(self.text)
         tx = self.rect.x + (BUTTON_WIDTH - s[0]) * 0.5
         ty = self.rect.y + (BUTTON_HEIGHT - s[1]) * 0.5
