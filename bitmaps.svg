@@ -24,16 +24,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="8.0000004"
-     inkscape:cx="126.68749"
-     inkscape:cy="311.31248"
+     inkscape:zoom="16.000001"
+     inkscape:cx="174.34374"
+     inkscape:cy="312.03123"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     inkscape:snap-global="false"
+     inkscape:snap-global="true"
      inkscape:snap-bbox="false"
      inkscape:snap-nodes="true"
      inkscape:object-paths="false"
@@ -49,6 +49,91 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect4090"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.52916667,0,1 @ F,0,0,1,0,0.52916667,0,1 @ F,0,0,1,0,0.52916667,0,1 @ F,0,0,1,0,0.52916667,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect4062"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.79375,0,1 @ F,0,0,1,0,0.79375,0,1 @ F,0,0,1,0,0.79375,0,1 @ F,0,0,1,0,0.79375,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="3"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3883"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect2776"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.52916667,0,1 @ F,0,0,1,0,0.52916667,0,1 @ F,0,0,1,0,0.52916667,0,1 @ F,0,0,1,0,0.52916667,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1238"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.52916667,0,1 @ F,0,0,1,0,0.52916667,0,1 @ F,0,0,1,0,0.52916667,0,1 @ F,0,0,1,0,0.52916667,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient6585">
@@ -2604,6 +2689,46 @@
          style="fill:url(#linearGradient13163);fill-opacity:1;stroke:none;stroke-width:0.0317728;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 51.029953,88.16142 -0.004,0.375869 0.262703,0.0202 0.01211,-0.404161 z"
          id="path1168-7" />
+    </g>
+    <g
+       id="g6385"
+       inkscape:export-filename="C:\Dev\PlatformGame\button.png"
+       inkscape:export-xdpi="1460.5999"
+       inkscape:export-ydpi="1460.5999">
+      <path
+         id="rect3944"
+         style="fill:#503c12;fill-opacity:1;stroke:none;stroke-width:0.0895844;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71371"
+         d="m 46.566666,82.481889 a 0.20433164,0.20433164 0 0 0 -0.204332,0.204332 v 0.408663 a 0.20433164,0.20433164 0 0 0 0.204332,0.204332 h 6.538612 a 0.20433164,0.20433164 0 0 0 0.204332,-0.204332 v -0.408663 a 0.20433164,0.20433164 0 0 0 -0.204332,-0.204332 z m 0,0.06811 h 6.538612 a 0.1362211,0.1362211 0 0 1 0.136222,0.136222 v 0.408663 a 0.1362211,0.1362211 0 0 1 -0.136222,0.136221 h -6.538612 a 0.1362211,0.1362211 0 0 1 -0.136221,-0.136221 v -0.408663 a 0.1362211,0.1362211 0 0 1 0.136221,-0.136222 z" />
+      <path
+         style="fill:#503c12;fill-opacity:0.733871;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71371"
+         id="rect1236-3"
+         width="6.8110557"
+         height="0.68114722"
+         x="46.430447"
+         y="-83.231102"
+         sodipodi:type="rect"
+         transform="scale(1,-1)"
+         d="m 46.430447,-83.231102 h 6.811055 v 0.681147 h -6.811055 z" />
+    </g>
+    <g
+       id="g6389"
+       inkscape:export-filename="C:\Dev\PlatformGame\buttonsel.png"
+       inkscape:export-xdpi="1462.444"
+       inkscape:export-ydpi="1462.444">
+      <path
+         style="fill:#222a32;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71371"
+         id="rect1236-3-8"
+         width="6.8110557"
+         height="0.68114722"
+         x="46.430447"
+         y="-84.818604"
+         sodipodi:type="rect"
+         transform="scale(1,-1)"
+         d="m 46.430447,-84.818604 h 6.811055 v 0.681148 h -6.811055 z" />
+      <path
+         id="rect3944-8"
+         style="fill:#39f5ff;fill-opacity:1;stroke:none;stroke-width:0.0895844;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71371"
+         d="m 46.566666,84.069389 a 0.20433164,0.20433164 0 0 0 -0.204332,0.204332 v 0.408663 a 0.20433164,0.20433164 0 0 0 0.204332,0.204332 h 6.538612 a 0.20433164,0.20433164 0 0 0 0.204332,-0.204332 v -0.408663 a 0.20433164,0.20433164 0 0 0 -0.204332,-0.204332 z m 0,0.06811 h 6.538612 a 0.1362211,0.1362211 0 0 1 0.136222,0.136222 v 0.408663 a 0.1362211,0.1362211 0 0 1 -0.136222,0.136221 h -6.538612 a 0.1362211,0.1362211 0 0 1 -0.136221,-0.136221 v -0.408663 a 0.1362211,0.1362211 0 0 1 0.136221,-0.136222 z" />
     </g>
   </g>
 </svg>
