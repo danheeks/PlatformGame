@@ -38,9 +38,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="11.313709"
-     inkscape:cx="183.26989"
-     inkscape:cy="804.78113"
+     inkscape:zoom="4"
+     inkscape:cx="137.60735"
+     inkscape:cy="774.69438"
      inkscape:window-width="1280"
      inkscape:window-height="969"
      inkscape:window-x="0"
@@ -2729,6 +2729,342 @@
          id="rect3944-8"
          d="m 46.566666,84.137499 h 6.538612 a 0.1362211,0.1362211 0 0 1 0.136222,0.136222 v 0.408663 a 0.1362211,0.1362211 0 0 1 -0.136222,0.136221 h -6.538612 a 0.1362211,0.1362211 0 0 1 -0.136221,-0.136221 v -0.408663 a 0.1362211,0.1362211 0 0 1 0.136221,-0.136222 z"
          style="fill:#00474b;fill-opacity:1;stroke:none;stroke-width:0.0895844;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.71370999" />
+    </g>
+    <g
+       id="g1803"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/pinkpacman1.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="89.831253"
+         x="26.458332"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         id="path1306"
+         transform="scale(0.26458333)"
+         d="M 106 339.51953 A 3.9999996 3.9999996 0 0 0 102 343.51953 A 3.9999996 3.9999996 0 0 0 104 346.97852 L 104 348.51953 L 103 348.51953 L 103 349.51953 L 109 349.51953 L 109 348.51953 L 108 348.51953 L 108 346.97852 A 3.9999996 3.9999996 0 0 0 109.96484 344.01562 L 106 343.51953 L 109.96484 343.02344 A 3.9999996 3.9999996 0 0 0 106 339.51953 z M 105.21094 341.41992 A 0.60225235 0.60225235 0 0 1 105.8125 342.02344 A 0.60225235 0.60225235 0 0 1 105.21094 342.625 A 0.60225235 0.60225235 0 0 1 104.60742 342.02344 A 0.60225235 0.60225235 0 0 1 105.21094 341.41992 z M 107 347.38672 L 107 348.51953 L 105 348.51953 L 105 347.38867 A 3.9999996 3.9999996 0 0 0 106 347.51953 A 3.9999996 3.9999996 0 0 0 107 347.38672 z "
+         style="fill:#ff0ff8;fill-opacity:1;stroke:none;stroke-width:0.99999994" />
+    </g>
+    <g
+       id="g1807"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/pinkpacman2.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="89.831253"
+         x="30.427082"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-8"
+         style="fill:#fffffd;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         id="path1306-5"
+         transform="scale(0.26458333)"
+         d="M 121 339.51953 A 3.9999998 3.9999998 0 0 0 117 343.51953 A 3.9999998 3.9999998 0 0 0 118.36133 346.51953 L 118 346.51953 L 118 347.51953 L 121 347.51953 L 124 347.51953 L 124 346.51953 L 123.63867 346.51953 A 3.9999998 3.9999998 0 0 0 124.57227 345.30664 L 121 343.51953 L 124.57422 341.73242 A 3.9999998 3.9999998 0 0 0 121 339.51953 z M 120.21094 341.41992 A 0.60225236 0.60225236 0 0 1 120.8125 342.02344 A 0.60225236 0.60225236 0 0 1 120.21094 342.625 A 0.60225236 0.60225236 0 0 1 120 342.58594 L 120 342.51953 L 119.86914 342.51953 A 0.60225236 0.60225236 0 0 1 119.60742 342.02344 A 0.60225236 0.60225236 0 0 1 120.21094 341.41992 z "
+         style="fill:#ff0ff8;fill-opacity:1;stroke:none;stroke-width:0.99999994" />
+    </g>
+    <g
+       id="g1811"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/pinkpacman3.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="89.831253"
+         x="34.395832"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-88"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         id="path1306-3"
+         transform="scale(0.26458333)"
+         d="M 136 339.51953 A 3.9999998 3.9999998 0 0 0 132 343.51953 A 3.9999998 3.9999998 0 0 0 134 346.97852 L 134 348.51953 L 133 348.51953 L 133 349.51953 L 139 349.51953 L 139 348.51953 L 138 348.51953 L 138 346.97852 A 3.9999998 3.9999998 0 0 0 138.82227 346.3418 L 136 343.51953 L 138.82617 340.69336 A 3.9999998 3.9999998 0 0 0 136 339.51953 z M 135.21094 341.41992 A 0.60225236 0.60225236 0 0 1 135.8125 342.02344 A 0.60225236 0.60225236 0 0 1 135.21094 342.625 A 0.60225236 0.60225236 0 0 1 134.60742 342.02344 A 0.60225236 0.60225236 0 0 1 135.21094 341.41992 z M 137 347.38672 L 137 348.51953 L 135 348.51953 L 135 347.38867 A 3.9999998 3.9999998 0 0 0 136 347.51953 A 3.9999998 3.9999998 0 0 0 137 347.38672 z "
+         style="fill:#ff0ff8;fill-opacity:1;stroke:none;stroke-width:0.99999994" />
+    </g>
+    <g
+       id="g1815"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/pinkpacman4.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="89.831253"
+         x="38.364582"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-4"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         id="path1306-33"
+         transform="scale(0.26458333)"
+         d="M 151 339.51953 A 3.9999998 3.9999998 0 0 0 147 343.51953 A 3.9999998 3.9999998 0 0 0 149 346.97852 L 149 350.51953 L 148 350.51953 L 148 351.51953 L 154 351.51953 L 154 350.51953 L 153 350.51953 L 153 346.97852 A 3.9999998 3.9999998 0 0 0 154.57422 345.30664 L 151 343.51953 L 154.57422 341.73242 A 3.9999998 3.9999998 0 0 0 151 339.51953 z M 150.21094 341.41992 A 0.60225236 0.60225236 0 0 1 150.8125 342.02344 A 0.60225236 0.60225236 0 0 1 150.21094 342.625 A 0.60225236 0.60225236 0 0 1 149.60742 342.02344 A 0.60225236 0.60225236 0 0 1 150.21094 341.41992 z M 152 347.38672 L 152 350.51953 L 150 350.51953 L 150 347.38867 A 3.9999998 3.9999998 0 0 0 151 347.51953 A 3.9999998 3.9999998 0 0 0 152 347.38672 z "
+         style="fill:#ff0ff8;fill-opacity:1;stroke:none;stroke-width:0.99999994" />
+    </g>
+    <g
+       id="g1931"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/yellowpacman1.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="93.270882"
+         x="26.458332"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-889"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-7"
+         d="m 28.045833,93.270836 a 1.0583332,1.0583332 0 0 0 -1.058333,1.058333 1.0583332,1.0583332 0 0 0 0.529166,0.915191 v 0.407726 h -0.264583 v 0.264583 h 1.5875 V 95.652086 H 28.575 V 95.24436 a 1.0583332,1.0583332 0 0 0 0.519864,-0.783934 l -1.049031,-0.131257 1.049031,-0.131257 a 1.0583332,1.0583332 0 0 0 -1.049031,-0.927076 z m -0.208772,0.502811 a 0.15934593,0.15934593 0 0 1 0.159163,0.159682 0.15934593,0.15934593 0 0 1 -0.159163,0.159163 0.15934593,0.15934593 0 0 1 -0.159681,-0.159163 0.15934593,0.15934593 0 0 1 0.159681,-0.159682 z m 0.473355,1.578716 v 0.299723 H 27.78125 v -0.299207 a 1.0583332,1.0583332 0 0 0 0.264583,0.03462 1.0583332,1.0583332 0 0 0 0.264583,-0.03514 z"
+         style="fill:#f1ff0f;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1935"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/yellowpacman2.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="93.270882"
+         x="30.427082"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-8-6"
+         style="fill:#fffffd;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-5-4"
+         d="m 32.014583,93.270836 a 1.0583333,1.0583333 0 0 0 -1.058333,1.058333 1.0583333,1.0583333 0 0 0 0.360185,0.79375 h -0.0956 v 0.264584 h 0.79375 0.79375 v -0.264584 h -0.0956 a 1.0583333,1.0583333 0 0 0 0.247015,-0.32091 l -0.945163,-0.47284 0.945679,-0.472839 a 1.0583333,1.0583333 0 0 0 -0.945679,-0.585494 z m -0.208772,0.502811 a 0.15934593,0.15934593 0 0 1 0.159163,0.159682 0.15934593,0.15934593 0 0 1 -0.159163,0.159163 0.15934593,0.15934593 0 0 1 -0.05581,-0.01033 v -0.01757 h -0.03462 a 0.15934593,0.15934593 0 0 1 -0.06925,-0.131258 0.15934593,0.15934593 0 0 1 0.159682,-0.159681 z"
+         style="fill:#f1ff0f;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1939"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/yellowpacman3.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="93.270882"
+         x="34.395832"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-88-0"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-3-3"
+         d="M 35.983333,93.270836 A 1.0583333,1.0583333 0 0 0 34.925,94.329169 1.0583333,1.0583333 0 0 0 35.454166,95.24436 v 0.407726 h -0.264583 v 0.264583 h 1.5875 V 95.652086 H 36.5125 V 95.24436 a 1.0583333,1.0583333 0 0 0 0.217558,-0.168465 l -0.746725,-0.746726 0.747757,-0.747757 a 1.0583333,1.0583333 0 0 0 -0.747757,-0.310576 z m -0.208772,0.502811 a 0.15934593,0.15934593 0 0 1 0.159163,0.159682 0.15934593,0.15934593 0 0 1 -0.159163,0.159163 0.15934593,0.15934593 0 0 1 -0.159682,-0.159163 0.15934593,0.15934593 0 0 1 0.159682,-0.159682 z m 0.473355,1.578716 v 0.299723 H 35.71875 v -0.299207 a 1.0583333,1.0583333 0 0 0 0.264583,0.03462 1.0583333,1.0583333 0 0 0 0.264583,-0.03514 z"
+         style="fill:#f1ff0f;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1943"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/yellowpacman4.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="93.270882"
+         x="38.364582"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-4-9"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-33-2"
+         d="m 39.952083,93.270836 a 1.0583333,1.0583333 0 0 0 -1.058333,1.058333 1.0583333,1.0583333 0 0 0 0.529166,0.915191 v 0.936893 h -0.264583 v 0.264583 h 1.5875 V 96.181253 H 40.481249 V 95.24436 a 1.0583333,1.0583333 0 0 0 0.416513,-0.442351 l -0.945679,-0.47284 0.945679,-0.472839 a 1.0583333,1.0583333 0 0 0 -0.945679,-0.585494 z m -0.208772,0.502811 a 0.15934593,0.15934593 0 0 1 0.159162,0.159682 0.15934593,0.15934593 0 0 1 -0.159162,0.159163 0.15934593,0.15934593 0 0 1 -0.159682,-0.159163 0.15934593,0.15934593 0 0 1 0.159682,-0.159682 z m 0.473355,1.578716 v 0.82889 H 39.6875 v -0.828374 a 1.0583333,1.0583333 0 0 0 0.264583,0.03462 1.0583333,1.0583333 0 0 0 0.264583,-0.03514 z"
+         style="fill:#f1ff0f;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1950"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/dypacman1.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="96.710464"
+         x="26.458332"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-889-5"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-7-4"
+         d="m 28.045833,96.710419 a 1.0583332,1.0583332 0 0 0 -1.058333,1.058333 1.0583332,1.0583332 0 0 0 0.529165,0.915191 v 0.407726 h -0.264582 v 0.264583 h 1.5875 V 99.091669 H 28.575 v -0.407726 a 1.0583332,1.0583332 0 0 0 0.519864,-0.783934 l -1.049031,-0.131257 1.049031,-0.131257 a 1.0583332,1.0583332 0 0 0 -1.049031,-0.927076 z m -0.208772,0.502811 a 0.15934593,0.15934593 0 0 1 0.159162,0.159682 0.15934593,0.15934593 0 0 1 -0.159162,0.159163 0.15934593,0.15934593 0 0 1 -0.159682,-0.159163 0.15934593,0.15934593 0 0 1 0.159682,-0.159682 z m 0.473355,1.578716 v 0.299723 H 27.78125 v -0.299207 a 1.0583332,1.0583332 0 0 0 0.264583,0.03462 1.0583332,1.0583332 0 0 0 0.264583,-0.03514 z"
+         style="fill:#a7b100;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1954"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/dypacman2.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="96.710464"
+         x="30.427082"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-8-6-0"
+         style="fill:#fffffd;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-5-4-5"
+         d="m 32.014583,96.710419 a 1.0583333,1.0583333 0 0 0 -1.058333,1.058333 1.0583333,1.0583333 0 0 0 0.360185,0.79375 h -0.0956 v 0.264584 h 0.79375 0.79375 v -0.264584 h -0.0956 a 1.0583333,1.0583333 0 0 0 0.247015,-0.32091 l -0.945163,-0.47284 0.945679,-0.472839 A 1.0583333,1.0583333 0 0 0 32.014587,96.710419 Z M 31.80581,97.21323 a 0.15934593,0.15934593 0 0 1 0.159163,0.159682 0.15934593,0.15934593 0 0 1 -0.159163,0.159163 0.15934593,0.15934593 0 0 1 -0.05581,-0.01033 v -0.01757 h -0.03462 a 0.15934593,0.15934593 0 0 1 -0.06925,-0.131258 0.15934593,0.15934593 0 0 1 0.159683,-0.159681 z"
+         style="fill:#a7b100;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1958"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/dypacman3.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="96.710464"
+         x="34.395832"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-88-0-9"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-3-3-4"
+         d="m 35.983333,96.710419 a 1.0583333,1.0583333 0 0 0 -1.058333,1.058333 1.0583333,1.0583333 0 0 0 0.529166,0.915191 v 0.407726 h -0.264583 v 0.264583 h 1.5875 V 99.091669 H 36.5125 v -0.407726 a 1.0583333,1.0583333 0 0 0 0.217558,-0.168465 L 35.983333,97.768752 36.73109,97.020995 A 1.0583333,1.0583333 0 0 0 35.983333,96.710419 Z M 35.77456,97.21323 a 0.15934593,0.15934593 0 0 1 0.159163,0.159682 0.15934593,0.15934593 0 0 1 -0.159163,0.159163 0.15934593,0.15934593 0 0 1 -0.159681,-0.159163 0.15934593,0.15934593 0 0 1 0.159681,-0.159682 z m 0.473356,1.578716 v 0.299723 H 35.71875 v -0.299207 a 1.0583333,1.0583333 0 0 0 0.264583,0.03462 1.0583333,1.0583333 0 0 0 0.264583,-0.03514 z"
+         style="fill:#a7b100;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1962"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/dypacman4.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="96.710464"
+         x="38.364582"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-4-9-6"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-33-2-9"
+         d="m 39.952083,96.710419 a 1.0583333,1.0583333 0 0 0 -1.058333,1.058333 1.0583333,1.0583333 0 0 0 0.529166,0.915191 v 0.93689 h -0.264583 v 0.26459 h 1.5875 v -0.26459 h -0.264584 v -0.93689 a 1.0583333,1.0583333 0 0 0 0.416513,-0.442351 l -0.945679,-0.47284 0.945679,-0.472839 a 1.0583333,1.0583333 0 0 0 -0.945679,-0.585494 z m -0.208772,0.502811 a 0.15934593,0.15934593 0 0 1 0.159162,0.159682 0.15934593,0.15934593 0 0 1 -0.159162,0.159163 0.15934593,0.15934593 0 0 1 -0.159682,-0.159163 0.15934593,0.15934593 0 0 1 0.159682,-0.159682 z m 0.473355,1.578716 v 0.828887 H 39.6875 v -0.828371 a 1.0583333,1.0583333 0 0 0 0.264583,0.03462 1.0583333,1.0583333 0 0 0 0.264583,-0.03514 z"
+         style="fill:#a7b100;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1966"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/cyanpacman1.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="100.15005"
+         x="26.458332"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-889-2"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-7-2"
+         d="m 28.045833,100.15 a 1.0583332,1.0583332 0 0 0 -1.058333,1.05833 1.0583332,1.0583332 0 0 0 0.529166,0.91519 v 0.40773 h -0.264583 v 0.26458 h 1.5875 v -0.26458 H 28.575 v -0.40773 a 1.0583332,1.0583332 0 0 0 0.519864,-0.78393 l -1.049031,-0.13126 1.049031,-0.13125 A 1.0583332,1.0583332 0 0 0 28.045833,100.15 Z m -0.208772,0.50281 a 0.15934593,0.15934593 0 0 1 0.159163,0.15968 0.15934593,0.15934593 0 0 1 -0.159163,0.15917 0.15934593,0.15934593 0 0 1 -0.159681,-0.15917 0.15934593,0.15934593 0 0 1 0.159681,-0.15968 z m 0.473355,1.57872 v 0.29972 H 27.78125 v -0.29921 a 1.0583332,1.0583332 0 0 0 0.264583,0.0346 1.0583332,1.0583332 0 0 0 0.264583,-0.0351 z"
+         style="fill:#0fffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1970"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/cyanpacman2.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="100.15005"
+         x="30.427082"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-8-6-4"
+         style="fill:#fffffd;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-5-4-7"
+         d="m 32.014583,100.15 a 1.0583333,1.0583333 0 0 0 -1.058333,1.05833 1.0583333,1.0583333 0 0 0 0.360185,0.79375 h -0.0956 v 0.26459 h 0.79375 0.79375 v -0.26459 h -0.0956 a 1.0583333,1.0583333 0 0 0 0.247015,-0.32091 l -0.945163,-0.47284 0.945679,-0.47284 A 1.0583333,1.0583333 0 0 0 32.014587,100.15 Z m -0.208772,0.50281 a 0.15934593,0.15934593 0 0 1 0.159163,0.15968 0.15934593,0.15934593 0 0 1 -0.159163,0.15917 0.15934593,0.15934593 0 0 1 -0.05581,-0.0103 v -0.0176 h -0.03462 a 0.15934593,0.15934593 0 0 1 -0.06925,-0.13126 0.15934593,0.15934593 0 0 1 0.159682,-0.15968 z"
+         style="fill:#0fffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1974"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/cyanpacman3.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="100.15005"
+         x="34.395832"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-88-0-7"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-3-3-5"
+         d="m 35.983333,100.15 a 1.0583333,1.0583333 0 0 0 -1.058333,1.05833 1.0583333,1.0583333 0 0 0 0.529166,0.91519 v 0.40773 h -0.264583 v 0.26458 h 1.5875 v -0.26458 H 36.5125 v -0.40773 a 1.0583333,1.0583333 0 0 0 0.217558,-0.16846 l -0.746725,-0.74673 0.747757,-0.74775 A 1.0583333,1.0583333 0 0 0 35.983333,100.15 Z m -0.208772,0.50281 a 0.15934593,0.15934593 0 0 1 0.159163,0.15968 0.15934593,0.15934593 0 0 1 -0.159163,0.15917 0.15934593,0.15934593 0 0 1 -0.159682,-0.15917 0.15934593,0.15934593 0 0 1 0.159682,-0.15968 z m 0.473355,1.57872 v 0.29972 H 35.71875 v -0.29921 a 1.0583333,1.0583333 0 0 0 0.264583,0.0346 1.0583333,1.0583333 0 0 0 0.264583,-0.0351 z"
+         style="fill:#0fffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
+    </g>
+    <g
+       id="g1978"
+       inkscape:export-filename="/home/pi/PlatformGame/level6/cyanpacman4.png"
+       inkscape:export-xdpi="511.99219"
+       inkscape:export-ydpi="511.99219">
+      <rect
+         inkscape:export-ydpi="256"
+         inkscape:export-xdpi="256"
+         inkscape:export-filename="C:\Dev\Platform Game\cursor.png"
+         y="100.15005"
+         x="38.364582"
+         height="3.1750026"
+         width="3.1750026"
+         id="rect851-4-9-4-9-4"
+         style="fill:#555500;fill-opacity:0;stroke:none;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1306-33-2-8"
+         d="m 39.952083,100.15 a 1.0583333,1.0583333 0 0 0 -1.058333,1.05833 1.0583333,1.0583333 0 0 0 0.529166,0.91519 v 0.9369 h -0.264583 v 0.26458 h 1.5875 v -0.26458 h -0.264584 v -0.9369 a 1.0583333,1.0583333 0 0 0 0.416513,-0.44235 l -0.945679,-0.47284 0.945679,-0.47284 A 1.0583333,1.0583333 0 0 0 39.952083,100.15 Z m -0.208772,0.50281 a 0.15934593,0.15934593 0 0 1 0.159162,0.15968 0.15934593,0.15934593 0 0 1 -0.159162,0.15917 0.15934593,0.15934593 0 0 1 -0.159682,-0.15917 0.15934593,0.15934593 0 0 1 0.159682,-0.15968 z m 0.473355,1.57872 v 0.82889 H 39.6875 v -0.82838 a 1.0583333,1.0583333 0 0 0 0.264583,0.0346 1.0583333,1.0583333 0 0 0 0.264583,-0.0351 z"
+         style="fill:#0fffff;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
     </g>
   </g>
 </svg>

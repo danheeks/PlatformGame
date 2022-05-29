@@ -191,6 +191,42 @@ levels = [
     ],
     ], # end of level
     
+            
+          # level 6
+     [   
+       ["Processing Plant", 'level6',[0,0,0], 512, 160, True],
+        [
+         # list of monsters
+            [2, True, 416, 160, 48, 416],
+            [2, False, 128, 288, 128, 416],
+            [1, False, 512, 64, 64, 416],
+        ],
+        [
+         'brick','floor','thorn bush','','stalactite','floorfall','','',
+         '','','','','','end','','',
+         '','endinv','','','','key',''
+         ],
+    [  
+     # list of lines
+    'A                   E          A',
+    'A                             VA',
+    'A                              A',
+    'A                              A',
+    'A                       C      A',
+    'ABBBBBBBBBBBBB    FFFFBBBBBB   A',
+    'A                            BBA',
+    'A                    C       V A',
+    'A                 DDDDDDDDDD   A',
+    'A   BBBBBBBBBB                 A',
+    'A                              A',
+    'AFFBBBBBBBBBBB    BBBBBBB     BA',
+    'A      VAV                     A',
+    'ABB     A     ANOA             A',
+    'A    C  A     APQAAAAAAACC     A',
+    'ABBBBBBBAAAAAAAAAAAAAAAABBBBBBBA',
+    ],
+    ], # end of level
+    
      ]
 
 level = []
