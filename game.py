@@ -764,7 +764,7 @@ class Man(Being):
 
         b1 = level[foot_block_j][foot_block_left]
         if is_wall(b1):
-                return True
+            return True
 
         b2 = level[foot_block_j][foot_block_left + 1]
         if is_wall(b2):
