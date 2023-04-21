@@ -243,7 +243,7 @@ high_score = 0;
 level_number = 0;
 conveyor = [];
 level_title = '';
-background_color = Phaser.Display.Color.GetColor(0,0,0);
+background_color = '#000000';
 num_lives = 3;
 
 const GIRL_OFFSETS = [ [97, 348], [83, 351], [81, 356], [96, 365], [99, 361], [105, 365], [99, 375], [96, 366] ];
@@ -306,7 +306,7 @@ function affect_floor(j,i)
 man = null;
 monsters = [];
 
-function load_level()
+function load_level(scene)
 {
     air = 2000;
     level = [];
@@ -325,7 +325,7 @@ function load_level()
     man_x = levels[level_number][0][3];
     man_y = levels[level_number][0][4];
     leftward = levels[level_number][0][5];
-    man = new Man(man_x, man_y, leftward);
+    man = new Man(scene, 'bg', man_x, man_y, leftward);
     monsters = [];
     for (let i = 0; i < levels[level_number][1].length; i++)
     {
@@ -546,6 +546,8 @@ class Being extends Phaser.Sprite
                 this.leftward_images.append(flipped_img);
                 this.left_offsets.append([img.get_width() -this.offsets[i][0], this.offsets[i][1]]);
             }
+        }
+    }
 
     get_on_posns()
     {
@@ -573,66 +575,90 @@ class Being extends Phaser.Sprite
 
 class Monster extends Being
 {
-    def __init__(self, version, leftward, x, y, minx, max_x):
-        this.version = version
-        Being.__init__(self, x, y, leftward)
-        this.min_x = minx
-        this.max_x = max_x
+    constructor(scene, x, y, texture, leftward, version, minx, max_x)
+    {
+        this.version = version;
+        super(scene, x, y, texture, leftward);
+        this.min_x = minx;
+        this.max_x = max_x;
+    }
         
-    def load_images(self):
-        if this.version == 0:
-            this.load_images2('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, True)
-        elif this.version == 2:
-            this.load_images2('toilet/', TOILET_OFFSETS, TOILET_PIXEL_SCALE, False)
-        elif this.version == 3:
-            this.load_images2('Goose/', GOOSE_OFFSETS, GOOSE_PIXEL_SCALE, True)
+    load_images()
+    {
+        if (this.version == 0)
+            this.load_images2('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, true);
+        else if (this.version == 2)
+            this.load_images2('toilet/', TOILET_OFFSETS, TOILET_PIXEL_SCALE, false);
+        else if (this.version == 3)
+            this.load_images2('Goose/', GOOSE_OFFSETS, GOOSE_PIXEL_SCALE, true);
+    }
             
-    def move(self):
-        if this.leftward:
-            this.pos[0] -= this.move_step
-            this.image_index -= 1
-            if this.pos[0] <= this.min_x:
-                this.leftward = False
-        else:
-            this.pos[0] += this.move_step
-            this.image_index += 1
-            if this.pos[0] >= this.max_x:
-                this.leftward = True
-        if this.image_index > 7:
-            this.image_index = 0
-        elif this.image_index < 0:
-            this.image_index = 7
+    move()
+    {
+        if (this.leftward)
+        {
+            this.pos[0] -= this.move_step;
+            this.image_index -= 1;
+            if (this.pos[0] <= this.min_x)
+                this.leftward = false;
+        }
+        else
+        {
+            this.pos[0] += this.move_step;
+            this.image_index += 1;
+            if (this.pos[0] >= this.max_x)
+                this.leftward = true;
+        }
+        if (this.image_index > 7)
+            this.image_index = 0;
+        else if (this.image_index < 0)
+            this.image_index = 7;
+    }
+}
             
-class Eugene(Being):
-    def __init__(self, upward, x, y, miny, max_y):
-        Being.__init__(self, x, y, False)
-        this.upward = upward
-        this.min_y = miny
-        this.max_y = max_y
-        this.move_step = pixel_scale * 0.125
+class Eugene extends Being
+{
+    constructor(scene, x, y, texture, upward, miny, max_y)
+    {
+        super(scene, x, y, texture, false);
+        this.upward = upward;
+        this.min_y = miny;
+        this.max_y = max_y;
+        this.move_step = pixel_scale * 0.125;
+    }
 
-    def load_images(self):
-        this.load_images2('eugene', EUGENE_OFFSETS, EUGENE_PIXEL_SCALE, False, 1)
+    load_images()
+    {
+        this.load_images2('eugene', EUGENE_OFFSETS, EUGENE_PIXEL_SCALE, false, 1);
+    }
 
-    def move(self):
-        global keys_left
-        if keys_left == 0:
-            this.upward = False
-        if this.upward:
-            this.pos[1] -= this.move_step
-            if this.pos[1] <= this.min_y:
-                this.upward = False
-        else:
-            this.pos[1] += this.move_step
-            if this.pos[1] >= this.max_y:
-                this.pos[1] = this.max_y
-                this.upward = True
+    move()
+    {
+        if (keys_left == 0)
+            this.upward = false;
+        if (this.upward)
+        {
+            this.pos[1] -= this.move_step;
+            if (this.pos[1] <= this.min_y)
+                this.upward = false;
+        }
+        else
+        {
+            this.pos[1] += this.move_step;
+            if (this.pos[1] >= this.max_y)
+            {
+                this.pos[1] = this.max_y;
+                this.upward = true;
+            }
+        }
+    }
+}
 
 class Man extends Being
 {
-    constructor(x = 0, y = 0, leftward = false)
+    constructor(scene, texture, x = 0, y = 0, leftward = false)
     {
-        super(x, y, leftward);
+        super(scene, x, y, texture, leftward);
         this.in_jump = false;
         this.move_dir_on_jump = 0;
         this.jump_index = 0;
@@ -1028,8 +1054,6 @@ function draw_air()
     pygame.draw.rect(screen, pygame.Color(255,255,255), pygame.Rect(128, 552, air * 0.448, 16))
 }
 
-load_level();
-
 function draw_score()
 {
     screen.blit(myfont.render("High Score " + "{:06d}".format(high_score), False, pygame.Color(255,255,255)),(0,580));
@@ -1037,8 +1061,6 @@ function draw_score()
     screen.blit(myfont.render("Keys " + "{:d}".format(keys_left), False, pygame.Color(255,255,255)),(512,612));
 }
     
-man_for_lives = new Man();
-
 function draw_lives()
 {
     for(let i=0; i<num_lives - 1; i++)
@@ -1080,6 +1102,9 @@ function preload ()
 
 function create ()
 {
+    load_level(this.scene);
+    man_for_lives = new Man(this.scene, 'bg');
+    dan = new Man()
 }
 
 function update ()
