@@ -1,9 +1,15 @@
+var config = {
+    type: Phaser.AUTO,
+    width: 1024,
+    height: 710,
+    scene: {
+        preload: preload,
+        create: create,
+        update: update
+    }
+};
 
-
-let { init, Sprite, GameLoop } = kontra;
-
-window.addEventListener('keydown', onKeyDown);
-window.addEventListener('keyup', onKeyUp);
+clock = Date.now();
 
 const levels = [
           // level 1
@@ -214,6 +220,7 @@ const levels = [
     ], // end of level
     
      ];
+
 level = [];
 blocks = 'ABCDEFGHIJKLMNOPQRSTUVW';
 wall_flags =  '1                      ';
@@ -236,7 +243,7 @@ high_score = 0;
 level_number = 0;
 conveyor = [];
 level_title = '';
-background_color = 'rgba(0, 0, 0, 1)';//'rgba(0, 255, 170, 1)';
+background_color = '#000000';
 num_lives = 3;
 
 const GIRL_OFFSETS = [ [97, 348], [83, 351], [81, 356], [96, 365], [99, 361], [105, 365], [99, 375], [96, 366] ];
@@ -249,52 +256,6 @@ const TOILET_OFFSETS = [ [25, 63], [25, 63], [25, 63], [25, 63], [25, 63], [25, 
 const TOILET_PIXEL_SCALE = 32;
 const GOOSE_OFFSETS = [ [144,242], [144,242], [144,242], [144,242], [144,242], [144,242], [144,242], [144,242], ];
 const GOOSE_PIXEL_SCALE = 118;
-
-
-var background = 
-{
-  render: function ()
-   {
-    //ctx.save()
-    ctx.beginPath();
-    ctx.rect(0, 0, CANVAS_W, CANVAS_H);
-    ctx.fillStyle = background_color;
-    ctx.fill();
-    ctx.closePath();
-}
-}
-
-
-let { canvas } = init();
-var ctx = canvas.getContext("2d");
-const CANVAS_W = canvas.width;
-const CANVAS_H = canvas.height;
-
-function onKeyDown(e) {
-//    console.log(e.keyCode);
-    switch (e.keyCode)
-    {
-       case 37:
-           left_pressed = true;
-           break;
-       case 39:
-           right_pressed = true;
-           break;
-    }
-}
-
-function onKeyUp(e) {
-    switch (e.keyCode)
-    {
-       case 37:
-           left_pressed = false;
-           break;
-       case 39:
-           right_pressed = false;
-           break;
-    }
-}
-
 
 function is_wall(c)
 {
@@ -364,7 +325,7 @@ function load_level(scene)
     man_x = levels[level_number][0][3];
     man_y = levels[level_number][0][4];
     leftward = levels[level_number][0][5];
-    man = new Man(man_x, man_y, leftward);
+    man = new Man(scene, 'bg', man_x, man_y, leftward);
     monsters = [];
     for (let i = 0; i < levels[level_number][1].length; i++)
     {
@@ -377,7 +338,7 @@ function load_level(scene)
     images = [];
     image_folder_name = levels[level_number][0][1];
     level_title = levels[level_number][0][0];
-    background_color = 'rgba(' + toString(levels[level_number][0][2][0]) + ', ' + toString(levels[level_number][0][2][1]) + ', ' + toString(levels[level_number][0][2][2]) + ', 1)';
+    background_color = new Phaser.Display.Cfolor(levels[level_number][0][2][0], levels[level_number][0][2][1], levels[level_number][0][2][2]);
     for (let i = 0; i < levels[level_number][2].length; i++) {
         image_name = levels[level_number][2][i];
         // images[0] for 'A', images[1] for 'B' etc.
@@ -385,9 +346,13 @@ function load_level(scene)
             images.push(null);
         else
         {
-            var img = new Image();
-            img.src = image_folder_name + '/' + image_name + '.png';
-            images.push(img);
+            try{
+                images.push(this.load.image(image_folder_name + '/' + image_name + '.png'));
+            }catch(error)
+            {
+                console.error(error);
+                console.error('image_name = ' + image_name);
+            }
         }
     }
     
@@ -402,9 +367,7 @@ function load_level(scene)
     conveyor = [];
     for(let i = 0; i<4; i++)
     {
-        var image = new Image();
-        image.src = image_folder_name + '/conveyor' + (i+1) + '.png';
-        conveyor.push(image);
+        conveyor.push(this.load.image(image_folder_name + '/conveyor' + str(i+1) + '.png'));
     }
 }
     
@@ -482,10 +445,11 @@ function on_lose_life()
     space_pressed = false;
 }
 
-class Being
+class Being extends Phaser.Sprite
 {
-    constructor(x, y, leftward)
+    constructor(scene, x, y, texture, leftward)
     {
+        super(scene, x, y, texture);
         this.leftward = leftward;
         this.images = [];
         this.leftward_images = [];
@@ -496,10 +460,6 @@ class Being
         this.image_index = 0;
         this.load_images();
     }
-    
-    load_images()
-    {
-    }
         
     draw()
     {
@@ -509,14 +469,14 @@ class Being
             if (i > 7)
                 i -= 8;
             this.image = this.leftward_images[i];
-            this.image_shift = [Math.trunc(this.pos[0] - this.left_offsets[i][0]), Math.trunc(this.pos[1] - this.left_offsets[i][1])];
+            this.image_shift = [int(this.pos[0] - this.left_offsets[i][0]), int(this.pos[1] - this.left_offsets[i][1])];
         }
         else
         {
             this.image = this.images[this.image_index];
-            this.image_shift = [Math.trunc(this.pos[0] - this.offsets[this.image_index][0]), Math.trunc(this.pos[1] - this.offsets[this.image_index][1])];
+            this.image_shift = [int(this.pos[0] - this.offsets[this.image_index][0]), int(this.pos[1] - this.offsets[this.image_index][1])];
         }
-        ctx.drawImage(this.image, this.image_shift[0], this.image_shift[1]);
+        screen.blit(this.image, this.image_shift);
         this.rect = this.image.get_rect();
         this.rect.x += this.image_shift[0];
         this.rect.y += this.image_shift[1];
@@ -526,14 +486,13 @@ class Being
 
     load_images2(root_path, offsets, character_pixel_scale, leftward, num_images = 8)
     {
-        return;
         if (leftward)
         {
             this.left_offsets = [];
             for(let i = 0; offsets.length; i++)
             {
                 offset = offsets[i];
-                this.left_offsets.push([offset[0],offset[1]]);
+                this.left_offsets.append([offset[0],offset[1]]);
             }
             this.offsets = [];
         }
@@ -542,23 +501,21 @@ class Being
             this.offsets = [];
             for(let i = 0; i<offsets.length; i++)
             {
-                var offset = offsets[i];
-                this.offsets.push([offset[0],offset[1]]);
+                offset = offsets[i];
+                this.offsets.append([offset[0],offset[1]]);
             }
             this.left_offsets = [];
         }
-        var image_pixel_scale = character_pixel_scale;
-        var image_scale = pixel_scale / image_pixel_scale;
+        image_pixel_scale = character_pixel_scale;
+        image_scale = pixel_scale / image_pixel_scale;
         for(let i = 0; i<num_images; i++)
         {
-            var image_name = root_path + '.png';
-            var img = null;
+            image_name = root_path + '.png';
             if (num_images > 1)
-                image_name = root_path + toString(i) + '.png';
+                image_name = root_path + '{}.png'.format(i);
             try
             {
-                img = new Image();
-                img = img.src = image_name;
+                img = pygame.image.load(image_name);
             }
             catch(error)
             {
@@ -618,10 +575,10 @@ class Being
 
 class Monster extends Being
 {
-    constructor(x, y, leftward, version, minx, max_x)
+    constructor(scene, x, y, texture, leftward, version, minx, max_x)
     {
-        super(x, y, leftward);
         this.version = version;
+        super(scene, x, y, texture, leftward);
         this.min_x = minx;
         this.max_x = max_x;
     }
@@ -661,9 +618,9 @@ class Monster extends Being
             
 class Eugene extends Being
 {
-    constructor(x, y, upward, miny, max_y)
+    constructor(scene, x, y, texture, upward, miny, max_y)
     {
-        super(x, y, false);
+        super(scene, x, y, texture, false);
         this.upward = upward;
         this.min_y = miny;
         this.max_y = max_y;
@@ -699,9 +656,9 @@ class Eugene extends Being
 
 class Man extends Being
 {
-    constructor(x = 0, y = 0, leftward = false)
+    constructor(scene, texture, x = 0, y = 0, leftward = false)
     {
-        super(x, y, leftward);
+        super(scene, x, y, texture, leftward);
         this.in_jump = false;
         this.move_dir_on_jump = 0;
         this.jump_index = 0;
@@ -710,7 +667,7 @@ class Man extends Being
 
     load_images()
     {
-        this.load_images2('walking man/t', DAN_OFFSETS, DAN_PIXEL_SCALE, false);
+        this.load_images2('walking man/t', DAN_OFFSETS, DAN_PIXEL_SCALE, False);
     }
 
     add_move_dir()
@@ -962,7 +919,7 @@ class Man extends Being
 
 function on_game_over()
 {
-    back_col = 'rgba(0,0,0, 1)';
+    back_col = Phaser.Display.Color.GetColor(0,0,0);
     foot = this.load.image('foot.png');
     flipped_img = pygame.transform.flip(foot, true, true);
     man_for_squashing = new Man();
@@ -1044,7 +1001,7 @@ function on_end_level()
                 
 function draw_background()
 {
-    //screen.fill(background_color);
+    screen.fill(background_color);
 }
     
 function draw_level(offset = [0,0])
@@ -1056,15 +1013,9 @@ function draw_level(offset = [0,0])
         line = level[i];
         for(let x = 0; x<32; x++)
         {
-            var posx = x*pixel_scale + offset[0];
-            var posy = y + offset[1];
+            pos = (x*pixel_scale + offset[0], y + offset[1]);
             if (line[x] != ' ')
             {
-                if(posx == 256 && posy == 288)
-                {
-                    posx = 256;
-                }
-                
                 if (line[x] == 'D')
                     img = conveyor[animation_index & 3];
                 else if (line[x] == 'W')
@@ -1074,21 +1025,13 @@ function draw_level(offset = [0,0])
                     img_char = line[x];
                     if ((animation_index & 3) > 1 && keys_left == 0 && img_char == 'N')
                         img_char = 'R';
-                    img = images[img_char.charCodeAt(0)-65];
+                    img = images[ord(img_char)-65];
                 }
                 if (img != null)
                 {
-                    try
-                    {
-                    ctx.drawImage(img, posx, posy, 32, 32);
-                    }
-                    catch(err)
-                    {
-                        console.log(err.message);
-                        console.log(img.src);
-                        console.log(posx, ', ', posy);
-                        exit();
-                    }
+                    if (pixel_scale != 32)
+                        img = pygame.transform.scale(img, (int(img.get_width() * pixel_scale/32), int(img.get_height() * pixel_scale/32)));
+                    screen.blit(img, pos);
                 }
             }
             if (line[x] == 'V')
@@ -1100,7 +1043,7 @@ function draw_level(offset = [0,0])
     keys_left = local_keys_left;
 
     // level title
-   // screen.blit(myfont.render(level_title, False, pygame.Color(255,255,255)),(400,y));
+    screen.blit(myfont.render(level_title, False, pygame.Color(255,255,255)),(400,y));
 }
 
 function draw_air()
@@ -1132,63 +1075,105 @@ function draw_lives()
         
 function draw_everything()
 {
-    background.render();
-    //man.draw();
-    //for(let i = 0; i<monsters.length; i++)
-    //{
-    //    monsters[i].draw();
-    //}
+    draw_background();
+    man.draw();
+    for(let i = 0; i<monsters.length; i++)
+    {
+        monsters[i].draw();
+    }
     draw_level();
-    //draw_air();
-    //draw_score();
-    //draw_lives();
+    draw_air();
+    draw_score();
+    draw_lives();
 }
                         
-                         
+                            
+                                
+                                    
+                                        
+                                            
+                                                    
+var game = new Phaser.Game(config);
 
-let sprite = Sprite({
-  x: 100,        // starting x,y position of the sprite
-  y: 80,
-  color: 'red',  // fill color of the sprite rectangle
-  width: 20,     // width and height of the sprite rectangle
-  height: 40,
-//  dx: 2          // move the sprite 2px to the right every frame
-    update: function()
-    {
-        if (left_pressed){
-          // left arrow pressed
-          sprite.x -= 2;
-        }
-        else if (right_pressed) {
-          // right arrow pressed
-          sprite.x += 2;
-        }
-    }
-});
+function preload ()
+{
+    this.load.image('cursor', 'cursor.png');
+}
 
+function create ()
+{
+    load_level(this.scene);
+    man_for_lives = new Man(this.scene, 'bg');
+    dan = new Man()
+}
 
-let loop = GameLoop({  // create the main game loop
-  fps: 12.5,
-  update: function() { // update the game state
-    sprite.update();
+function update ()
+{
+//while num_lives > 0:
+//    for event in pygame.event.get():
+//        if event.type == pygame.QUIT:
+//            exit()
+//        elif event.type == pygame.KEYDOWN:
+//            if event.key == pygame.K_ESCAPE:
+//                on_pause()
+//            if event.key == pygame.K_RIGHT:
+//                right_pressed = True
+//            if event.key == pygame.K_LEFT:
+//                left_pressed = True
+//            if event.key == pygame.K_UP:
+//                up_pressed = True
+//            if event.key == pygame.K_SPACE:
+//                space_pressed = True
+//            if event.key == pygame.K_k:
+//                on_end_level()                
+//        elif event.type == pygame.KEYUP:
+//            if event.key == pygame.K_RIGHT:
+//                right_pressed = False
+//            if event.key == pygame.K_LEFT:
+//                left_pressed = False
+//            if event.key == pygame.K_UP:
+//                up_pressed = False
+//            if event.key == pygame.K_SPACE:
+//                space_pressed = False
+
+    draw_everything();
+    life_lost = man.move();
     
-    // wrap the sprites position when it reaches
-    // the edge of the screen
-    if (sprite.x > canvas.width) {
-      sprite.x = -sprite.width;
+    if(life_lost)
+        return;
+
+    for(let i=0; i<monsters.length; i++)
+        monster.move();
+    
+    life_lost = false;
+    
+    for(let i=0; i<monsters.length; i++)
+    {
+        if(man.being_collision(monster))
+        {
+            pygame.display.flip();
+            animated_zoom();
+            on_lose_life();
+            life_lost = true;
+            break;
+        }
     }
+        
+    if(life_lost)
+        return;
+
+    pygame.display.flip();
     
     animation_index += 1;
-  },
-  render: function() { // render the game state
-    draw_everything();
-    sprite.render();
-  }
-});
+    if(animation_index == 8)
+        animation_index = 0;
+        
+    air -= 1;
+    
+    if(air <= 0)
+        on_lose_life();
 
-load_level();
-man_for_lives = new Man();
-dan = new Man()
-
-loop.start();    // start the game
+    clock.tick(12.5);
+    //pygame.display.set_caption(f"fps: {clock.get_fps()}");
+}
 
