@@ -250,6 +250,8 @@ def resize_level(level_number):
 
 #for i in range(0,6):
 #    resize_level(i)
+import os
+this_dir = os.path.dirname(os.path.realpath(__file__))
 
 def rescale_image(image_path, old_pixel_scale):
     scale = 32.0/old_pixel_scale
@@ -270,4 +272,4 @@ def resize_being(root_path, old_pixel_scale, offsets, num_images = 8):
     for i in range(0, 8):
         rescale_image(root_path + str(i), old_pixel_scale)
         
-resize_being('C:/Dev/PlatformGame/trunk/walking man/t', 230, DAN_OFFSETS)
+resize_being(this_dir + '/walking man/t', 230, DAN_OFFSETS)

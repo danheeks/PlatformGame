@@ -271,11 +271,17 @@ const CANVAS_W = canvas.width;
 const CANVAS_H = canvas.height;
 
 function onKeyDown(e) {
-//    console.log(e.keyCode);
+    console.log(e.keyCode);
     switch (e.keyCode)
     {
+       case 32:
+           space_pressed = true;
+           break;
        case 37:
            left_pressed = true;
+           break;
+       case 38:
+           up_pressed = true;
            break;
        case 39:
            right_pressed = true;
@@ -286,15 +292,20 @@ function onKeyDown(e) {
 function onKeyUp(e) {
     switch (e.keyCode)
     {
+       case 32:
+           space_pressed = false;
+           break;
        case 37:
            left_pressed = false;
+           break;
+       case 38:
+           up_pressed = false;
            break;
        case 39:
            right_pressed = false;
            break;
     }
 }
-
 
 function is_wall(c)
 {
@@ -326,7 +337,7 @@ function on_flag(i,j)
         score += 100;
         level[j][i] = ' ';
     }
-    index = ord(c) - 65;
+    index = c.charCodeAt(0) - 65;
     if (on_flags[index] == ' ')
         return 0;
     return Math.trunc(on_flags[index]);
@@ -337,7 +348,7 @@ function affect_floor(j,i)
 {
     c = level[j][i]
     if (c >= 'F' && c < 'M')
-        level[j][i] = chr(ord(c)+1);
+        level[j][i] = String.fromCharCode(c.charCodeAt(0)+1);
     else if (c == 'M')
         level[j][i] = ' ';
 }
@@ -482,6 +493,26 @@ function on_lose_life()
     space_pressed = false;
 }
 
+class Rect
+{
+    constructor(xmin, ymin, xmax, ymax)
+    {
+        this.xmin = xmin;
+        this.ymin = ymin;
+        this.xmax = xmax;
+        this.ymax = ymax;
+    }
+    
+    intersects(rect)
+    {
+        if (rect.xmin > this.xmax)return false;
+        if (rect.ymin > this.ymax)return false;
+        if (rect.xmax < this.xmin)return false;
+        if (rect.ymax < this.ymin)return false;
+        return true;
+    }
+}
+
 class Being
 {
     constructor(x, y, leftward)
@@ -505,7 +536,7 @@ class Being
     {
         if (this.leftward)
         {
-            i = 9 - this.image_index;
+            var i = 9 - this.image_index;
             if (i > 7)
                 i -= 8;
             this.image = this.leftward_images[i];
@@ -531,7 +562,7 @@ class Being
             this.left_offsets = [];
             for(let i = 0; offsets.length; i++)
             {
-                offset = offsets[i];
+                var offset = offsets[i];
                 this.left_offsets.push([offset[0],offset[1]]);
             }
             this.offsets = [];
@@ -588,40 +619,39 @@ class Being
         return [[i,j],[i+1,j],[i,j-1],[i+1,j-1]];
     }
     
-    update_mask()
+    get_rect_from_image()
     {
-        this.mask = pygame.mask.from_surface(this.image);
+        return Rect(this.pos[0], this.pos[1], this.pos[0] + this.image.width + this.pos[1] + this.image.height);
     }
         
     being_collision(being)
     {
-        if (pygame.sprite.collide_rect(self, being))
-        {
-            this.update_mask();
-            being.update_mask();
-            return this.mask.overlap(being.mask, (being.image_shift[0] - this.image_shift[0], being.image_shift[1] - this.image_shift[1]));
-        }
-        return false;
+        var rect1 = this.get_rect_from_image();
+        var rect2 = being.get_rect_from_image();
+        
+        return rect1.intersects(rect2);
     }
 }
 
+var version_for_Monster = null;
+
 class Monster extends Being
 {
-    constructor(x, y, leftward, version, minx, max_x)
+    constructor(version, leftward, x, y, minx, max_x)
     {
+        version_for_Monster = version;
         super(x, y, leftward);
-        this.version = version;
         this.min_x = minx;
         this.max_x = max_x;
     }
         
     load_images()
     {
-        if (this.version == 0)
+        if (version_for_Monster == 0)
             this.load_images2('Girl Monster/', GIRL_OFFSETS, GIRL_PIXEL_SCALE, true);
-        else if (this.version == 2)
+        else if (version_for_Monster == 2)
             this.load_images2('toilet/', TOILET_OFFSETS, TOILET_PIXEL_SCALE, false);
-        else if (this.version == 3)
+        else if (version_for_Monster == 3)
             this.load_images2('Goose/', GOOSE_OFFSETS, GOOSE_PIXEL_SCALE, true);
     }
             
@@ -718,10 +748,14 @@ class Man extends Being
     
     move()
     {
+        if(left_pressed)
+        {
+            console.log("left pressed");
+        }
         let on = this.on_flag();
         if (on == 1)
         {
-            animated_zoom();
+            //animated_zoom();
             on_lose_life();
             return true;
         }
@@ -746,7 +780,7 @@ class Man extends Being
         
         else
         {
-            f = this.on_floor();
+            const f = this.on_floor();
             if (f == 0)
             {
                 this.pos[1] += 16;
@@ -756,7 +790,7 @@ class Man extends Being
             {
                 if (this.fall_count > 8)
                 {
-                    animated_zoom();
+                    //animated_zoom();
                     on_lose_life();
                     return true;
                 }
@@ -872,52 +906,18 @@ class Man extends Being
     {
         if (this.pos[1] % pixel_scale != 0)
             return false;
-        foot_block_j = Math.trunc(this.pos[1] / pixel_scale) - 3;
-        foot_block_left = Math.trunc(this.pos[0]/pixel_scale - 0.51);
+        const foot_block_j = Math.trunc(this.pos[1] / pixel_scale) - 3;
+        const foot_block_left = Math.trunc(this.pos[0]/pixel_scale - 0.51);
 
-        b1 = level[foot_block_j][foot_block_left];
+        const b1 = level[foot_block_j][foot_block_left];
         if (is_wall(b1))
             return true;
 
-        b2 = level[foot_block_j][foot_block_left + 1];
+        const b2 = level[foot_block_j][foot_block_left + 1];
         if (is_wall(b2))
             return true;
         
         return false;
-    }
-    
-    draw_floor_cursor()
-    {
-        if (this.pos[1] % pixel_scale != 0)
-            return;
-        foot_block_j = Math.trunc(this.pos[1] / pixel_scale);
-        foot_block_left = Math.trunc(this.pos[0]/pixel_scale - 0.51);
-        screen.blit(cursor, (foot_block_left * 32, foot_block_j * 32));
-        screen.blit(cursor, ((foot_block_left + 1) * 32, foot_block_j * 32));
-    }
-
-    draw_head_cursor()
-    {
-        if (this.pos[1] % pixel_scale != 0)
-            return;
-        foot_block_j = Math.trunc(this.pos[1] / pixel_scale) - 3;
-        foot_block_left = Math.trunc(this.pos[0]/pixel_scale - 0.51);
-        screen.blit(cursor, (foot_block_left * 32, foot_block_j * 32));
-        screen.blit(cursor, ((foot_block_left + 1) * 32, foot_block_j * 32));
-    }
-    
-    draw_front_cursor()
-    {
-        if (this.image_index == 0 || this.image_index == 4)
-        {
-            knee_block_j = Math.trunc(this.pos[1] / pixel_scale) - 1;
-            let add = 0.5;
-            if (this.leftward)
-                add = -1.5;
-            block_right = Math.trunc(this.pos[0]/pixel_scale + add);
-            screen.blit(cursor, (block_right * 32, knee_block_j * 32));
-            screen.blit(cursor, (block_right * 32, (knee_block_j - 1) * 32));
-        }
     }
     
     on_flag()
@@ -932,10 +932,12 @@ class Man extends Being
             const on = on_flag(test[0], test[1]);
             if (on == 1)
             {
+                // to do, do pixel check
+                return 1;
                 // death, check with mask
                 man.update_mask();
                 img_char = level[test[1]][test[0]];
-                img = images[ord(img_char)-65];
+                img = images[img_char.charCodeAt(0)-65];
                 mask = pygame.mask.from_surface(img);
                 shiftx = test[0]*pixel_scale;
                 shifty = test[1]*pixel_scale;
@@ -1133,47 +1135,18 @@ function draw_everything()
     //draw_lives();
 }
                         
-                         
-
-let sprite = Sprite({
-  x: 100,        // starting x,y position of the sprite
-  y: 80,
-  color: 'red',  // fill color of the sprite rectangle
-  width: 20,     // width and height of the sprite rectangle
-  height: 40,
-//  dx: 2          // move the sprite 2px to the right every frame
-    update: function()
-    {
-        if (left_pressed){
-          // left arrow pressed
-          sprite.x -= 2;
-        }
-        else if (right_pressed) {
-          // right arrow pressed
-          sprite.x += 2;
-        }
-    }
-});
+ 
 
 
 let loop = GameLoop({  // create the main game loop
   fps: 12.5,
   update: function() { // update the game state
-    sprite.update();
-    
-    // wrap the sprites position when it reaches
-    // the edge of the screen
-    if (sprite.x > canvas.width) {
-      sprite.x = -sprite.width;
-    }
-    
     life_lost = man.move();
     
     animation_index += 1;
   },
   render: function() { // render the game state
     draw_everything();
-    sprite.render();
   }
 });
 
