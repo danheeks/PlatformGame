@@ -216,7 +216,7 @@ pixel_scale = 32 # pixels per metre
 
 GIRL_OFFSETS = [ [97, 348], [83, 351], [81, 356], [96, 365], [99, 361], [105, 365], [99, 375], [96, 366] ]
 GIRL_PIXEL_SCALE = 185
-DAN_OFFSETS = [[24, 65],[19, 66],[11, 64],[15, 64],[21, 63],[16, 63],[10, 63],[15, 64],] # rescaled
+DAN_OFFSETS = [ [178,470], [140, 475], [80,465], [110,464], [151,453], [120,459], [74, 459], [108, 465] ]
 DAN_PIXEL_SCALE = 230
 EUGENE_OFFSETS = [ [240,480], ]
 EUGENE_PIXEL_SCALE = 240
@@ -256,7 +256,7 @@ def rescale_image(image_path, old_pixel_scale):
     src_image_path = image_path + '.png'
     dst_image_path = image_path + '_32.png'
     img = wx.Image(src_image_path)
-    img.Scale(float(img.Width)*scale, float(img.Height)*scale)
+    img = img.Scale(float(img.Width)*scale, float(img.Height)*scale)
     img.SaveFile(dst_image_path)
     
 def resize_being(root_path, old_pixel_scale, offsets, num_images = 8):
@@ -270,4 +270,4 @@ def resize_being(root_path, old_pixel_scale, offsets, num_images = 8):
     for i in range(0, 8):
         rescale_image(root_path + str(i), old_pixel_scale)
         
-resize_being('C:/Dev/PlatformGame/walking man/t', 230, DAN_OFFSETS)
+resize_being('C:/Dev/PlatformGame/trunk/walking man/t', 230, DAN_OFFSETS)

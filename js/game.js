@@ -241,7 +241,7 @@ num_lives = 3;
 
 const GIRL_OFFSETS = [ [97, 348], [83, 351], [81, 356], [96, 365], [99, 361], [105, 365], [99, 375], [96, 366] ];
 const GIRL_PIXEL_SCALE = 185;
-const DAN_OFFSETS = [ [178,470], [140, 475], [80,465], [110,464], [151,453], [120,459], [74, 459], [108, 465] ];
+const DAN_OFFSETS = [[24, 65],[19, 66],[11, 64],[15, 64],[21, 63],[16, 63],[10, 63],[15, 64],]; // rescaled
 const DAN_PIXEL_SCALE = 230;
 const EUGENE_OFFSETS = [ [240,480], ];
 const EUGENE_PIXEL_SCALE = 240;
@@ -301,7 +301,7 @@ function is_wall(c)
     if(c == ' ')
         return false;
         
-    index = ord(c) - 65;
+    index = c.charCodeAt(0) - 65;
     return wall_flags[index] != ' ';
 }
 
@@ -309,10 +309,10 @@ function floor_flag(c)
 {
     if (c == ' ')
         return 0;
-    index = ord(c) - 65;
+    index = c.charCodeAt(0) - 65;
     if (floor_flags[index] == ' ')
         return 0
-    return int(floor_flags[index]);
+    return Math.trunc(floor_flags[index]);
 }
 
 function on_flag(i,j)
@@ -329,7 +329,7 @@ function on_flag(i,j)
     index = ord(c) - 65;
     if (on_flags[index] == ' ')
         return 0;
-    return int(on_flags[index]);
+    return Math.trunc(on_flags[index]);
 }
 
 
@@ -517,16 +517,15 @@ class Being
             this.image_shift = [Math.trunc(this.pos[0] - this.offsets[this.image_index][0]), Math.trunc(this.pos[1] - this.offsets[this.image_index][1])];
         }
         ctx.drawImage(this.image, this.image_shift[0], this.image_shift[1]);
-        this.rect = this.image.get_rect();
-        this.rect.x += this.image_shift[0];
-        this.rect.y += this.image_shift[1];
+        //this.rect = this.image.get_rect();
+        //this.rect.x += this.image_shift[0];
+        //this.rect.y += this.image_shift[1];
         // draw a yellow rectangle for debugging
         //pygame.draw.rect(screen, pygame.Color(255,255,0), this.rect, width = 1)
     }
 
     load_images2(root_path, offsets, character_pixel_scale, leftward, num_images = 8)
     {
-        return;
         if (leftward)
         {
             this.left_offsets = [];
@@ -554,48 +553,38 @@ class Being
             var image_name = root_path + '.png';
             var img = null;
             if (num_images > 1)
-                image_name = root_path + toString(i) + '.png';
+                image_name = root_path + i + '_32.png';
             try
             {
                 img = new Image();
-                img = img.src = image_name;
+                img.src = image_name;
             }
             catch(error)
             {
                 console.error(error);
                 console.error('image_name = ' + image_name);
             }
-            img = pygame.transform.scale(img, (int(img.get_width()*image_scale), int(img.get_height()*image_scale)));
+            //flipped_img = pygame.transform.flip(img, true, false);
+            var flipped_img = img;
             if (leftward)
             {
-                this.left_offsets[i][0] *= image_scale;
-                this.left_offsets[i][1] *= image_scale;
+                this.leftward_images.push(img);
+                this.images.push(flipped_img);
+                this.offsets.push([img.width -this.left_offsets[i][0], this.left_offsets[i][1]]);
             }
             else
             {
-                this.offsets[i][0] *= image_scale;
-                this.offsets[i][1] *= image_scale;
-            }
-            flipped_img = pygame.transform.flip(img, true, false);
-            if (leftward)
-            {
-                this.leftward_images.append(img);
-                this.images.append(flipped_img);
-                this.offsets.append([img.get_width() -this.left_offsets[i][0], this.left_offsets[i][1]]);
-            }
-            else
-            {
-                this.images.append(img);
-                this.leftward_images.append(flipped_img);
-                this.left_offsets.append([img.get_width() -this.offsets[i][0], this.offsets[i][1]]);
+                this.images.push(img);
+                this.leftward_images.push(flipped_img);
+                this.left_offsets.push([img.width -this.offsets[i][0], this.offsets[i][1]]);
             }
         }
     }
 
     get_on_posns()
     {
-        j = int(this.pos[1] / pixel_scale) - 1;
-        i = int(this.pos[0]/pixel_scale - 0.51);
+        const j = Math.trunc(this.pos[1] / pixel_scale) - 1;
+        const i = Math.trunc(this.pos[0]/pixel_scale - 0.51);
         return [[i,j],[i+1,j],[i,j-1],[i+1,j-1]];
     }
     
@@ -825,13 +814,13 @@ class Man extends Being
         if (this.pos[1] % pixel_scale != 0)
             return 0;
         
-        foot_block_j = int(this.pos[1] / pixel_scale);
-        foot_block_left = int(this.pos[0]/pixel_scale - 0.51);
+        var foot_block_j = Math.trunc(this.pos[1] / pixel_scale);
+        var foot_block_left = Math.trunc(this.pos[0]/pixel_scale - 0.51);
         
-        floor_found = 0;
+        var floor_found = 0;
         
-        b = level[foot_block_j][foot_block_left];
-        f = floor_flag(b);
+        var b = level[foot_block_j][foot_block_left];
+        var f = floor_flag(b);
         if (f != 0)
         {
             affect_floor(foot_block_j,foot_block_left);
@@ -852,7 +841,7 @@ class Man extends Being
     
     wall_in_front()
     {
-        wall_step = false;
+        var wall_step = false;
         if (this.leftward)
         {
             if (this.image_index == 1 || this.image_index == 5)
@@ -865,14 +854,14 @@ class Man extends Being
         }
         if (wall_step)
         {
-            knee_block_j = int(this.pos[1] / pixel_scale) - 1;
+            const knee_block_j = Math.trunc(this.pos[1] / pixel_scale) - 1;
             let add = 0.5;
             if (this.leftward)
                 add = -1.5;
-            block_right = int(this.pos[0]/pixel_scale + add);
+            const block_right = Math.trunc(this.pos[0]/pixel_scale + add);
             
-            b1 = level[knee_block_j][block_right];
-            b2 = level[knee_block_j - 1][block_right];
+            const b1 = level[knee_block_j][block_right];
+            const b2 = level[knee_block_j - 1][block_right];
             if (is_wall(b1) || is_wall(b2))
                 return true;
         }
@@ -883,8 +872,8 @@ class Man extends Being
     {
         if (this.pos[1] % pixel_scale != 0)
             return false;
-        foot_block_j = int(this.pos[1] / pixel_scale) - 3;
-        foot_block_left = int(this.pos[0]/pixel_scale - 0.51);
+        foot_block_j = Math.trunc(this.pos[1] / pixel_scale) - 3;
+        foot_block_left = Math.trunc(this.pos[0]/pixel_scale - 0.51);
 
         b1 = level[foot_block_j][foot_block_left];
         if (is_wall(b1))
@@ -901,8 +890,8 @@ class Man extends Being
     {
         if (this.pos[1] % pixel_scale != 0)
             return;
-        foot_block_j = int(this.pos[1] / pixel_scale);
-        foot_block_left = int(this.pos[0]/pixel_scale - 0.51);
+        foot_block_j = Math.trunc(this.pos[1] / pixel_scale);
+        foot_block_left = Math.trunc(this.pos[0]/pixel_scale - 0.51);
         screen.blit(cursor, (foot_block_left * 32, foot_block_j * 32));
         screen.blit(cursor, ((foot_block_left + 1) * 32, foot_block_j * 32));
     }
@@ -911,8 +900,8 @@ class Man extends Being
     {
         if (this.pos[1] % pixel_scale != 0)
             return;
-        foot_block_j = int(this.pos[1] / pixel_scale) - 3;
-        foot_block_left = int(this.pos[0]/pixel_scale - 0.51);
+        foot_block_j = Math.trunc(this.pos[1] / pixel_scale) - 3;
+        foot_block_left = Math.trunc(this.pos[0]/pixel_scale - 0.51);
         screen.blit(cursor, (foot_block_left * 32, foot_block_j * 32));
         screen.blit(cursor, ((foot_block_left + 1) * 32, foot_block_j * 32));
     }
@@ -921,11 +910,11 @@ class Man extends Being
     {
         if (this.image_index == 0 || this.image_index == 4)
         {
-            knee_block_j = int(this.pos[1] / pixel_scale) - 1;
+            knee_block_j = Math.trunc(this.pos[1] / pixel_scale) - 1;
             let add = 0.5;
             if (this.leftward)
                 add = -1.5;
-            block_right = int(this.pos[0]/pixel_scale + add);
+            block_right = Math.trunc(this.pos[0]/pixel_scale + add);
             screen.blit(cursor, (block_right * 32, knee_block_j * 32));
             screen.blit(cursor, (block_right * 32, (knee_block_j - 1) * 32));
         }
@@ -933,14 +922,14 @@ class Man extends Being
     
     on_flag()
     {
-        posns = this.get_on_posns();
-        j = int(this.pos[1] / pixel_scale) - 1;
-        i = int(this.pos[0]/pixel_scale - 0.51);
-        tests = [[i,j],[i+1,j],[i,j-1],[i+1,j-1]];
+        var posns = this.get_on_posns();
+        const j = Math.trunc(this.pos[1] / pixel_scale) - 1;
+        const i = Math.trunc(this.pos[0]/pixel_scale - 0.51);
+        var tests = [[i,j],[i+1,j],[i,j-1],[i+1,j-1]];
         for(let k = 0; k<tests.length; k++)
         {
-            test = tests[k];
-            on = on_flag(test[0], test[1]);
+            const test = tests[k];
+            const on = on_flag(test[0], test[1]);
             if (on == 1)
             {
                 // death, check with mask
@@ -1133,7 +1122,7 @@ function draw_lives()
 function draw_everything()
 {
     background.render();
-    //man.draw();
+    man.draw();
     //for(let i = 0; i<monsters.length; i++)
     //{
     //    monsters[i].draw();
@@ -1177,6 +1166,8 @@ let loop = GameLoop({  // create the main game loop
     if (sprite.x > canvas.width) {
       sprite.x = -sprite.width;
     }
+    
+    life_lost = man.move();
     
     animation_index += 1;
   },
