@@ -233,7 +233,7 @@ keys_left = 1;
 air = 2000;
 score = 0;
 high_score = 0;
-level_number = 0;
+level_number = 2;
 conveyor = [];
 level_title = '';
 background_color = 'rgba(0, 0, 0, 1)';//'rgba(0, 255, 170, 1)';
@@ -247,7 +247,7 @@ const EUGENE_OFFSETS = [ [240,480], ];
 const EUGENE_PIXEL_SCALE = 240;
 const TOILET_OFFSETS = [ [25, 63], [25, 63], [25, 63], [25, 63], [25, 63], [25, 63], [25, 63], [25, 63],  ];
 const TOILET_PIXEL_SCALE = 32;
-const GOOSE_OFFSETS = [ [144,242], [144,242], [144,242], [144,242], [144,242], [144,242], [144,242], [144,242], ];
+const GOOSE_OFFSETS = [[39, 65],[39, 65],[39, 65],[39, 65],[39, 65],[39, 65],[39, 65],[39, 65],];
 const GOOSE_PIXEL_SCALE = 118;
 
 
@@ -388,7 +388,7 @@ function load_level(scene)
     images = [];
     image_folder_name = levels[level_number][0][1];
     level_title = levels[level_number][0][0];
-    background_color = 'rgba(' + toString(levels[level_number][0][2][0]) + ', ' + toString(levels[level_number][0][2][1]) + ', ' + toString(levels[level_number][0][2][2]) + ', 1)';
+    background_color = 'rgba(' + levels[level_number][0][2][0] + ', ' + levels[level_number][0][2][1] + ', ' + levels[level_number][0][2][2] + ', 1)';
     for (let i = 0; i < levels[level_number][2].length; i++) {
         image_name = levels[level_number][2][i];
         // images[0] for 'A', images[1] for 'B' etc.
@@ -513,11 +513,26 @@ class Rect
     }
 }
 
+    
+function make_flipped_image(img)
+{
+    ctx.drawImage(img,0,0);
+    var idt = ctx.getImageData(0,0,img.width,img.height);
+
+    getPixelXY(idt, 1,1); // same pixel using x,y
+    setPixelXY(idt, 1,1, 0,0,0,255); // a black pixel
+    ctx.putImageData(idt, 0,0);  // 0,0 is xy coordinates
+    new_img = new Image();
+    new_img.src = canvas.toDataURL();
+    return new_img;
+}
+
 class Being
 {
     constructor(x, y, leftward)
     {
         this.leftward = leftward;
+        this.image_is_leftward = leftward;
         this.images = [];
         this.leftward_images = [];
         this.pos = [x, y];
@@ -534,49 +549,29 @@ class Being
         
     draw()
     {
-        if (this.leftward)
+        console.log(this.image_index);
+        var i =this.image_index;
+        this.image = this.images[i];
+        this.image_shift = [Math.trunc(this.pos[0] - this.offsets[i][0]), Math.trunc(this.pos[1] - this.offsets[i][1])];
+        
+        if(this.leftward != this.image_is_leftward)
         {
-            var i = 9 - this.image_index;
-            if (i > 7)
-                i -= 8;
-            this.image = this.leftward_images[i];
-            this.image_shift = [Math.trunc(this.pos[0] - this.left_offsets[i][0]), Math.trunc(this.pos[1] - this.left_offsets[i][1])];
+            ctx.save();
+            ctx.scale(-1,1);
+            ctx.drawImage(this.image, -this.image.width - this.image_shift[0] , this.image_shift[1]);
+            ctx.restore();
         }
         else
         {
-            this.image = this.images[this.image_index];
-            this.image_shift = [Math.trunc(this.pos[0] - this.offsets[this.image_index][0]), Math.trunc(this.pos[1] - this.offsets[this.image_index][1])];
+            ctx.drawImage(this.image, this.image_shift[0], this.image_shift[1]);
         }
-        ctx.drawImage(this.image, this.image_shift[0], this.image_shift[1]);
-        //this.rect = this.image.get_rect();
-        //this.rect.x += this.image_shift[0];
-        //this.rect.y += this.image_shift[1];
-        // draw a yellow rectangle for debugging
-        //pygame.draw.rect(screen, pygame.Color(255,255,0), this.rect, width = 1)
     }
 
     load_images2(root_path, offsets, character_pixel_scale, leftward, num_images = 8)
     {
-        if (leftward)
-        {
-            this.left_offsets = [];
-            for(let i = 0; i<offsets.length; i++)
-            {
-                var offset = offsets[i];
-                this.left_offsets.push([offset[0],offset[1]]);
-            }
-            this.offsets = [];
-        }
-        else
-        {
-            this.offsets = [];
-            for(let i = 0; i<offsets.length; i++)
-            {
-                var offset = offsets[i];
-                this.offsets.push([offset[0],offset[1]]);
-            }
-            this.left_offsets = [];
-        }
+        this.offsets = offsets;
+        this.image_is_leftward = leftward;
+
         var image_pixel_scale = character_pixel_scale;
         var image_scale = pixel_scale / image_pixel_scale;
         for(let i = 0; i<num_images; i++)
@@ -595,20 +590,8 @@ class Being
                 console.error(error);
                 console.error('image_name = ' + image_name);
             }
-            //flipped_img = pygame.transform.flip(img, true, false);
-            var flipped_img = img;
-            if (leftward)
-            {
-                this.leftward_images.push(img);
-                this.images.push(flipped_img);
-                this.offsets.push([img.width -this.left_offsets[i][0], this.left_offsets[i][1]]);
-            }
-            else
-            {
-                this.images.push(img);
-                this.leftward_images.push(flipped_img);
-                this.left_offsets.push([img.width -this.offsets[i][0], this.offsets[i][1]]);
-            }
+
+            this.images.push(img);
         }
     }
 
@@ -738,7 +721,7 @@ class Man extends Being
         {
             // apply velocity to position
             this.pos[0] += this.move_dir * this.move_step;
-            this.image_index += this.move_dir;
+            this.image_index += Math.abs(this.move_dir);
             if (this.image_index > 7)
                 this.image_index = 0;
             else if (this.image_index < 0)
@@ -1065,7 +1048,7 @@ function draw_level(offset = [0,0])
                 }
                 if (img != null)
                 {
-                    ctx.drawImage(img, posx, posy, 32, 32);
+                    ctx.drawImage(img, posx, posy);
                 }
             }
             if (line[x] == 'V')
@@ -1128,6 +1111,17 @@ let loop = GameLoop({  // create the main game loop
   fps: 12.5,
   update: function() { // update the game state
     life_lost = man.move();
+    
+    if (life_lost)
+        return;
+
+    for(let i=0; i<monsters.length; i++)
+    {
+        monster = monsters[i];
+        monster.move()
+    }
+    
+    life_lost = false
     
     animation_index += 1;
   },

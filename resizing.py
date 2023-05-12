@@ -273,4 +273,5 @@ def resize_being(root_path, old_pixel_scale, offsets, num_images = 8):
         rescale_image(root_path + str(i), old_pixel_scale)
         
 #resize_being(this_dir + '/walking man/t', 230, DAN_OFFSETS)
-resize_being(this_dir + '/Girl Monster/', 185, GIRL_OFFSETS)
+#resize_being(this_dir + '/Girl Monster/', 185, GIRL_OFFSETS)
+resize_being(this_dir + '/Goose/', 118, GOOSE_OFFSETS)
