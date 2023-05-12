@@ -239,7 +239,7 @@ level_title = '';
 background_color = 'rgba(0, 0, 0, 1)';//'rgba(0, 255, 170, 1)';
 num_lives = 3;
 
-const GIRL_OFFSETS = [ [97, 348], [83, 351], [81, 356], [96, 365], [99, 361], [105, 365], [99, 375], [96, 366] ];
+const GIRL_OFFSETS = [[16, 60],[14, 60],[14, 61],[16, 63],[17, 62],[18, 63],[17, 64],[16, 63],];
 const GIRL_PIXEL_SCALE = 185;
 const DAN_OFFSETS = [[24, 65],[19, 66],[11, 64],[15, 64],[21, 63],[16, 63],[10, 63],[15, 64],]; // rescaled
 const DAN_PIXEL_SCALE = 230;
@@ -271,7 +271,7 @@ const CANVAS_W = canvas.width;
 const CANVAS_H = canvas.height;
 
 function onKeyDown(e) {
-    console.log(e.keyCode);
+    //console.log(e.keyCode);
     switch (e.keyCode)
     {
        case 32:
@@ -560,7 +560,7 @@ class Being
         if (leftward)
         {
             this.left_offsets = [];
-            for(let i = 0; offsets.length; i++)
+            for(let i = 0; i<offsets.length; i++)
             {
                 var offset = offsets[i];
                 this.left_offsets.push([offset[0],offset[1]]);
@@ -748,10 +748,6 @@ class Man extends Being
     
     move()
     {
-        if(left_pressed)
-        {
-            console.log("left pressed");
-        }
         let on = this.on_flag();
         if (on == 1)
         {
@@ -1069,17 +1065,7 @@ function draw_level(offset = [0,0])
                 }
                 if (img != null)
                 {
-                    try
-                    {
                     ctx.drawImage(img, posx, posy, 32, 32);
-                    }
-                    catch(err)
-                    {
-                        console.log(err.message);
-                        console.log(img.src);
-                        console.log(posx, ', ', posy);
-                        exit();
-                    }
                 }
             }
             if (line[x] == 'V')
@@ -1125,10 +1111,10 @@ function draw_everything()
 {
     background.render();
     man.draw();
-    //for(let i = 0; i<monsters.length; i++)
-    //{
-    //    monsters[i].draw();
-    //}
+    for(let i = 0; i<monsters.length; i++)
+    {
+        monsters[i].draw();
+    }
     draw_level();
     //draw_air();
     //draw_score();
