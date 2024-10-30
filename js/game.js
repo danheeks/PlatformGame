@@ -1,6 +1,6 @@
 
 
-let { init, Sprite, GameLoop } = kontra;
+let { init, Sprite, GameLoop, Text } = kontra;
 
 window.addEventListener('keydown', onKeyDown);
 window.addEventListener('keyup', onKeyUp);
@@ -233,11 +233,23 @@ keys_left = 1;
 air = 2000;
 score = 0;
 high_score = 0;
-level_number = 2;
+level_number = 0;
 conveyor = [];
 level_title = '';
 background_color = 'rgba(0, 0, 0, 1)';//'rgba(0, 255, 170, 1)';
 num_lives = 3;
+paused = false;
+key_down = 0;
+GAME_MODE_PLAYING = 0;
+GAME_MODE_DEATH = 1;
+GAME_MODE_PAUSED = 2;
+GAME_MODE_END_LEVEL = 3;
+GAME_MODE_GAME_OVER = 4;
+GAME_MODE_GAME_WIN = 5;
+game_mode = GAME_MODE_PLAYING;
+man_for_squashing = null;
+foot_image = new Image();
+foot_image.src = 'foot.png';
 
 const GIRL_OFFSETS = [[16, 60],[14, 60],[14, 61],[16, 63],[17, 62],[18, 63],[17, 64],[16, 63],];
 const GIRL_PIXEL_SCALE = 185;
@@ -251,17 +263,21 @@ const GOOSE_OFFSETS = [[39, 65],[39, 65],[39, 65],[39, 65],[39, 65],[39, 65],[39
 const GOOSE_PIXEL_SCALE = 118;
 
 
-var background = 
+function render_rect(x, y, w, h, col)
 {
-  render: function ()
-   {
-    //ctx.save()
     ctx.beginPath();
-    ctx.rect(0, 0, CANVAS_W, CANVAS_H);
-    ctx.fillStyle = background_color;
+    ctx.rect(x, y, w, h);
+    ctx.fillStyle = col;
     ctx.fill();
     ctx.closePath();
 }
+
+var background = 
+{
+    render: function ()
+    {
+       render_rect(0, 0, CANVAS_W, CANVAS_H, background_color);
+    }
 }
 
 
@@ -272,6 +288,8 @@ const CANVAS_H = canvas.height;
 
 function onKeyDown(e) {
     //console.log(e.keyCode);
+    key_down = e.keyCode;
+    
     switch (e.keyCode)
     {
        case 32:
@@ -372,10 +390,8 @@ function load_level(scene)
         level.push(line_list);
     }
     
-    man_x = levels[level_number][0][3];
-    man_y = levels[level_number][0][4];
     leftward = levels[level_number][0][5];
-    man = new Man(man_x, man_y, leftward);
+    man = new Man(levels[level_number][0][3], levels[level_number][0][4], leftward);
     monsters = [];
     for (let i = 0; i < levels[level_number][1].length; i++)
     {
@@ -387,7 +403,8 @@ function load_level(scene)
     }
     images = [];
     image_folder_name = levels[level_number][0][1];
-    level_title = levels[level_number][0][0];
+    level_title = new Text({text: levels[level_number][0][0], font: '32px Arial', color: 'white', x: 400 });
+    debugging_text = new Text({font: '20px Arial', color: 'white'});
     background_color = 'rgba(' + levels[level_number][0][2][0] + ', ' + levels[level_number][0][2][1] + ', ' + levels[level_number][0][2][2] + ', 1)';
     for (let i = 0; i < levels[level_number][2].length; i++) {
         image_name = levels[level_number][2][i];
@@ -511,6 +528,11 @@ class Rect
         if (rect.ymax < this.ymin)return false;
         return true;
     }
+    
+    toString()
+    {
+        return "["+ this.xmin + "," + this.ymin + "," + this.xmax + "," + this.ymax + "]";
+    }
 }
 
     
@@ -551,11 +573,19 @@ class Being
     {
         console.log(this.image_index);
         var i =this.image_index;
+        
+        if(this.leftward)
+        {
+            i = 9 - this.image_index;
+            if(i > 7)i -= 8;
+        }
+        
         this.image = this.images[i];
         this.image_shift = [Math.trunc(this.pos[0] - this.offsets[i][0]), Math.trunc(this.pos[1] - this.offsets[i][1])];
         
         if(this.leftward != this.image_is_leftward)
         {
+            this.image_shift = [Math.trunc(this.pos[0] - this.image.width + this.offsets[i][0]), Math.trunc(this.pos[1] - this.offsets[i][1])];
             ctx.save();
             ctx.scale(-1,1);
             ctx.drawImage(this.image, -this.image.width - this.image_shift[0] , this.image_shift[1]);
@@ -604,7 +634,7 @@ class Being
     
     get_rect_from_image()
     {
-        return Rect(this.pos[0], this.pos[1], this.pos[0] + this.image.width + this.pos[1] + this.image.height);
+        return new Rect(this.pos[0], this.pos[1], this.pos[0] + this.image.width, this.pos[1] + this.image.height);
     }
         
     being_collision(being)
@@ -721,7 +751,7 @@ class Man extends Being
         {
             // apply velocity to position
             this.pos[0] += this.move_dir * this.move_step;
-            this.image_index += Math.abs(this.move_dir);
+            this.image_index += this.move_dir;
             if (this.image_index > 7)
                 this.image_index = 0;
             else if (this.image_index < 0)
@@ -734,14 +764,11 @@ class Man extends Being
         let on = this.on_flag();
         if (on == 1)
         {
-            //animated_zoom();
-            on_lose_life();
-            return true;
+            return 1; // life lost
         }
         else if (on == 2 && keys_left == 0)
         {
-            on_end_level();
-            return true;
+            return 2; // end level
         }
         if (this.in_jump)
         {
@@ -769,9 +796,7 @@ class Man extends Being
             {
                 if (this.fall_count > 8)
                 {
-                    //animated_zoom();
-                    on_lose_life();
-                    return true;
+                    return 1; // lose life
                 }
                 this.fall_count = 0;
                 if (left_pressed)
@@ -819,7 +844,7 @@ class Man extends Being
                 this.jump_index += 1;
             }
         }
-        return false; // not life lost
+        return 0; // not life lost or end level
     }
     
     on_floor()
@@ -932,33 +957,11 @@ class Man extends Being
 
 function on_game_over()
 {
-    back_col = 'rgba(0,0,0, 1)';
-    foot = this.load.image('foot.png');
-    flipped_img = pygame.transform.flip(foot, true, true);
-    man_for_squashing = new Man();
-    man_for_squashing.image_index = 2;
-
-    for(let i = 0; i<33; i++)
-    {
-        screen.fill(back_col);
-        man_for_squashing.pos = [512, 600];
-        man_for_squashing.draw();
-        screen.blit(foot, [400, i * 20 -768])
-        screen.blit(flipped_img, [360, 570]);
-
-        //for event in pygame.event.get():
-        //    if event.type == pygame.QUIT:
-        //        exit()
-        
-        clock.tick(12.5);
-        pygame.display.flip();
-    }
-
-    time.sleep(3);
-    
     num_lives = 3;
     level_number = 0;
     load_level();
+    game_mode = GAME_MODE_GAME_OVER;
+    animation_index = 0;
 }
         
 function on_game_win()
@@ -971,46 +974,8 @@ function on_game_win()
         
 function on_end_level()
 {
-    // animated air going down
-    air_down_step = 10;
-    while(air > 0)
-    {
-        if (air > air_down_step)
-        {
-            air -= air_down_step;
-            score += air_down_step;
-        }
-        else
-        {
-            score += air;
-            air = 0;
-        }
-        draw_background();
-        man.draw();
-        for(let i = 0; i<monsters.length; i++)
-        {
-            monster.draw();
-        }
-        draw_level();
-        draw_air();
-        draw_score();
-        draw_lives();
-        pygame.display.flip();
-    }
-    
-    level_number += 1;
-    if(level_number >= levels.length)
-    {
-        level_number = 0;
-        on_game_win();
-    }
-    
-    load_level();
-}
-
-    
-        
-            
+    game_mode = GAME_MODE_END_LEVEL;
+}           
                 
 function draw_background()
 {
@@ -1060,22 +1025,41 @@ function draw_level(offset = [0,0])
     keys_left = local_keys_left;
 
     // level title
-   // screen.blit(myfont.render(level_title, False, pygame.Color(255,255,255)),(400,y));
+    level_title.y = y;
+    level_title.render();
+    debugging_text.y = y + 32;
+    debugging_text.text = "air = " + air.toString();
+
+    debugging_text.render();
+}
+
+function render_text(font, color, text, x, y)
+{
+    ctx.font = font;
+    ctx.fillStyle = color;
+    ctx.textBaseline = "top";
+    ctx.fillText(text, x, y);
 }
 
 function draw_air()
 {
-    pygame.draw.rect(screen, pygame.Color(255,0,0), pygame.Rect(0, 544, 319, 32))
-    pygame.draw.rect(screen, pygame.Color(0,255,0), pygame.Rect(319, 544, 705, 32))
-    screen.blit(myfont.render("Air", False, pygame.Color(255,255,255)),(50,540))
-    pygame.draw.rect(screen, pygame.Color(255,255,255), pygame.Rect(128, 552, air * 0.448, 16))
+    render_rect(0, 544, 319, 32, 'rgba(255,0,0, 1)');
+    render_rect(319, 544, 705, 32, 'rgba(0,255,0, 1)');
+    render_text('32px Arial','white', "Air", 50,545);
+    render_rect(128, 552, air * 0.448, 16, 'rgba(255,255,255, 1)');
+}
+
+function pad(num, size) {
+    num = num.toString();
+    while (num.length < size) num = "0" + num;
+    return num;
 }
 
 function draw_score()
 {
-    screen.blit(myfont.render("High Score " + "{:06d}".format(high_score), False, pygame.Color(255,255,255)),(0,580));
-    screen.blit(myfont.render("Score " + "{:06d}".format(score), False, pygame.Color(255,255,255)),(512,580));
-    screen.blit(myfont.render("Keys " + "{:d}".format(keys_left), False, pygame.Color(255,255,255)),(512,612));
+    render_text('32px Arial','white', "High Score " + pad(high_score, 6), 0,580);
+    render_text('32px Arial','white', "Score " + pad(score, 6), 512,580);
+    render_text('32px Arial','white', "Keys " + keys_left.toString(), 512,612);
 }
     
 function draw_lives()
@@ -1090,43 +1074,121 @@ function draw_lives()
         man_for_lives.image_index = 0;
 }
         
-function draw_everything()
-{
-    background.render();
-    man.draw();
-    for(let i = 0; i<monsters.length; i++)
-    {
-        monsters[i].draw();
-    }
-    draw_level();
-    //draw_air();
-    //draw_score();
-    //draw_lives();
-}
-                        
- 
-
-
 let loop = GameLoop({  // create the main game loop
   fps: 12.5,
   update: function() { // update the game state
-    life_lost = man.move();
-    
-    if (life_lost)
-        return;
-
-    for(let i=0; i<monsters.length; i++)
+    switch(game_mode)
     {
-        monster = monsters[i];
-        monster.move()
+        case GAME_MODE_PLAYING:
+            move_result = man.move();
+            if(move_result == 0)
+            {
+                for(let i=0; i<monsters.length; i++)
+                {
+                    monster = monsters[i];
+                    monster.move();
+                    if(man.being_collision(monster))
+                    {
+                        move_result = 1; // lose life
+                        break;
+                    }
+                }
+            }
+            
+            air -= 1;
+            
+            if (move_result == 1)
+                on_lose_life();
+            else if(move_result == 2)
+                on_end_level();
+            else if(air <= 0)
+                on_lose_life();
+            else
+            {
+                animation_index += 1;
+                if(animation_index >= 4)animation_index = 0;
+            }
+            break;
+            
+        case GAME_MODE_GAME_OVER:
+            animation_index += 1;
+            if(animation_index >= 50)
+            {
+                animation_index = 0;
+                game_mode = GAME_MODE_PLAYING;
+            }
+            break;
+            
+        case GAME_MODE_END_LEVEL:
+            // animate air going down
+            air_down_step = 10;
+            if(air > 0)
+            {
+                if (air > air_down_step)
+                {
+                    air -= air_down_step;
+                    score += air_down_step;
+                }
+                else
+                {
+                    score += air;
+                    air = 0;
+                    level_number += 1;
+                    if(level_number >= levels.length)
+                    {
+                        level_number = 0;
+                        on_game_win();
+                    }
+                    else
+                    {                
+                        load_level();
+                        game_mode = GAME_MODE_PLAYING;
+                    }
+                }
+            }
+            else
+            {
+                animation_index += 1;
+                if(animation_index >= 4)animation_index = 0;
+            }
+            break;
+    
+            
     }
     
-    life_lost = false
-    
-    animation_index += 1;
   },
   render: function() { // render the game state
-    draw_everything();
+        switch(game_mode)
+        {
+            case GAME_MODE_PLAYING:
+            case GAME_MODE_END_LEVEL:
+                background.render();
+                man.draw();
+                for(let i = 0; i<monsters.length; i++)
+                {
+                    monsters[i].draw();
+                }
+                draw_level();
+                draw_air();
+                draw_score();
+                //draw_lives();
+                break;
+
+            case GAME_MODE_GAME_OVER:
+                background.render();
+                if(man_for_squashing == null)
+                {
+                    man_for_squashing = new Man();
+                    man_for_squashing.image_index = 2;
+                    man_for_squashing.pos = [512, 600];
+                }
+                man_for_squashing.draw();
+                let y = animation_index;
+                if(y > 32)y = 32;
+                ctx.drawImage(foot_image, 400, y * 20 -768);
+                //screen.blit(flipped_img, [360, 570]);
+                break;
+        }
   }
 });
 
