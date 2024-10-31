@@ -1069,9 +1069,6 @@ function draw_lives()
         man_for_lives.pos = [i * 64 + 64, 702];
         man_for_lives.draw();
     }
-    man_for_lives.image_index += 1;
-    if(man_for_lives.image_index == 8)
-        man_for_lives.image_index = 0;
 }
         
 let loop = GameLoop({  // create the main game loop
@@ -1107,6 +1104,9 @@ let loop = GameLoop({  // create the main game loop
             {
                 animation_index += 1;
                 if(animation_index >= 4)animation_index = 0;
+                man_for_lives.image_index += 1;
+                if(man_for_lives.image_index == 8)
+                    man_for_lives.image_index = 0;
             }
             break;
             
@@ -1171,7 +1171,7 @@ let loop = GameLoop({  // create the main game loop
                 draw_level();
                 draw_air();
                 draw_score();
-                //draw_lives();
+                draw_lives();
                 break;
 
             case GAME_MODE_GAME_OVER:
