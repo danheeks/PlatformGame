@@ -14,8 +14,8 @@ const levels = [
             [0, false, 288, 288, 272, 528],
         ],
         [
-         'brick','floor','thorn bush','','stalactite','floorfall','','',
-         '','','','','','end','','',
+         'brick','floor','thorn bush','','stalactite','floorfall','floorfall1','floorfall2',
+         'floorfall3','floorfall4','floorfall5','floorfall6','floorfall7','end','','',
          '','endinv','','','','key',''
          ],
     [  
@@ -419,14 +419,6 @@ function load_level(scene)
         }
     }
     
-                // to do            
-    // create floorfall images
-    //for (let i = 0; i<7; i++)
-    //{
-      //  images[6+i] = pygame.Surface((pixel_scale, pixel_scale), pygame.SRCALPHA)
-//        images[6+i].blit(images[5],(0,4*(i+1)))     
-  //  }   
-    
     conveyor = [];
     for(let i = 0; i<4; i++)
     {
@@ -589,11 +581,15 @@ class Being
             ctx.save();
             ctx.scale(-1,1);
             ctx.drawImage(this.image, -this.image.width - this.image_shift[0] , this.image_shift[1]);
+            ctx.strokeStyle = "white";
+            ctx.strokeRect(-this.image.width - this.image_shift[0] , this.image_shift[1], this.image.width, this.image.height);
             ctx.restore();
         }
         else
         {
             ctx.drawImage(this.image, this.image_shift[0], this.image_shift[1]);
+            ctx.strokeStyle = "white";
+            ctx.strokeRect(this.image_shift[0], this.image_shift[1], this.image.width, this.image.height);
         }
     }
 
