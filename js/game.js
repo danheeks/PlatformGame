@@ -5,6 +5,7 @@ let { init, Sprite, GameLoop, Text } = kontra;
 window.addEventListener('keydown', onKeyDown);
 window.addEventListener('keyup', onKeyUp);
 
+
 const levels = [
           // level 1
      [   
@@ -32,7 +33,7 @@ const levels = [
     'ABBBB   DDDDDDDDDDDDDDDDDDDD   A',
     'A                            BBA',
     'A                              A',
-    'A           C       AAAFFFFFBBBA',
+    'AE          C       AAAFFFFFBBBA',
     'A    BBBBBBBBBBBBBBB         NOA',
     'A                            PQA',
     'ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBA',
@@ -262,6 +263,24 @@ const TOILET_PIXEL_SCALE = 32;
 const GOOSE_OFFSETS = [[39, 65],[39, 65],[39, 65],[39, 65],[39, 65],[39, 65],[39, 65],[39, 65],];
 const GOOSE_PIXEL_SCALE = 118;
 
+touches = []
+
+window.addEventListener('touchstart', (event) => {
+    event.preventDefault(); // Prevent default behavior, like scrolling
+    touches = event.touches;
+});
+
+// Handle touch move
+window.addEventListener('touchmove', (event) => {
+    event.preventDefault();
+    touches = event.touches;
+});
+
+// Handle touch end
+window.addEventListener('touchend', (event) => {
+    event.preventDefault();
+    touches = event.touches;
+});
 
 function render_rect(x, y, w, h, col)
 {
@@ -276,18 +295,15 @@ var background =
 {
     render: function ()
     {
-       render_rect(0, 0, CANVAS_W, CANVAS_H, background_color);
+       render_rect(0, 0, 1024, 710, background_color);
     }
 }
 
 
 let { canvas } = init();
 var ctx = canvas.getContext("2d");
-const CANVAS_W = canvas.width;
-const CANVAS_H = canvas.height;
 
 function onKeyDown(e) {
-    //console.log(e.keyCode);
     key_down = e.keyCode;
     
     switch (e.keyCode)
@@ -404,7 +420,6 @@ function load_level(scene)
     images = [];
     image_folder_name = levels[level_number][0][1];
     level_title = new Text({text: levels[level_number][0][0], font: '32px Arial', color: 'white', x: 400 });
-    debugging_text = new Text({font: '20px Arial', color: 'white'});
     background_color = 'rgba(' + levels[level_number][0][2][0] + ', ' + levels[level_number][0][2][1] + ', ' + levels[level_number][0][2][2] + ', 1)';
     for (let i = 0; i < levels[level_number][2].length; i++) {
         image_name = levels[level_number][2][i];
@@ -488,6 +503,12 @@ function animated_zoom()
     
     time.sleep(0.5);
 }
+
+function on_man_death()
+{
+    game_mode = GAME_MODE_DEATH; // stay in a collision mode for a moment
+    animation_index = 0;
+}
         
 function on_lose_life()
 {
@@ -495,7 +516,11 @@ function on_lose_life()
     if(num_lives == 0)
         on_game_over();
     else
+    {
         load_level();
+        game_mode = GAME_MODE_PLAYING;
+        animation_index = 0;
+    }
     left_pressed = false;
     right_pressed = false;
     up_pressed = false;
@@ -521,6 +546,25 @@ class Rect
         return true;
     }
     
+    intersecting_rect(rect)
+    {
+        if (rect.xmin > this.xmax)return null;
+        if (rect.ymin > this.ymax)return null;
+        if (rect.xmax < this.xmin)return null;
+        if (rect.ymax < this.ymin)return null;
+        
+        let xmin = this.xmin;
+        if(rect.xmin > xmin)xmin = rect.xmin; // use biggest xmin
+        let ymin = this.ymin;
+        if(rect.ymin > ymin)ymin = rect.ymin; // use biggest ymin
+        let xmax = this.xmax;
+        if(rect.xmax < xmax)xmax = rect.xmax; // use smallest xmax
+        let ymax = this.ymax;
+        if(rect.ymax < ymax)ymax = rect.ymax; // use smallest ymax        
+        
+        return new Rect(xmin, ymin, xmax, ymax);
+    }
+        
     toString()
     {
         return "["+ this.xmin + "," + this.ymin + "," + this.xmax + "," + this.ymax + "]";
@@ -548,6 +592,8 @@ class Being
         this.leftward = leftward;
         this.image_is_leftward = leftward;
         this.images = [];
+        this.image_data = [];
+        this.image_data_created = [];
         this.leftward_images = [];
         this.pos = [x, y];
         this.move_step = pixel_scale * 0.25;
@@ -560,11 +606,10 @@ class Being
     load_images()
     {
     }
-        
-    draw()
+    
+    get_current_image_index()
     {
-        console.log(this.image_index);
-        var i =this.image_index;
+        let i =this.image_index;
         
         if(this.leftward)
         {
@@ -572,26 +617,87 @@ class Being
             if(i > 7)i -= 8;
         }
         
-        this.image = this.images[i];
+        return i;
+    }
+        
+    draw()
+    {
+        let i =this.get_current_image_index();
         this.image_shift = [Math.trunc(this.pos[0] - this.offsets[i][0]), Math.trunc(this.pos[1] - this.offsets[i][1])];
         
         if(this.leftward != this.image_is_leftward)
         {
-            this.image_shift = [Math.trunc(this.pos[0] - this.image.width + this.offsets[i][0]), Math.trunc(this.pos[1] - this.offsets[i][1])];
+            this.image_shift = [-Math.trunc(this.pos[0] + this.offsets[i][0]), Math.trunc(this.pos[1] - this.offsets[i][1])];
             ctx.save();
             ctx.scale(-1,1);
-            ctx.drawImage(this.image, -this.image.width - this.image_shift[0] , this.image_shift[1]);
-            ctx.strokeStyle = "white";
-            ctx.strokeRect(-this.image.width - this.image_shift[0] , this.image_shift[1], this.image.width, this.image.height);
+            ctx.drawImage(this.images[i], this.image_shift[0] , this.image_shift[1]);
             ctx.restore();
         }
         else
         {
-            ctx.drawImage(this.image, this.image_shift[0], this.image_shift[1]);
-            ctx.strokeStyle = "white";
-            ctx.strokeRect(this.image_shift[0], this.image_shift[1], this.image.width, this.image.height);
+            ctx.drawImage(this.images[i], this.image_shift[0], this.image_shift[1]);
+        }
+        
+        if(!this.image_data_created[i] && (this.images[i].width > 0))
+        {
+            // Create an off-screen canvas
+            const offScreenCanvas = document.createElement('canvas');
+            const offScreenCtx = offScreenCanvas.getContext('2d');
+            
+            offScreenCtx.drawImage(this.images[i], 0, 0);
+            const imageData = offScreenCtx.getImageData(0, 0, this.images[i].width, this.images[i].height);
+            // test colour all pixels white
+            const data = imageData.data;
+            for (let j = 0; j < data.length; j += 4) {
+                if(data[j+3] > 0)
+                {
+                    data[j] = 255;
+                    data[j+1] = 128;
+                    data[j+2] = 230;
+                }
+            }
+            this.image_data.push(imageData);
+            
+            this.image_data_created[i] = true;
         }
     }
+
+    putImageData()
+    {
+        let i = this.get_current_image_index();
+        if(!this.image_data_created[i])
+        {
+            this.draw();
+            return;
+        }
+        let image_shift = [Math.trunc(this.pos[0] - this.offsets[i][0]), Math.trunc(this.pos[1] - this.offsets[i][1])];
+        if(this.leftward != this.image_is_leftward)
+        {
+            let width = this.images[i].width;
+            let height = this.images[i].height;
+            let data = this.image_data[i].data;
+            var image_data2 = ctx.getImageData(0,0,width,height);
+            
+            for(let j = 0; j<= height; j++)
+            {
+                for(let i = 0; i<= width; i++)
+                {
+                    let k1 = (j * width + i) * 4;
+                    let k2 = ((j+1) * width - i - 1) * 4;
+                    image_data2.data[k2] = data[k1];
+                    image_data2.data[k2 + 1] = data[k1+1];
+                    image_data2.data[k2 + 2] = data[k1+2];
+                    image_data2.data[k2 + 3] = data[k1+3];
+                }
+            }
+            ctx.putImageData(image_data2, image_shift[0] , image_shift[1]);
+        }
+        else
+        {
+            ctx.putImageData(this.image_data[i], image_shift[0] , image_shift[1]);
+        }
+    }
+
 
     load_images2(root_path, offsets, character_pixel_scale, leftward, num_images = 8)
     {
@@ -600,6 +706,7 @@ class Being
 
         var image_pixel_scale = character_pixel_scale;
         var image_scale = pixel_scale / image_pixel_scale;
+
         for(let i = 0; i<num_images; i++)
         {
             var image_name = root_path + '.png';
@@ -618,6 +725,7 @@ class Being
             }
 
             this.images.push(img);
+            this.image_data_created.push(false);
         }
     }
 
@@ -630,7 +738,8 @@ class Being
     
     get_rect_from_image()
     {
-        return new Rect(this.pos[0], this.pos[1], this.pos[0] + this.image.width, this.pos[1] + this.image.height);
+        let i = this.get_current_image_index();
+        return new Rect(this.pos[0], this.pos[1], this.pos[0] + this.images[i].width, this.pos[1] + this.images[i].height);
     }
         
     being_collision(being)
@@ -638,7 +747,39 @@ class Being
         var rect1 = this.get_rect_from_image();
         var rect2 = being.get_rect_from_image();
         
-        return rect1.intersects(rect2);
+        if(!rect1.intersects(rect2))
+            return false;
+            
+        // check every pixel
+        let r = rect1.intersecting_rect(rect2);
+        for(let j = r.ymin; j<= r.ymax; j++)
+        {
+            for(let i = r.xmin; i<= r.xmax; i++)
+            {
+                if(this.pixel_hits_pixel(being, i, j))
+                    return true;
+            }
+        }
+        return false;
+    }
+    
+    pixel_hits_pixel(being, x, y)
+    {
+        let image_index1 = this.get_current_image_index();
+        let image_index2 = being.get_current_image_index();
+        
+        let image_data1 = this.image_data[image_index1];
+        let image_data2 = this.image_data[image_index2];
+        
+        let i1 = (x - this.pos[0]) * 4 + (y - this.pos[1]) * 4 * image_data1.width + 3;
+        if(image_data1.data[i1] != 0)
+        {
+            let i2 = (x - being.pos[0]) * 4 + (y - being.pos[1]) * 4 * image_data2.width + 3;
+            if(image_data2.data[i2] != 0)
+                return true;
+        }
+        
+        return false;
     }
 }
 
@@ -978,6 +1119,10 @@ function draw_background()
     //screen.fill(background_color);
 }
     
+function isTouchDevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+}
+    
 function draw_level(offset = [0,0])
 {
     local_keys_left = 0;
@@ -1023,10 +1168,6 @@ function draw_level(offset = [0,0])
     // level title
     level_title.y = y;
     level_title.render();
-    debugging_text.y = y + 32;
-    debugging_text.text = "air = " + air.toString();
-
-    debugging_text.render();
 }
 
 function render_text(font, color, text, x, y)
@@ -1053,9 +1194,10 @@ function pad(num, size) {
 
 function draw_score()
 {
-    render_text('32px Arial','white', "High Score " + pad(high_score, 6), 0,580);
+    render_text('32px Arial','white', "Hijh Score " + pad(high_score, 6), 0,580);
     render_text('32px Arial','white', "Score " + pad(score, 6), 512,580);
     render_text('32px Arial','white', "Keys " + keys_left.toString(), 512,612);
+    render_text('32px Arial','white', "Touches " + touches.length.toString(), 512,648);
 }
     
 function draw_lives()
@@ -1091,11 +1233,11 @@ let loop = GameLoop({  // create the main game loop
             air -= 1;
             
             if (move_result == 1)
-                on_lose_life();
+                on_man_death();
             else if(move_result == 2)
                 on_end_level();
             else if(air <= 0)
-                on_lose_life();
+                on_man_death();
             else
             {
                 animation_index += 1;
@@ -1103,6 +1245,14 @@ let loop = GameLoop({  // create the main game loop
                 man_for_lives.image_index += 1;
                 if(man_for_lives.image_index == 8)
                     man_for_lives.image_index = 0;
+            }
+            break;
+            
+        case GAME_MODE_DEATH:
+            animation_index += 1;
+            if(animation_index >= 50)
+            {
+                on_lose_life();                
             }
             break;
             
@@ -1139,6 +1289,7 @@ let loop = GameLoop({  // create the main game loop
                     {                
                         load_level();
                         game_mode = GAME_MODE_PLAYING;
+                        animation_index = 0;
                     }
                 }
             }
@@ -1159,7 +1310,7 @@ let loop = GameLoop({  // create the main game loop
             case GAME_MODE_PLAYING:
             case GAME_MODE_END_LEVEL:
                 background.render();
-                man.draw();
+                man.putImageData();
                 for(let i = 0; i<monsters.length; i++)
                 {
                     monsters[i].draw();
@@ -1168,6 +1319,15 @@ let loop = GameLoop({  // create the main game loop
                 draw_air();
                 draw_score();
                 draw_lives();
+                break;
+                
+            case GAME_MODE_DEATH:
+                background.render();
+                man.putImageData();
+                for(let i = 0; i<monsters.length; i++)
+                {
+                    monsters[i].draw();
+                }
                 break;
 
             case GAME_MODE_GAME_OVER:
@@ -1191,6 +1351,8 @@ let loop = GameLoop({  // create the main game loop
 load_level();
 man_for_lives = new Man();
 dan = new Man()
+var audio = new Audio("E1.mp3");
+audio.play();
 
 loop.start();    // start the game
 
